@@ -1,0 +1,72 @@
+site_name: Adele Goldstine - 2026.1 T01
+site_description: Avaliação da qualidade de software do SuaGradeUnB
+site_url: https://FCTE-Qualidade-de-Software-1.github.io/2026-1_T01_ADELE_GOLDSTINE/
+repo_url: https://github.com/FCTE-Qualidade-de-Software-1/2026-1_T01_ADELE_GOLDSTINE
+repo_name: Adele Goldstine
+
+nav:
+  - Home: index.md
+  - Fase 1:
+      - Propósito da Avaliação: fase1/fase1.md
+      - ODS: fase1/ods.md
+      - Tabela de Contribuição: fase1/tabela_contribuicao.md
+  - Fase 2:
+      - Especificação da Avaliação: fase2/fase2.md
+      - Objetivos de medição 1 - Segurança: fase2/seguranca.md
+      - Objetivos de medição 2 - Manutenibilidade: fase2/manutenibilidade.md
+      - Níveis de pontuação e Critérios de julgamento: fase2/criterios.md
+      - Tabela de Contribuição: fase2/tabela_contribuicao.md
+  - Fase 3:
+      - Planejamento da Avaliação: fase3/planejamento.md
+      - Tabela de Contribuição: fase3/tabela_contribuicao.md
+  - Fase 4:
+      - Resultados da Avaliação: fase4/fase4.md
+      - Avaliação Segurança: fase4/seguranca.md
+      - Avaliação Manutenibilidade: fase4/manutenibilidade.md
+      - Tabela de Contribuição: fase4/tabela_contribuicao.md
+
+theme:
+  name: material
+  language: pt
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  font:
+    text: Poppins
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+  palette:
+    - scheme: default
+      primary: light green
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Modo escuro
+    - scheme: slate
+      primary: light green
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
