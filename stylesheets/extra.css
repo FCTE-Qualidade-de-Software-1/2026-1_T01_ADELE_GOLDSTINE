@@ -1,0 +1,15 @@
+/* Tom de verde do SuaGradeUnB (#13AF5E) e azul de acento (#4080F4). */
+:root {
+  --md-primary-fg-color: #13AF5E;
+  --md-primary-fg-color--light: #2BC974;
+  --md-primary-fg-color--dark: #0E8C4B;
+  --md-accent-fg-color: #4080F4;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color: #4080F4;
+}
+
+.md-header__title {
+  font-weight: 600;
+}
