@@ -13,6 +13,10 @@
         <link rel="canonical" href="https://FCTE-Qualidade-de-Software-1.github.io/2026-1_T01_ADELE_GOLDSTINE/fase1/conclusao/">
       
       
+        <link rel="prev" href="../qualidades/">
+      
+      
+        <link rel="next" href="../tabela_contribuicao/">
       
       
         
@@ -235,10 +239,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../objetoDeEstudo/" class="md-tabs__link">
           
   
@@ -392,26 +398,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -429,7 +440,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -575,6 +586,103 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conclusão
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conclusão
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bibliografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bibliografia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico de Versão
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1127,6 +1235,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#bibliografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bibliografia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#historico-de-versao" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1160,7 +1279,15 @@
 <h1 id="conclusao">Conclusão<a class="headerlink" href="#conclusao" title="Permanent link">&para;</a></h1>
 <p>O SuaGradeUnB demonstra forte alinhamento com o ODS 4 (Educação de Qualidade) ao facilitar o planejamento acadêmico dos estudantes da Universidade de Brasília. Ao centralizar buscas por disciplinas, permitir a seleção e montagem de turmas, gerar visualizações de grade e exportar PDFs, o sistema amplia a previsibilidade e autonomia dos alunos no processo de matrícula, contribuindo diretamente para o acesso e a permanência na educação superior. Por ser open source e adotado em contexto acadêmico, o projeto também atua como recurso didático, promovendo o desenvolvimento de competências em tecnologia da informação entre estudantes e contribuintes.</p>
 <p>Além disso, a colaboração da comunidade favorece a continuidade do projeto. A opção por autenticação opcional e pelo uso anônimo reduz barreiras de entrada, ampliando a inclusão e tornando a ferramenta mais acessível a diferentes perfis de usuários.</p>
-<p>Com isso, o SuaGradeUnB integra princípios centrais de ODS, como inclusão e contribuindo com acesso à educação, ao promover equidade no planejamento acadêmico, fomentar atuação da comunidade por ser um projeto open source e assegurar um nível de confiabilidade e manutenibilidade que viabiliza sua evolução e uso contínuo pela comunidade estudantil.</p>
+<p>Apesar do alinhamento positivo, a avaliação identificou pontos de atenção que justificam o foco nas características priorizadas. A dependência de fontes de dados externas, como as informações de turmas obtidas por web scraping do SIGAA, expõe o sistema a fragilidades operacionais, uma vez que eventuais inconsistências nesses dados comprometeriam diretamente o propósito do projeto, podendo gerar prejuízos aos usuários. Esse cenário reforça a importância de avaliar a confiabilidade dos outputs gerados e a manutenibilidade da base de código, dimensões centrais para sustentar a evolução do SuaGradeUnB.</p>
+<p>Com isso, o SuaGradeUnB integra princípios centrais da ODS 4, promovendo inclusão e contribuindo com o acesso à educação, ao promover equidade no planejamento acadêmico, fomentar a atuação da comunidade por ser um projeto open source e assegurar um nível de confiabilidade e manutenibilidade que viabiliza sua evolução e uso contínuo pela comunidade estudantil.</p>
+<h2 id="bibliografia"><strong>Bibliografia</strong><a class="headerlink" href="#bibliografia" title="Permanent link">&para;</a></h2>
+<ul>
+<li>ISO. <strong>ISO/IEC 12207:2017</strong> – <em>Systems and software engineering — Software life cycle processes</em>. Geneva: International Organization for Standardization, 2017.</li>
+<li>ISO. <strong>ISO/IEC 25010:2011</strong> – <em>Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models</em>. Geneva: International Organization for Standardization, 2011.</li>
+<li>SUAGRADEUNB. <strong>SuaGradeUnB</strong>. Disponível em: <a href="https://suagradeunb.com.br/">https://suagradeunb.com.br/</a>. Acesso em: 13 maio 2026.</li>
+<li>RAMOS, Cristiane Soares. <strong>Processo de Avaliação de Produto de Software</strong>. Slides da disciplina Qualidade de Software, Faculdade de Ciências e Tecnologias em Engenharia (FCTE), Universidade de Brasília, 2025/2. Disponível em: <a href="https://aprender3.unb.br/pluginfile.php/3327791/mod_resource/content/1/2025-2%20PROC%20AVAL%20PRODUTO.pdf">https://aprender3.unb.br/pluginfile.php/3327791/mod_resource/content/1/2025-2%20PROC%20AVAL%20PRODUTO.pdf</a>. Acesso em: 13 maio 2026.</li>
+</ul>
 <h2 id="historico-de-versao"><strong>Histórico de Versão</strong><a class="headerlink" href="#historico-de-versao" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
