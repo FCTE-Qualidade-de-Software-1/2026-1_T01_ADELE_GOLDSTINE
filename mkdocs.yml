@@ -8,6 +8,7 @@ nav:
   - Home: index.md
   - Fase 1:
       - Propósito da Avaliação: fase1/fase1.md
+      - Objeto de Estudo: fase1/objetoDeEstudo.md
       - ODS: fase1/ods.md
       - Modelo de Qualidade: fase1/qualidades.md
       - Tabela de Contribuição: fase1/tabela_contribuicao.md
