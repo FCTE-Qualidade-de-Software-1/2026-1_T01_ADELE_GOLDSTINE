@@ -1,6 +1,6 @@
 **Especificação inicial do modelo de qualidade**
 
-![Especificação inicial do modelo de qualidade](../assets/imagem1.png)
+![Especificação inicial do modelo de qualidade](../assets/systemProductQuality.png)
 
 <div align="center">
   <font size="3"><figcaption>Figura 1: Modelo de Qualidade</figcaption></font>
@@ -25,7 +25,7 @@ A ISO 25010 faz parte da série SQUARE (System and Software Quality Requirements
 ### **Priorização das Qualidades**
 
 
-***Método de Priorização***
+#### ***Método de Priorização***
 
 A fim de priorizar as características a serem avaliadas, o grupo optou por utilizar o método Impacto, Risco e Esforço. O grupo debateu sobre o cada uma das características levantado diversas opiniões até que houvesse um consenso entre todo o grupo a respeito do número atribuído a cada um dos atributos (Impacto, Risco e Esforço). Antes da atribuição de valores, foi definido o que significa cada um dos critérios:
 
@@ -42,7 +42,7 @@ Após a atribuição de valores para cada critério, foi calculado o peso final 
 <br>
 
 
-***Aplicação do Método de Priorização***
+#### ***Aplicação do Método de Priorização***
 
 
 Esses foram os valores atribuídos pelo grupo para cada uma das qualidades (com exceção da característica Usabilidade, por restrição da disciplina):
@@ -50,30 +50,43 @@ Esses foram os valores atribuídos pelo grupo para cada uma das qualidades (com 
 
 | Característica            | Impacto | Risco | Esforço | Peso Final | Prioridade |
 |---------------------------|----------|--------|----------|-------------|-------------|
-| **Confiabilidade**        | 5        | 4      | 3        | 6.6         | -           |
-| Segurança                 | 3        | 2      | 2        | 3           | -           |
-| **Manutenibilidade**      | 4        | 3      | 2        | 6           | -           |
-| Eficiência de Desempenho  | 2        | 2      | 5        | 0.8         | —           |
+| **Confiabilidade**        | 5        | 4      | 3        | 6.6         | 1           |
+| **Manutenibilidade**      | 4        | 3      | 2        | 6           | 2           |
 | Adequação Funcional       | 5        | 2      | 2        | 5           | —           |
-| Compatibilidade           | 3        | 3      | 2        | 4.5         | —           |
 | Portabilidade             | 5        | 2      | 2        | 5           | —           |
+| Compatibilidade           | 3        | 3      | 2        | 4.5         | —           |
+| Segurança                 | 3        | 2      | 2        | 3           | —           |
+| Eficiência de Desempenho  | 2        | 2      | 5        | 0.8         | —           |
 
 <div align="center">
   <font size="3"><figcaption>Tabela 1: Método de Priorização</figcaption></font>
 </div>
 
 
-***Justificativas das características priorizadas***
+#### ***Justificativas das características priorizadas***
 
-| Característica | Justificativa |
+| **Característica** | **Justificativa** |
 |----------------|----------------|
-| Confiabilidade | A Confiabilidade obteve o maior Peso Final por julgarmos que, caso as turmas fornecidas pelo sistema não estejam de acordo com a oferta de matérias, o propósito do projeto não é atendido. |
-| Manutenibilidade | A Manutenibilidade foi a segunda característica priorizada porque ela está diretamente relacionada à facilidade de manutenção, evolução e continuidade do projeto ao longo do tempo. |
+| Confiabilidade | A Confiabilidade obteve o maior peso final (Peso 6,6) por julgarmos que caso as turmas fornecidas por ele não estejam de acordo com a oferta de matérias, resultando em um output equivocado para os usuários, o principal propósito do projeto de servir de apoio à comunidade de estudantes da UnB no processo de estruturar suas grades horárias não sería atendido, podendo gerar potenciais prejuízos aos usuários. </br>**Stakeholders:** Comunidade de estudantes da Universidade de Brasília (UnB). |
+| Manutenibilidade | A Manutenibilidade (Peso 6,0) é elementar para prolongar a vida útil desse projeto que é open source e de código legado. Uma vez que a arquitetura do projeto está diretamente ligada a sistemas de terceiros (como a fonte de dados extraídas por web scraping do SIGAA), bem como o uso do Heroku para implantação, que necessita de atualizações de status de assinatura constantes, faz-se necessário que o Sua Grade UnB possua uma base de código de fácil manutenção e entendimento, facilitando o processo de manutenção de código e, concomitantemente, fomentando a colaboração da comunidade. </br>**Stakeholders:** Facilita o trabalho da Comunidade OSS (contribuições e correções) e dos principais autores do projeto. |
 
 <div align="center">
   <font size="3"><figcaption>Tabela 2: Características Priorizadas</figcaption></font>
 </div>
 
+#### ***Justificativa para Características Não Priorizadas***
+
+### ***Visão Geral do Modelo***
+
+***Especificação do Modelo***
+
+As características de qualidade de software escolhidas para plano foram a **Confiabilidade** e **Manutenibilidade**. Essas dimensões, como demonstrado abaixo, foram selecionadas por representarem aspectos críticos para o funcionamento contínuo, confiabilidade dos outputs gerados para os usuários e a evolução da aplicação a partir de uma base de código open source.
+
+***Dimensões Avaliadas***
+
+**Confiabilidade**: Assegurar a exatidão dos outputs gerados pelas funções do sistema para os usuários finais.
+</br>
+**Manutenibilidade**: Assegurar a qualidade da base de código visando futuras operações de manutenção, contribuição e evolução.
 
 
 ## Bibliografia
@@ -87,3 +100,4 @@ Esses foram os valores atribuídos pelo grupo para cada uma das qualidades (com 
 |:------:|:-----------|:---------------------------|:----------|
 | 0.1    | 2026-05-11 | Criação inicial da página  | Caio Felipe |
 | 1.0    | 2026-05-12 | Adição do conteúdo da página  | Anne de Capdeville |
+| 1.1    | 2026-05-13 | Ajústes nos textos sobre Justificativas das características priorizadas  | Marllon Cardoso |

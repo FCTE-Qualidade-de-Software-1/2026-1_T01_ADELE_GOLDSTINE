@@ -64,6 +64,6 @@ Na versão 1.00 de Sua grade UnB, as seguintes tecnologias foram usadas:
 
 ## **Histórico de Versão**
 
-| Versão | Data       | Descrição                  | Autor(es) | Autor(es) |
-|:------:|:-----------|:---------------------------|:----------|:----------|
-| 0.1    | 2026-05-12 | Criação inicial da página  | Marllon Cardoso | NULL |
+| Versão | Data       | Descrição                  | Autor(es) |
+|:------:|:-----------|:---------------------------|:----------|
+| 0.1    | 2026-05-12 | Criação inicial da página  | Marllon Cardoso |
