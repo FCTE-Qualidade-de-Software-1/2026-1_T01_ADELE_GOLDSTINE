@@ -90,8 +90,6 @@ Esses foram os valores atribuídos pelo grupo para cada uma das qualidades (com 
 
 
 
-#### ***Justificativa para Características Não Priorizadas***
-
 ### ***Visão Geral do Modelo***
 
 ***Especificação do Modelo***
@@ -116,4 +114,5 @@ As características de qualidade de software escolhidas para plano foram a **Con
 |:------:|:-----------|:---------------------------|:----------|
 | 0.1    | 2026-05-11 | Criação inicial da página  | Caio Felipe |
 | 1.0    | 2026-05-12 | Adição do conteúdo da página  | Anne de Capdeville |
-| 1.1    | 2026-05-13 | Ajústes nos textos sobre Justificativas das características priorizadas  | Marllon Cardoso |
+| 1.1    | 2026-05-13 | Ajustes nos textos sobre Justificativas das características priorizadas  | Marllon Cardoso |
+| 1.2    | 2026-05-12 | Novas alterações e documentação  | Anne de Capdeville |

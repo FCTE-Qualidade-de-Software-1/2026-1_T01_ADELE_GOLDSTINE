@@ -18,3 +18,9 @@ O projeto alvo deste plano é amplamente utilizado por estudantes da Universidad
 
 ## 3 - Escopo e Profundidade
 Como dito anteriormente, o software “SuaGrade” atende às necessidades de uma ampla comunidade de estudantes da Universidade de Brasília todos os semestres desde sua criação. Com isso, é elementar que ele apresenta indicadores de qualidade satisfatórios. Diante disso, este grupo optou por idealizar o plano de qualidade para o “SuaGrade” por completo, ou seja, avaliando todo o escopo do produto.
+
+## Histórico de Versão
+
+| Versão | Data       | Descrição                  | Autor(es) |
+|:------:|:-----------|:---------------------------|:----------|
+| 0.1    | 2026-05-11 | Criação e documentação da página  | Gabriel Magioli |
