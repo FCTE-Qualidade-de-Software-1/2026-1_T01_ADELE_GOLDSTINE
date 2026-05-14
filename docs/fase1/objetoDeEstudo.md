@@ -73,6 +73,11 @@ Na versão 1.00 de Sua grade UnB, as seguintes tecnologias foram usadas:
 
 **[Repositorio](https://github.com/unb-mds/2023-2-SuaGradeUnB)**
 
+## **Bibliografia**
+
+- SUAGRADEUNB. **SuaGradeUnB**. Disponível em: <https://suagradeunb.com.br/>. Acesso em: 13 maio 2026.
+- RAMOS, Cristiane Soares. **Processo de Avaliação de Produto de Software**. Slides da disciplina Qualidade de Software, Faculdade de Ciências e Tecnologias em Engenharia (FCTE), Universidade de Brasília, 2025/2. Disponível em: <https://aprender3.unb.br/pluginfile.php/3327791/mod_resource/content/1/2025-2%20PROC%20AVAL%20PRODUTO.pdf>. Acesso em: 13 maio 2026.
+
 ## **Histórico de Versão**
 
 | Versão | Data       | Descrição                  | Autor(es) |
