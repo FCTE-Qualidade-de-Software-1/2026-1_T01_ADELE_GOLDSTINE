@@ -27,6 +27,17 @@ O projeto Sua Grade UnB possui como tarefa, a facilitação na elaboração e pl
 
 Os principais usuários do sistema são alunos ativos da Universidade de Brasília matriculados em qualquer curso disponibilizado na universidade.
 
+## **Classificação do projeto**
+
+Os Produtos de Software podem ser avaliados a partir de diferentes critérios, como domínio de aplicação, modelo de negócio, entre outros.
+
+Para realizar a classificação do projeto, o grupo utilizou como base a classificação tradicional e classificação teórica de Pressman (2002) e a classificação da norma IEEE 1062
+(1998). Após o estudo das classificações, foi debatido entre a equipe com qual classe o projeto mais se adequa, mesmo que não completamente.
+
+Dentro da Classificação de Pressman, a que classe que o projeto mais se assemelha é a de software em tempo real, que coleta dados de um ambiente externo e transforma as informações. No contexto do projeto, as turmas disponíveis são coletadas a partir do Sigaa e apresentadas ao usuário final. Entretanto, essa classificação se adequa completamente ao contexto, porque não existe um monitoramento em tempo real do Sigaa, que tem os seus dados coletados periodicamente a partir da técnica web-scraping.
+
+Sob outra ótica, utilizando a classificação da norma IEEE 1062, determinamos que o tipo mais adequado é o COTS (Commercial Off-The-Shelf-Software), no qual não há especificações para diferentes clientes, todos os clientes fazem uso do mesmo produto. Analisando o projeto SuaGradeUnB, percebemos que, apesar de não ser um projeto comercial, não existem particularidades para diferentes usuários, sendo o mesmo projeto para todos os usuários, independentemente de campus, curso, semestre e outras possíveis particularidades. Entretanto, caso haja uma evolução do projeto a partir da implementação dele em outras universidades, ele poderia ser classificado como um MOTS (Modified Off-The-Shelf-Software), onde há um produto base mas são desenvolvidas particularidades para diferentes clientes.
+
 ## **Contexto de uso**
 
 O projeto está inserido dentro de um contexto acadêmico onde alunos fazem o uso dele como facilitador para planejar suas matrículas e rotina, em contextos educacionais, onde é utilizado como objeto de estudo em relação a sua usabilidade, desempenho, e outros tópicos referente a sua qualidade.
@@ -62,8 +73,14 @@ Na versão 1.00 de Sua grade UnB, as seguintes tecnologias foram usadas:
 
 **[Repositorio](https://github.com/unb-mds/2023-2-SuaGradeUnB)**
 
+## **Bibliografia**
+
+- SUAGRADEUNB. **SuaGradeUnB**. Disponível em: <https://suagradeunb.com.br/>. Acesso em: 13 maio 2026.
+- RAMOS, Cristiane Soares. **Processo de Avaliação de Produto de Software**. Slides da disciplina Qualidade de Software, Faculdade de Ciências e Tecnologias em Engenharia (FCTE), Universidade de Brasília, 2025/2. Disponível em: <https://aprender3.unb.br/pluginfile.php/3327791/mod_resource/content/1/2025-2%20PROC%20AVAL%20PRODUTO.pdf>. Acesso em: 13 maio 2026.
+
 ## **Histórico de Versão**
 
 | Versão | Data       | Descrição                  | Autor(es) |
 |:------:|:-----------|:---------------------------|:----------|
 | 0.1    | 2026-05-12 | Criação inicial da página  | Marllon Cardoso |
+| 0.2    | 2026-05-13 | Adiciona classificação do projeto  | Ana Clara Borges |

@@ -2,6 +2,8 @@
 
 Para um melhor entendimento do projeto e visão crítica de seus impactos, o grupo procurou relacionar o projeto com os Objetivos de Desenvolvimento Sustentável (ODS). Dentro do nosso estudo, conseguimos relacionar o projeto com a ODS 4, Educação de Qualidade.
 
+As descrições, metas e indicadores foram retiradas do site [https://www.ipea.gov.br/ods/ods4.html](https://www.ipea.gov.br/ods/ods4.html):
+
 ### **ODS 4, Educação de Qualidade**
 
 ***Descrição:*** Assegurar a educação inclusiva, equitativa e de qualidade, promover oportunidades de aprendizagem ao longo da vida para todos.
@@ -24,7 +26,7 @@ Para um melhor entendimento do projeto e visão crítica de seus impactos, o gru
 
 ## Bibliografia
 
-- ISO/IEC 25010:2011 — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models*. ISO, 2011.
+- INSTITUTO DE PESQUISA ECONÔMICA APLICADA (Ipea). ODS 4 - Educação de Qualidade. Disponível em: [https://www.ipea.gov.br/ods/ods4.html](https://www.ipea.gov.br/ods/ods4.html). Acesso em: 13 mai. 2026.
 
 
 ## Histórico de Versão
