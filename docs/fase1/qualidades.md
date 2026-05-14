@@ -74,6 +74,22 @@ Esses foram os valores atribuídos pelo grupo para cada uma das qualidades (com 
   <font size="3"><figcaption>Tabela 2: Características Priorizadas</figcaption></font>
 </div>
 
+#### ***Justificativas das características não priorizadas***
+
+| **Característica** | **Justificativa** |
+|----------------|----------------|
+| Segurança | A característica Segurança obteve um peso final menor (3,0) em comparação às características priorizadas devido à combinação entre impacto e risco moderados e baixo esforço de avaliação. Apesar de importante, o grupo considerou que o sistema não realiza armazenamento extensivo de dados sensíveis dos usuários, reduzindo parcialmente os riscos associados à proteção de dados. Dessa forma, concluiu-se que, dentro do contexto e dos recursos disponíveis para este trabalho, outras características apresentavam maior prioridade de avaliação.  |
+| Eficiência de desempenho | A Eficiência de Desempenho apresentou o menor peso final (0,8). O grupo analisou que o “SuaGradeUnB” não é um sistema que exige alta velocidade de processamento ou respostas imediatas para que seu objetivo principal seja atendido adequadamente. Como o propósito do sistema está relacionado principalmente à organização de grades e consultas de informações acadêmicas, eventuais limitações de desempenho tendem a possuir impacto reduzido comparado com as demais características. |
+| Adequação funcional | Embora a Adequação Funcional tenha recebido um impacto elevado, seu peso final (5,0) foi o mesmo de Portabilidade, estando assim os dois empatados no nível de priorização. Considerou-se que o “SuaGradeUnB” já possui funcionalidades consolidadas e amplamente utilizadas pela comunidade acadêmica, atendendo adequadamente às principais necessidades relacionadas ao planejamento de grades horárias.  |
+| Compatibilidade | A Compatibilidade obteve peso final intermediário (4,5), porém não suficiente para ser priorizada. O grupo avaliou que o sistema utiliza tecnologias web amplamente consolidadas e acessadas por navegadores modernos, reduzindo os riscos relacionados à interoperabilidade e execução em diferentes ambientes de software. Além disso, não foram identificados indícios significativos de incompatibilidades que impactam diretamente a utilização do sistema pelos usuários. |
+| Portabilidade | Assim como Adequação funcional, a Portabilidade apresentou peso final (5,0). O “SuaGradeUnB” é uma aplicação web desenvolvida com abordagem Mobile First, apresentando compatibilidade com diferentes tamanhos de tela e dispositivos, o que reduz significativamente possíveis problemas relacionados ao acesso e utilização do sistema pelos usuários. Por se tratar de uma aplicação acessada diretamente pelo navegador, faz com que questões relacionadas à portabilidade estejam mais relacionadas à experiência de acesso do usuário do que à necessidade de adaptação do sistema para diferentes ambientes operacionais. O grupo considerou que outras características apresentavam maior prioridade. |
+
+<div align="center">
+  <font size="3"><figcaption>Tabela 3: Características Não Priorizadas</figcaption></font>
+</div>
+
+
+
 #### ***Justificativa para Características Não Priorizadas***
 
 ### ***Visão Geral do Modelo***
