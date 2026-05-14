@@ -22,3 +22,4 @@ Com isso, o SuaGradeUnB integra princípios centrais da ODS 4, promovendo inclus
 | Versão | Data       | Descrição                  | Autor(es) |
 |:------:|:-----------|:---------------------------|:----------|
 | 0.1    | 2026-05-13 | Criação inicial da página  | Gabriel Magioli |
+| 1.0    | 2026-05-13 | Revisão da conclusão e inclusão na navegação | Caio Felipe |

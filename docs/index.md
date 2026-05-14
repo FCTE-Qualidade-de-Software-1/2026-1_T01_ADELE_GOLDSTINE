@@ -11,17 +11,27 @@ A análise utiliza o modelo **ISO/IEC 25010**, com foco nas características de 
   <figcaption>Figura 1 — Logo do SuaGradeUnB, objeto da avaliação.</figcaption>
 </figure>
 
-> Site em construção. Os resultados da avaliação serão publicados gradualmente nas seções **Fase 1** a **Fase 4** ao longo do semestre.
-
 ## Disciplina
 
 **Qualidade de Software 1** — FCTE / UnB — 2026.1 — Turma T01.
 
+## Ementa da Avaliação
+
+- Definição e terminologia de qualidade de software.
+- A qualidade no contexto de desenvolvimento de software e atributos da qualidade.
+- Definição, terminologia e modelos de métricas em qualidade de software.
+- Técnicas estáticas de Verificação e Validação de software.
+
 ## Equipe
 
-| Integrante | Matrícula | GitHub |
-|---|---|---|
-| _A preencher_ | _—_ | _—_ |
+| Integrante | GitHub |
+|---|---|
+| Ana Borges | [@anabborges](https://github.com/anabborges) |
+| Anne de Capdeville | [@nanecapde](https://github.com/nanecapde) |
+| Caio Felipe | [@caio-felipee](https://github.com/caio-felipee) |
+| Edilson Júnior | [@Edilson-r-jr](https://github.com/Edilson-r-jr) |
+| Gabriel Magioli | [@gabemagioli](https://github.com/gabemagioli) |
+| Marllon Cardoso | [@m4rllon](https://github.com/m4rllon) |
 
 ## Adele Goldstine
 
@@ -37,3 +47,4 @@ Adele Goldstine (1920–1964) foi uma matemática e cientista da computação am
 | Versão | Data       | Descrição                              | Autor(es) |
 |:------:|:-----------|:---------------------------------------|:----------|
 | 0.1    | 2026-05-11 | Estrutura inicial do site MkDocs       | —         |
+| 1.0    | 2026-05-13 | Adição da ementa da avaliação e da equipe (GitHubs dos integrantes) | Caio Felipe |
