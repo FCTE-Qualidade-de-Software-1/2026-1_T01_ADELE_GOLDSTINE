@@ -1,11 +1,8 @@
 # Planejamento da Avaliação
 
-A Fase 3 corresponde à etapa de **projetar a avaliação** dentro do Processo de Avaliação de Produto de Software (ISO/IEC 25040). Tendo como entrada a especificação da medição produzida na Fase 2 — os objetivos, questões e métricas definidos pelo método **Goal/Question/Metric (GQM)** para as características de **Confiabilidade** e **Manutenibilidade** — esta fase organiza *como* essas medições serão efetivamente obtidas na Fase 4.
+Avaliar a **Confiabilidade** e a **Manutenibilidade** do sistema *Sua Grade UnB*, com base no plano de medição GQM (Goal-Question-Metric) definido na Fase 2. O objetivo é executar a coleta de dados de forma sistemática para identificar pontos de vulnerabilidade, débito técnico e riscos operacionais, validando as hipóteses formuladas.
 
-Conforme Solingen e Berghout (1999), o principal artefato da etapa de planejamento de um programa de medição GQM é o **plano de avaliação**, que documenta os procedimentos, os recursos e o cronograma necessários para que a coleta seja executada de forma padronizada, repetível e auditável. É exatamente esse o escopo das seções a seguir.
-
-!!! info "Rastreabilidade entre as fases"
-    Este plano não introduz novas métricas. Cada elemento descrito aqui deriva diretamente das métricas e dos critérios de julgamento de **Confiabilidade** e **Manutenibilidade** estabelecidos na Fase 2 e do propósito declarado na Fase 1. A relação explícita é apresentada na [Seção 5 — Consistência entre as Fases 2 e 3](#5-consistencia-entre-as-fases-2-e-3).
+Esta fase organiza *como* as medições especificadas na Fase 2 serão obtidas na prática, documentando o método, os recursos e o cronograma necessários para que a coleta seja feita de forma padronizada e repetível na Fase 4.
 
 ---
 
@@ -39,7 +36,11 @@ Conforme Solingen e Berghout (1999), o principal artefato da etapa de planejamen
   </div>
 </div>
 
-A avaliação adota uma abordagem **mista**: medições **automáticas/estáticas** sobre o código-fonte (cobertura de testes, acoplamento, tratamento de exceções, logs) combinadas com uma medição **dinâmica e controlada** com usuários (MTBF) e uma medição **de processo** sobre o histórico do repositório (tempo médio de alteração). Essa combinação acompanha a recomendação de Solingen e Berghout (1999) de só recorrer a ferramentas automatizadas quando elas respondem objetivamente à questão, mantendo a coleta manual onde o dado mais valioso vem da observação humana.
+### Método de Avaliação
+
+Será utilizada uma abordagem mista (quantitativa e qualitativa) baseada no plano GQM. A coleta de dados combina ferramentas de análise estática de código, análise do histórico do repositório e inspeção manual de código para as métricas qualitativas. As medições automáticas garantem objetividade onde o dado é numérico (cobertura de testes, acoplamento, tratamento de exceções, logs), enquanto uma sessão de uso controlada com usuários cobre o que só a observação direta revela.
+
+Essa sessão de uso serve para medir o **MTBF** (*Mean Time Between Failures*, ou Tempo Médio Entre Falhas), um indicador de confiabilidade que expressa quanto tempo, em média, o sistema opera sob uso normal antes de apresentar uma falha. Quanto maior o MTBF, mais estável é o sistema. Esse é o foco da métrica M1.1 de Confiabilidade, detalhada na Seção 2.2.
 
 ---
 
@@ -153,78 +154,31 @@ A avaliação adota uma abordagem **mista**: medições **automáticas/estática
 
 ### 3.1 - Ambiente de execução
 
-O *Sua Grade UnB* é distribuído via Docker, o que permite reproduzir o ambiente de avaliação de forma idêntica entre os avaliadores. São requisitos para executar e analisar o produto:
+O *Sua Grade UnB* é distribuído via Docker, o que permite reproduzir o ambiente de avaliação de forma idêntica entre os avaliadores.
 
 <div align="center">
   <table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; text-align: left;">
     <tr>
-      <th><b>Categoria</b></th>
       <th><b>Recurso</b></th>
-      <th><b>Finalidade</b></th>
+      <th><b>Descrição</b></th>
     </tr>
     <tr>
-      <td rowspan="2"><b>Hardware</b></td>
-      <td>Máquina com, no mínimo, 8 GB de RAM e acesso à internet</td>
-      <td>Subir os contêineres e executar as suítes de teste</td>
+      <td><b>Hardware</b></td>
+      <td>Máquina com no mínimo 8 GB de RAM e acesso à internet (contêineres e suítes de teste); dispositivos desktop e celular para a sessão de MTBF (abordagem <i>Mobile First</i>).</td>
     </tr>
     <tr>
-      <td>Dispositivos variados (desktop e celular)</td>
-      <td>Sessão de uso controlada do MTBF (abordagem <i>Mobile First</i> do produto)</td>
+      <td><b>Ambiente</b></td>
+      <td>Docker e Docker Compose (backend + PostgreSQL), Python 3 + Django e Node.js (execução local), Git/GitHub (histórico e versionamento) e navegador web moderno (instância em produção).</td>
     </tr>
     <tr>
-      <td rowspan="4"><b>Software (execução)</b></td>
-      <td>Docker e Docker Compose</td>
-      <td>Reproduzir o ambiente do backend e do banco PostgreSQL</td>
-    </tr>
-    <tr>
-      <td>Python 3 + Django / Node.js</td>
-      <td>Executar backend e frontend localmente</td>
-    </tr>
-    <tr>
-      <td>Git e acesso ao GitHub (repositório e Projects)</td>
-      <td>Coleta de M3.1 (histórico) e versionamento dos dados brutos</td>
-    </tr>
-    <tr>
-      <td>Navegador web moderno</td>
-      <td>Acesso à instância em produção na sessão de uso</td>
-    </tr>
-    <tr>
-      <td rowspan="5"><b>Software (medição)</b></td>
-      <td>Test runner do Django (<code>coverage run manage.py test</code>) + Codecov</td>
-      <td>M4.1 — execução e contagem dos casos de teste (backend)</td>
-    </tr>
-    <tr>
-      <td>Sentry (<code>sentry-sdk[django]</code> / <code>@sentry/nextjs</code>) + config <code>LOGGING</code> do Django</td>
-      <td>M2.1 (Manutenibilidade) — instrumentação e centralização dos logs</td>
-    </tr>
-    <tr>
-      <td>Análise de <i>imports</i> (apoio opcional: <code>pydeps</code>)</td>
-      <td>M1.1 — Independência dos componentes</td>
-    </tr>
-    <tr>
-      <td><code>grep</code> e módulo <code>ast</code> do Python (apoio à inspeção)</td>
-      <td>M2.1 (Confiabilidade) — contagem de operações com <code>try</code></td>
-    </tr>
-    <tr>
-      <td>Planilha (Google Sheets / LibreOffice Calc)</td>
-      <td>Formulários de coleta e consolidação dos dados brutos</td>
+      <td><b>Ferramentas</b></td>
+      <td>As já listadas na Tabela 2 — <code>coverage</code> + Django test runner, Sentry, <code>pydeps</code>, <code>grep</code>/<code>ast</code> e planilha — usadas conforme a coleta de cada métrica.</td>
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 3: Recursos de hardware e software para a avaliação.</figcaption></font>
+    <font size="4"><figcaption>Tabela 3: Recursos e ambiente de execução.</figcaption></font>
   </div>
 </div>
-
-### 3.2 - Massa de dados
-
-- **MTBF (M1.1):** a sessão de uso depende de um **conjunto representativo de consultas** (nomes de disciplinas e professores reais ofertados pela UnB). Como os dados são obtidos por *web scraping* periódico do SIGAA, a própria base em produção fornece a massa necessária; o roteiro de tarefas fixa as consultas a serem realizadas para garantir comparabilidade entre os usuários.
-- **Cobertura de testes (M4.1):** utiliza a suíte de testes já existente no repositório como massa de entrada, não exigindo geração de dados adicionais.
-
-### 3.3 - Conhecimento exigido dos avaliadores
-
-- **Domínio da aplicação:** conhecimento do processo de montagem de grade horária e matrícula na UnB — pré-requisito para conduzir a sessão de MTBF e interpretar falhas.
-- **Conhecimento técnico:** noções de Python/Django e TypeScript/Next.js e familiaridade com Git, Docker e com as ferramentas de medição, necessárias para as métricas estáticas e de processo.
-- **Nível de informática dos usuários da sessão:** usuários finais (estudantes) com conhecimento básico de navegação web, refletindo o público-alvo real do produto.
 
 ---
 
@@ -288,8 +242,6 @@ O cronograma abaixo organiza a execução da Fase 4, distribuindo as atividades 
 
 - ISO/IEC 25040:2011 — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Evaluation process*. Genebra: ISO, 2011.
 - ISO/IEC 25010:2011 — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models*. Genebra: ISO, 2011.
-- SOLINGEN, Rini van; BERGHOUT, Egon. **The Goal/Question/Metric Method: a practical guide for quality improvement of software development**. Londres: McGraw-Hill, 1999.
-- BASILI, Victor R.; CALDIERA, Gianluca; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: *Encyclopedia of Software Engineering*. Nova York: John Wiley & Sons, 1994.
 - RAMOS, Cristiane Soares. **Processo de Avaliação de Produto de Software**. Slides da disciplina Qualidade de Software 1, Faculdade de Ciências e Tecnologias em Engenharia (FCTE), Universidade de Brasília, 2025/2.
 
 ## Histórico de Versão
