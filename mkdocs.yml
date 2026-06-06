@@ -12,6 +12,8 @@ nav:
       - ODS: fase1/ods.md
       - Modelo de Qualidade: fase1/qualidades.md
       - Conclusão: fase1/conclusao.md
+  - Fase 3:
+      - Planejamento da Avaliação: fase3/planejamento.md
 
 theme:
   name: material
