@@ -43,67 +43,60 @@ A avaliação adota uma abordagem **mista**: medições **automáticas/estática
 
 ---
 
-## 2 - Método de Avaliação
+## 2 - Recursos Necessários e Métodos de Avaliação
 
-Para cada métrica da Fase 2 são definidos: a **fonte de evidência**, a **ferramenta/instrumento** e as **instruções passo a passo** para o avaliador. As instruções foram escritas de modo a garantir **repetibilidade** (o mesmo avaliador obtém o mesmo resultado) e **reprodutibilidade** (avaliadores diferentes obtêm resultados equivalentes), conforme exigido em processos formais de medição.
-
-!!! note "Sobre o nível de detalhe das ferramentas"
-    O **método** de cada coleta segue fielmente os passos definidos na Fase 2 e é independente de ferramenta. As ferramentas citadas são de três tipos: as **já presentes no projeto** (verificadas no repositório `unb-mds/2023-2-SuaGradeUnB` — ex.: o *test runner* do Django com `coverage`/Codecov, e a stack Django 5 + DRF + `requests`/`beautifulsoup4`); as de **apoio opcional** (ex.: `grep`/AST e `pydeps`), que apenas agilizam a inspeção e podem ser substituídas por verificação manual; e a **adição planejada** do **Sentry** com a config `LOGGING` do Django, necessária ao M2.1 (Manutenibilidade), uma vez que o backend ainda não possui instrumentação de logs.
-
-### 2.1 - Tabela GQM do método de avaliação
-
-A tabela abaixo consolida o desdobramento GQM, ligando cada **dimensão** (característica) às suas **questões** e **métricas** da Fase 2 e associando, para cada métrica, a **fonte de dados** e o **plano de coleta**. As instruções detalhadas de cada plano estão nas Seções 2.2 e 2.3.
+### 2.1 - Recursos Necessários para a Avaliação
 
 <div align="center">
   <table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; text-align: left; vertical-align: top;">
     <tr>
-      <th><b>Dimensão</b></th>
-      <th><b>Questão</b></th>
-      <th><b>Métrica</b></th>
-      <th><b>Fonte de dados</b></th>
-      <th><b>Plano de Coleta</b></th>
+      <th><b>Categoria</b></th>
+      <th><b>Recurso</b></th>
+      <th><b>Finalidade</b></th>
     </tr>
     <tr>
-      <td rowspan="2"><b>Confiabilidade</b></td>
-      <td>Qual é o tempo médio entre falhas apresentado pelo sistema durante o seu uso em operação normal?</td>
-      <td>M1.1: Tempo Médio Entre Falhas (MTBF)</td>
-      <td>Instância em execução e relato dos usuários durante a sessão controlada</td>
-      <td>Cronometrar uma sessão de uso controlada com usuários finais e contar as falhas observadas. Resultado em <b>problemas/hora = nº de falhas ÷ tempo (horas)</b> (detalhes na Seção 2.2)</td>
+      <td rowspan="2"><b>Ambiente</b></td>
+      <td>Repositório local do <i>Sua Grade UnB</i> (código-fonte clonado)</td>
+      <td>Base para todas as métricas de análise estática de código (M2.1 — Conf.; M1.1, M2.1 e M4.1 — Manut.)</td>
     </tr>
     <tr>
-      <td>O quanto o sistema consegue sinalizar a ocorrência de falhas?</td>
-      <td>M2.1: Percentual de operações críticas tratadas com exceções</td>
-      <td>Código-fonte do projeto (backend e frontend)</td>
-      <td>Definir a lista de operações críticas (acesso ao banco, scraping do SIGAA, autenticação, manipulação de arquivos). No código-fonte, contar o total dessas operações e quantas estão dentro de um bloco <code>try</code>. Percentual = (operações com <code>try</code> ÷ total) × 100 (detalhes na Seção 2.2)</td>
+      <td>Instância em produção (<code>suagradeunb.com.br</code>)</td>
+      <td>Ambiente da sessão controlada de uso para medição do MTBF (M1.1 — Conf.)</td>
     </tr>
     <tr>
-      <td rowspan="4"><b>Manutenibilidade</b></td>
-      <td>O quão forte é a relação entre os componentes do sistema?</td>
-      <td>M1.1: Nível de independência dos componentes</td>
-      <td>Classes/módulos do sistema e suas dependências</td>
-      <td>Levantar as classes/módulos do sistema; identificar as dependências entre eles; classificar como independente o que não depende de outros; aplicar a fórmula (Seção 2.3)</td>
+      <td rowspan="5"><b>Ferramentas</b></td>
+      <td><code>grep</code> e módulo <code>ast</code> do Python</td>
+      <td>Varredura e contagem de operações críticas cobertas por <code>try/except</code> no backend (M2.1 — Conf.)</td>
     </tr>
     <tr>
-      <td>O quão fácil é identificar a operação específica que causou a falha?</td>
-      <td>M2.1: Nível de qualidade dos logs do sistema</td>
-      <td>Chamadas de log das operações críticas, centralizadas no Sentry</td>
-      <td>Mapear as operações críticas; instrumentar com a config <code>LOGGING</code> do Django + Sentry; verificar no painel do Sentry (ou nas chamadas de log no código) quantas operações registram dados; aplicar a fórmula (Seção 2.3)</td>
+      <td><code>pydeps</code></td>
+      <td>Geração do grafo de dependências entre módulos Python para análise de acoplamento (M1.1 — Manut.)</td>
     </tr>
     <tr>
-      <td>O quão facilmente o mantenedor consegue modificar o software para resolver um problema?</td>
-      <td>M3.1: Média do tempo gasto para fazer uma alteração</td>
-      <td>Quadro de <i>issues</i> do projeto (GitHub Projects)</td>
-      <td>Escolher um período de coleta; medir o tempo entre cada <i>issue</i> passar de "Em Andamento" para "Concluída"; aplicar a média (Seção 2.3)</td>
+      <td><code>coverage</code> + <code>manage.py test</code> (Django test runner)</td>
+      <td>Execução da suíte de testes automatizados e contagem de casos de teste do backend (M4.1 — Manut.)</td>
     </tr>
     <tr>
-      <td>O quão completa é a cobertura de testes do sistema?</td>
-      <td>M4.1: Porcentagem de cobertura de testes</td>
-      <td>Suíte de testes automatizados e especificações do projeto</td>
-      <td>Rodar a suíte de testes para contar quantos casos de teste foram criados; levantar nas especificações quantos cenários deveriam existir; aplicar a fórmula (Seção 2.3)</td>
+      <td><code>git log</code></td>
+      <td>Extração de datas de commits para cruzamento com histórico de <i>issues</i> (M3.1 — Manut.)</td>
+    </tr>
+    <tr>
+      <td>Sentry (<code>sentry-sdk[django]</code> / <code>@sentry/nextjs</code>)</td>
+      <td>Verificação e centralização dos registros de log das operações críticas (M2.1 — Manut.)</td>
+    </tr>
+    <tr>
+      <td><b>Plataformas</b></td>
+      <td>GitHub Projects</td>
+      <td>Coleta de dados de transição de estado das <i>issues</i> para cálculo do tempo de ciclo (M3.1 — Manut.)</td>
+    </tr>
+    <tr>
+      <td><b>Instrumento de coleta</b></td>
+      <td>Planilha</td>
+      <td>Formulários de coleta e consolidação dos dados brutos de todas as métricas</td>
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 2: Tabela GQM — método de coleta por dimensão, questão e métrica.</figcaption></font>
+    <font size="4"><figcaption>Tabela 2: Recursos necessários para a avaliação.</figcaption></font>
   </div>
 </div>
 
@@ -112,23 +105,16 @@ A tabela abaixo consolida o desdobramento GQM, ligando cada **dimensão** (carac
 **M1.1 — Tempo Médio Entre Falhas (MTBF)**
 
 1. Preparar um **roteiro de tarefas** representativas do uso normal: (a) buscar disciplinas por nome de matéria e por professor; (b) selecionar turmas e montar uma grade; (c) gerar a grade horária; (d) exportar a grade em PDF; (e) autenticar com conta Google.
-2. Recrutar de 3 a 5 usuários finais (estudantes da UnB) e conduzir uma **sessão de uso controlada** com a instância em produção (`https://suagradeunb.com.br/`).
-3. Iniciar um cronômetro no começo da sessão e registrar o **tempo total decorrido em horas**.
-4. A cada falha ou comportamento inesperado relatado, registrar a ocorrência no **formulário de registro de falhas** (descrição, tarefa, horário, avaliador responsável) e somar +1 ao total de falhas da sessão.
-5. Ao final, calcular a **taxa de falhas** = `(número de falhas) / (tempo da sessão em horas)`, em **problemas/hora**, e comparar com a pontuação de julgamento da Fase 2.
-
-!!! warning "Alinhar com a Fase 2"
-    A escala de julgamento da Fase 2 está em **problemas/hora**, portanto a taxa de falhas (`falhas ÷ horas`) é a forma diretamente comparável e robusta ao caso de zero falhas. A fórmula textual da Fase 2 ainda está como `horas ÷ falhas` (MTBF), que é o inverso e indefinido quando não há falhas — recomenda-se uniformizar a Fase 2 para `falhas ÷ horas`.
-
-!!! note "Instrumento de coleta"
-    O formulário de registro de falhas segue o modelo de *manual data collection form* de Solingen e Berghout (1999): uma planilha de página única, com campo identificador do avaliador, que torna o dado bruto verificável e rastreável. O modelo em branco e a planilha preenchida serão versionados no repositório.
+2. Acessar a instância em produção (`https://suagradeunb.com.br/`) e executar cada fluxo do roteiro, iniciando um cronômetro no início da execução e registrando o **tempo total decorrido em horas**.
+3. A cada falha ou comportamento inesperado observado, registrar a ocorrência no **formulário de registro de falhas** (descrição, fluxo, horário, avaliador responsável) e somar +1 ao total de falhas.
+4. Ao final, calcular a **taxa de falhas** = `(número de falhas) / (tempo da sessão em horas)`, em **problemas/hora**, e comparar com a pontuação de julgamento da Fase 2.
 
 **M2.1 — Percentual de operações críticas com tratamento de exceção**
 
 1. Fixar a lista de **operações críticas**: conexão/consulta ao banco de dados, manipulação de arquivos, manipulação dos dados de *web scraping* do SIGAA, e autenticação/autorização de usuários.
-2. Varrer todo o código-fonte com busca assistida (`grep`/análise de AST com o módulo `ast` do Python) para **contar todas as ocorrências** dessas operações.
-3. Classificar manualmente quais ocorrências estão **sintaticamente dentro de um bloco `try { ... }`** (ou `try/except`), descartando falsos positivos.
-4. Calcular `(operações críticas com try-catch / total de operações críticas) × 100`.
+2. Varrer o código-fonte do backend com `grep` e análise de AST via módulo `ast` do Python para **contar todas as ocorrências** dessas operações; no frontend TypeScript, aplicar `grep` de forma equivalente.
+3. Classificar manualmente quais ocorrências estão **dentro de um bloco de tratamento de exceção** — `try/except` no backend Python ou `try/catch` no frontend TypeScript — descartando falsos positivos.
+4. Calcular `(operações críticas com tratamento de exceção / total de operações críticas) × 100`.
 5. Registrar, para cada ocorrência, o arquivo e a linha, garantindo a rastreabilidade entre o dado bruto e a métrica.
 
 ### 2.3 - Instruções de coleta — Manutenibilidade
@@ -136,23 +122,22 @@ A tabela abaixo consolida o desdobramento GQM, ligando cada **dimensão** (carac
 **M1.1 — Nível de independência dos componentes**
 
 1. Levantar as **classes/módulos** do sistema (apps do backend Django e módulos do frontend Next.js).
-2. **Identificar as dependências** entre eles (análise de *imports*; opcionalmente com apoio de `pydeps` no backend para visualizar o grafo).
+2. **Identificar as dependências** entre eles por análise dos `import`s; utilizar `pydeps` no backend para gerar o grafo de dependências e apoiar a classificação visual.
 3. Classificar como **independente** o componente que não depende de outro componente interno do sistema.
 4. Calcular `(componentes independentes / total de componentes)` e comparar com a faixa de julgamento.
 
 **M2.1 — Nível de qualidade dos logs**
 
-> Hoje o backend **não possui instrumentação de logs**; a medição pressupõe ativar o `logging` do Django e centralizar os registros no **Sentry** — adição de baixo esforço e diretamente alinhada ao propósito da Analisabilidade (diagnosticar a operação que causou a falha).
+> A medição avalia a existência e a cobertura das chamadas de log já presentes no código-fonte, verificando quais operações críticas emitem registros. Caso o projeto já utilize o Sentry (`sentry-sdk[django]` / `@sentry/nextjs`), o painel centraliza os registros e facilita a inspeção; na ausência, a análise é feita diretamente pelas chamadas de `logger.*` no código.
 
 1. A partir da lista de operações críticas (mesma do M2.1 de Confiabilidade), montar um **checklist do que deveria ser registrado** para monitorar o status do sistema.
-2. Instrumentar o backend com a configuração `LOGGING` do Django e integrar ao **Sentry** (`sentry-sdk[django]`); no frontend, usar `@sentry/nextjs`.
-3. Verificar — no painel do Sentry ou inspecionando as chamadas de log no código — quantas operações críticas **efetivamente registram dados**.
-4. Calcular `(dados efetivamente registrados / dados planejados para registro)`.
+2. Verificar no código-fonte do backend — pelas chamadas de `logger.*` (configuração `LOGGING` do Django) ou pelas integrações com o Sentry — e no frontend — pelas integrações com `@sentry/nextjs` — quantas operações críticas **efetivamente emitem registros**.
+3. Calcular `(operações críticas com registro de log / total de operações críticas planejadas para registro)`.
 
 **M3.1 — Tempo médio para realizar uma alteração**
 
 1. Definir o período de coleta (ex.: as *issues* trabalhadas no último marco do projeto).
-2. Para cada *issue*, medir o **tempo de ciclo** entre a transição "Em Andamento" → "Concluída" no GitHub Projects, cruzando com as datas dos *commits* (`git log`).
+2. Para cada *issue*, medir o **tempo de ciclo** entre a transição "Em Andamento" → "Concluída" no GitHub Projects; cruzar com as datas dos *commits* relacionados via `git log` para validar a data efetiva de conclusão.
 3. Calcular `(soma dos tempos de alteração / número de alterações)` em horas.
 
 **M4.1 — Cobertura de testes**
@@ -163,9 +148,6 @@ A tabela abaixo consolida o desdobramento GQM, ligando cada **dimensão** (carac
 2. Verificar a existência de testes automatizados no **frontend** (`web/`) e registrar a cobertura efetiva encontrada.
 3. Levantar, nas **especificações/histórias do projeto**, quantos cenários de teste **deveriam** existir.
 4. Calcular `(casos de teste automatizados escritos / cenários que deveriam existir)` e comparar com a faixa de julgamento.
-
-!!! warning "Evidências obrigatórias"
-    Toda execução de ferramenta deve ser acompanhada de evidência (saída de terminal, relatório HTML de cobertura ou *screenshot*) armazenada no repositório, permitindo a verificação externa exigida na Fase 4.
 
 ---
 
