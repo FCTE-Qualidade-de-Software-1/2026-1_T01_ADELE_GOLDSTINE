@@ -128,8 +128,6 @@ A avaliação adota uma abordagem **mista**: medições **automáticas/estática
 
 **M2.1 — Nível de qualidade dos logs**
 
-> A medição avalia a existência e a cobertura das chamadas de log já presentes no código-fonte, verificando quais operações críticas emitem registros. Caso o projeto já utilize o Sentry (`sentry-sdk[django]` / `@sentry/nextjs`), o painel centraliza os registros e facilita a inspeção; na ausência, a análise é feita diretamente pelas chamadas de `logger.*` no código.
-
 1. A partir da lista de operações críticas (mesma do M2.1 de Confiabilidade), montar um **checklist do que deveria ser registrado** para monitorar o status do sistema.
 2. Verificar no código-fonte do backend — pelas chamadas de `logger.*` (configuração `LOGGING` do Django) ou pelas integrações com o Sentry — e no frontend — pelas integrações com `@sentry/nextjs` — quantas operações críticas **efetivamente emitem registros**.
 3. Calcular `(operações críticas com registro de log / total de operações críticas planejadas para registro)`.
@@ -232,7 +230,7 @@ O *Sua Grade UnB* é distribuído via Docker, o que permite reproduzir o ambient
 
 ## 4 - Cronograma de Avaliação
 
-O cronograma abaixo organiza a execução da Fase 4, distribuindo as atividades entre os integrantes e permitindo a coleta **em paralelo** por característica. As métricas estáticas e de processo independem da sessão com usuários, podendo ocorrer simultaneamente.
+O cronograma abaixo organiza a execução da Fase 4, distribuindo as atividades entre os integrantes e permitindo a coleta **em paralelo** por característica. As métricas estáticas e de processo são independentes entre si e podem ser conduzidas simultaneamente.
 
 <div align="center">
   <table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; text-align: left;">
@@ -245,54 +243,44 @@ O cronograma abaixo organiza a execução da Fase 4, distribuindo as atividades 
     </tr>
     <tr>
       <td>1</td>
-      <td>Preparação do ambiente (Docker, suítes de teste) e dos instrumentos (roteiro e formulários)</td>
+      <td>Preparação do ambiente (clone do repositório, suítes de teste) e dos instrumentos (formulários)</td>
       <td>Todas</td>
-      <td>Equipe</td>
+      <td>Responsável: Equipe</td>
       <td>Dias 1–2</td>
     </tr>
     <tr>
       <td>2</td>
       <td>Coleta das métricas estáticas de código</td>
       <td>Conf. M2.1; Manut. M1.1 e M2.1</td>
-      <td>Dupla "Código"</td>
-      <td>Dias 3–5</td>
+      <td>Responsável: -</td>
+      <td>Dias 1–3</td>
     </tr>
     <tr>
       <td>3</td>
-      <td>Coleta da métrica de processo (histórico de issues)</td>
+      <td>Coleta da métrica de processo (histórico de <i>issues</i>)</td>
       <td>Manut. M3.1</td>
-      <td>Responsável "Processo"</td>
-      <td>Dias 3–4</td>
+      <td>Responsável: -</td>
+      <td>Dias 1–2</td>
     </tr>
     <tr>
       <td>4</td>
-      <td>Execução das suítes e coleta de cobertura</td>
+      <td>Execução das suítes e coleta de cobertura de testes</td>
       <td>Manut. M4.1</td>
-      <td>Responsável "Testes"</td>
-      <td>Dias 3–4</td>
+      <td>Responsável: -</td>
+      <td>Dias 1–3</td>
     </tr>
     <tr>
       <td>5</td>
-      <td>Sessão de uso controlada com usuários finais</td>
-      <td>Conf. M1.1 (MTBF)</td>
-      <td>Dupla "Usuários"</td>
-      <td>Dias 5–6</td>
-    </tr>
-    <tr>
-      <td>6</td>
       <td>Consolidação dos dados brutos no repositório e revisão</td>
       <td>Todas</td>
-      <td>Equipe</td>
-      <td>Dias 7–8</td>
+      <td>Responsável: Equipe</td>
+      <td>Dias 4–5</td>
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
     <font size="4"><figcaption>Tabela 4: Cronograma de execução da avaliação (Fase 4).</figcaption></font>
   </div>
 </div>
-
-!!! note
-    A divisão por "duplas/responsáveis" será detalhada na Tabela de Contribuição da equipe. Os períodos são relativos ao início da Fase 4 e serão ajustados às datas oficiais definidas no Moodle.
 
 ---
 
