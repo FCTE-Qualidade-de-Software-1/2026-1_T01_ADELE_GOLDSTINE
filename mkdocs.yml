@@ -12,6 +12,9 @@ nav:
       - ODS: fase1/ods.md
       - Modelo de Qualidade: fase1/qualidades.md
       - Conclusão: fase1/conclusao.md
+  - Fase 2:
+      - Introdução: fase2/introducao.md
+      - Medição 2 - Manutenibilidade: fase2/manutenibilidade
   - Fase 3:
       - Planejamento da Avaliação: fase3/planejamento.md
 
