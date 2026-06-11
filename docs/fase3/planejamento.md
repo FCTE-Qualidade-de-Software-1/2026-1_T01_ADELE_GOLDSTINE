@@ -206,21 +206,21 @@ O cronograma abaixo organiza a execução da Fase 4, distribuindo as atividades 
       <td>2</td>
       <td>Coleta das métricas estáticas de código</td>
       <td>Conf. M2.1; Manut. M1.1 e M2.1</td>
-      <td>Responsável: -</td>
+      <td>Responsável: Anne de Capdeville e Edilson Júnior</td>
       <td>Dias 1–3</td>
     </tr>
     <tr>
       <td>3</td>
       <td>Coleta da métrica de processo (histórico de <i>issues</i>)</td>
       <td>Manut. M3.1</td>
-      <td>Responsável: -</td>
+      <td>Responsável: Anne de Capdeville </td>
       <td>Dias 1–2</td>
     </tr>
     <tr>
       <td>4</td>
       <td>Execução das suítes e coleta de cobertura de testes</td>
       <td>Manut. M4.1</td>
-      <td>Responsável: -</td>
+      <td>Responsável: Anne de Capdeville </td>
       <td>Dias 1–3</td>
     </tr>
     <tr>

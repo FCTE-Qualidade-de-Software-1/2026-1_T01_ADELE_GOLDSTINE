@@ -1,11 +1,14 @@
-# Resultados da Avaliação
+# Fase 4 - Execução da Avaliação
 
-> Em construção. Substituir este placeholder pelo conteúdo da fase.
+Esta fase detalha a execução do plano de avaliação de qualidade do software **SuaGradeUnB**, conforme projetado na Fase 3. O objetivo aqui é apresentar, de forma transparente e rastreável, a coleta de dados brutos para cada métrica definida nos planos GQM da  [Fase 2 - Medição da Manutenibilidade](../fase2/manutenibilidade.md) e a [Fase 3 - Planejamento da Avaliação](../fase3/planejamento.md).
 
-<figure markdown="span">
-  ![Logo do SuaGradeUnB](../assets/logo.png){ width="200" }
-  <figcaption>Figura 1 — Exemplo de imagem com legenda (substituir pela figura real).</figcaption>
-</figure>
+Os resultados são agrupados por característica de qualidade:
+
+* [Avaliação da Confiabilidade](confiabilidade.md)
+* [Avaliação da Manutenibilidade](manutenibilidade.md)
+* [Avaliação da Segurança](seguranca.md)
+
+Cada seção de métrica apresentará as evidências da coleta, a classificação obtida com base nos critérios do GQM e uma análise crítica dos resultados encontrados.
 
 ## Bibliografia
 
@@ -16,4 +19,4 @@
 
 | Versão | Data       | Descrição                  | Autor(es) |
 |:------:|:-----------|:---------------------------|:----------|
-| 0.1    | 2026-05-11 | Criação inicial da página  | —         |
+| 1.0    | 2026-06-11 | Documentação da página  | Anne de Capdeville     |

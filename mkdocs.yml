@@ -17,6 +17,9 @@ nav:
       - Medição 2 - Manutenibilidade: fase2/manutenibilidade.md
   - Fase 3:
       - Planejamento da Avaliação: fase3/planejamento.md
+  - Fase 4:
+      - Introdução: fase4/fase4.md
+      - Avaliação Manutenibilidade: fase4/manutenibilidade.md
 
 theme:
   name: material
