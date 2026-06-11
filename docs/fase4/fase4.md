@@ -13,7 +13,7 @@ Cada seção de métrica apresentará as evidências da coleta, a classificaçã
 ## Bibliografia
 
 - ISO/IEC 25010:2011 — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models*. ISO, 2011.
-- _(adicionar mais referências no formato adotado pela disciplina)_
+
 
 ## Histórico de Versão
 

@@ -152,8 +152,11 @@ Classificação dos módulos do sistema, dividida entre Backend e Frontend, conf
 ### 1.4 - Cálculo (componentes independentes / total de componentes)
 
 Foram considerados 14 unidades modulares.
+</br>
 - Total de Módulos (N): 14
+</br>
 - Total de Independentes (I): 8
+</br>
 - Total de Dependentes (D): 6
 
 * **M1.1** = (I / N) × 100 = (8 / 14) × 100 ≈ **57,14%**
