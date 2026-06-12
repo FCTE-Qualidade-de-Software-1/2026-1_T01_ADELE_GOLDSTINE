@@ -42,14 +42,14 @@ Adele Goldstine (1920–1964) foi uma matemática e cientista da computação am
 | Fase | Ferramenta e Modo de Uso | 
 |---|---|
 | Fase 1 | **NotebookLM** - Confirmação de tópicos a partir de documentos <br> **Claude Opus** - Geração de texto para markdown |
-| Fase 2 | **Gemini** - Especificação de como conseguir os dados para o cálculo de métricas |
+| Fase 2 | **Gemini** - Especificação de como conseguir os dados para o cálculo de métricas <br> **NotebookLM** - Identificar partes específicas da ISO, como descrição de métricas e questões de pesquisa. |
 | Fase 3 | **NotebookLM** - Confirmação de tópicos a partir de documentos <br> **Claude** - Geração de texto e tabelas para markdown| 
 | Fase 4 | **Claude** - Correção gramatical e auxílio na escrita do código para cálculo da métrica 1.2 de confiabilidade; |
 
 
 ## Bibliografia
 
-- ISO/IEC 25010:2011 — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models*. ISO, 2011.
+> ISO/IEC 25010:2011 — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models*. ISO, 2011.
 
 ## Histórico de Versão
 
@@ -58,3 +58,4 @@ Adele Goldstine (1920–1964) foi uma matemática e cientista da computação am
 | 0.1    | 2026-05-11 | Estrutura inicial do site MkDocs       | —         |
 | 1.0    | 2026-05-13 | Adição da ementa da avaliação e da equipe (GitHubs dos integrantes) | Caio Felipe |
 | 1.1    | 2026-06-12 | Adição de tabela de uso de ia | Ana Clara Borges |
+| 1.2    | 2026-06-12 | Adição de item na tabela de uso de ia | Marllon Cardoso |
