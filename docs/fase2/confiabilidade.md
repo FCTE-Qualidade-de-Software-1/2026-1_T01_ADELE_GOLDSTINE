@@ -46,7 +46,7 @@ Para alcançar o objetivo de medição para a característica de Confiabilidade,
 **Questão 1: Maturidade** (Grau em que um sistema, produto ou componente atende às necessidades de confiabilidade sob operação normal)
 > Qual é o tempo médio entre falhas apresentado pelo sistema durante o seu uso em operação normal?
 
-* **Hipótese 1.1 (H1.1):** O sistema apresentará um Tempo Médio Entre Falhas (MTBF) superior a 10 horas ou nenhuma falha encontrada.
+* **Hipótese 1.1 (H1.1):** O sistema apresentará um Tempo Médio Entre Falhas (MTBF) superior a 10 minutos ou nenhuma falha encontrada.
 
 
 **Questão 2: Tolerância a falhas** (Grau em que um sistema, produto ou componente opera conforme o pretendido, apesar da presença de falhas de hardware ou software)
@@ -62,18 +62,18 @@ Para alcançar o objetivo de medição para a característica de Confiabilidade,
 
 * **Métrica 1.1: Tempo Médio Entre Falhas (Mean time between failures - MTBF)**
     * **Definição:** Tempo decorrido de sessão de uso controlado do sistemas dividido pelo número de falhas detectadas durante essa sessão de uso.
-    * **Fórmula:** `(Tempo da sessão de uso em horas) / (quantidade de falhas identificadas)`
+    * **Fórmula:** `(Tempo da sessão de uso em minutos) / (quantidade de falhas identificadas)`
     * **Coleta:** 
         1. Iniciar uma sessão de uso com usuários finais;
         2. Incrementar 1 em um contador iniciado em 0 a cada falha encontrado pelos usuários;
-        3. Ao final da sessão, coletar o tempo decorrido da mesma em horas;
+        3. Ao final da sessão, coletar o tempo decorrido da mesma em minutos;
         4.  Aplicar a fórmula apontada acima.
 
     * **Pontuação de Julgamento:** 
 
     | **Excelente** | **Bom** | **Regular** | **Insatisfatório** |
     |:--------------:|:--------:|:-------------:|:-------------------:|
-    | MTBF > 10 horas ou nenhuma falha detectada | MTBF entre 4 e 10 horas | MTBF entre 1 e 4 horas | MTBF < 1 hora |
+    | MTBF > 10 minutos ou nenhuma falha detectada | MTBF entre 4 e 10 minutos | MTBF entre 1 e 4 minutos | MTBF < 1 hora |
 
     * **Propósito:** Avaliar o nível de estabilidade alcançado pelo produto sob a perspectiva dos usuários finais.
 
