@@ -21,6 +21,7 @@ nav:
       - Planejamento da Avaliação: fase3/planejamento.md
   - Fase 4:
       - Introdução: fase4/fase4.md
+      - Avaliação Confiabilidade: fase4/confiabilidade.md
       - Avaliação Manutenibilidade: fase4/manutenibilidade.md
 
 theme:
