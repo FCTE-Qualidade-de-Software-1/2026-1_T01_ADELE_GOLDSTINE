@@ -127,7 +127,7 @@ Com o valor obtido de **MTBF = 1,45 minutos**, dentro do intervalo de 1 a 4 minu
 
 ### 2.1 Descrição da medição
 
-A medição da métrica M2.1 foi realizada por meio de um script Python que percorreu o código-fonte do repositório `2023-2-SuaGradeUnB`, identificando as operações críticas previamente definidas na Fase 3 (conexão/consulta ao banco de dados, manipulação de arquivos, *web scraping* do SIGAA e autenticação/autorização de usuários) e verificando se cada ocorrência está protegida por um bloco de tratamento de exceção (`try/except` no backend Python ou `try/catch` no frontend TypeScript). O registro completo da medição, com o detalhamento de cada ocorrência por arquivo e linha, está disponível em `m2_1_registro.md`.
+A medição da métrica M2.1 foi realizada por meio de um script Python que percorreu o código-fonte do repositório `2023-2-SuaGradeUnB`, identificando as operações críticas previamente definidas na Fase 3 (conexão/consulta ao banco de dados, manipulação de arquivos, *web scraping* do SIGAA e autenticação/autorização de usuários) e verificando se cada ocorrência está protegida por um bloco de tratamento de exceção (`try/except` no backend Python ou `try/catch` no frontend TypeScript). O registro completo da medição, com o detalhamento de cada ocorrência por arquivo e linha, está disponível em [Registro da metrica M2.1 - Confiabilidade](m2_1_registro.md)
 
 O escopo analisado foi:
 
