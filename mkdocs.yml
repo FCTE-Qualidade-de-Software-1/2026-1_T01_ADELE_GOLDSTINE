@@ -14,7 +14,9 @@ nav:
       - Conclusão: fase1/conclusao.md
   - Fase 2:
       - Introdução: fase2/introducao.md
+      - Medição 1 - Confiabilidade: fase2/confiabilidade.md
       - Medição 2 - Manutenibilidade: fase2/manutenibilidade.md
+      - Conclusão: fase2/conclusao.md
   - Fase 3:
       - Planejamento da Avaliação: fase3/planejamento.md
   - Fase 4:

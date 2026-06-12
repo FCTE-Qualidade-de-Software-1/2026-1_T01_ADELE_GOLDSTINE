@@ -42,22 +42,22 @@ Para alcançar o objetivo de medição para a característica de Manutenibilidad
 **Questão 1: Modularidade** (Grau em que um sistema ou programa é composto por componentes discretos, de tal forma que a mudança em um tenha um impacto mínimo em outros componentes)
 > O quão forte é a relação entre os componentes do sistema?
 
-* **Hipótese 1.1 (H1.1):** hipotese
+* **Hipótese 1.1 (H1.1):** O nível de independência dos componentes do sistema é igual ou superior a 80%.
 
 **Questão 2: Analisabilidade** (Grau de eficácia e eficiência com que é possível avaliar o impacto em um produto ou sistema de uma mudança pretendida em uma ou mais de suas partes, ou diagnosticar deficiências ou causas de falhas em um produto, ou identificar partes a serem modificadas.)
 > O quão fácil é identificar a operação específica que causou a falha?
 
-* **Hipótese 2.1 (H2.1):** hipotese
+* **Hipótese 2.1 (H2.1):** A qualidade dos logs do sitema é igual ou supeiror a 90%, sendo possível identificar as operações que causaram a falha.
 
 **Questão 3: Modificabilidade** (Grau em que um produto ou sistema pode ser modificado de forma eficaz e eficiente, sem introduzir defeitos ou degradar a qualidade do produto existente.)
 > O quão facilmente o mantenedor consegue modificar o software para resolver um problema?
 
-* **Hipótese 3.1 (H4.1):** hipotese
+* **Hipótese 3.1 (H4.1):** O tempo gasto para o mantenedor fazer uma alteração é menor ou igual a 5 horas.
 
 **Questão 4: Testabilidade** (Grau de eficácia e eficiência com que os critérios de teste podem ser estabelecidos para um sistema, produto ou componente, e os testes podem ser realizados para determinar se esses critérios foram atendidos.)
 > O quão completa é a cobertura de testes do sistema?
 
-* **Hipótese 4.1 (H4.1):** hipotese
+* **Hipótese 4.1 (H4.1):** A porcentagem de cobertura de testes é igual ou maior a 90%.
 
 ---
 
@@ -140,11 +140,13 @@ Para alcançar o objetivo de medição para a característica de Manutenibilidad
 
 ## Bibliografia
 
-- ISO/IEC 25010:2011 — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models*. ISO, 2011.
+> BRITISH STANDARDS INSTITUTION. BS ISO/IEC 25010: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Londres, 2011.
 
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. ISO/IEC WD 25023: Systems and software engineering – Systems and software Quality Requirements and Evaluation (SQuaRE) – Measurement of system and software product quality. Esboço de Trabalho (Working Draft). Editado por Motoei Azuma e KeumSuk Lee. Genebra, 2011.
 
 ## Histórico de Versão
 
 | Versão | Data       | Descrição                  | Autor(es) |
 |:------:|:-----------|:---------------------------|:----------|
 | 0.1    | 2026-06-09 | Criação inicial da página  | Ana Clara Borges     |
+| 1.0    | 2026-06-12 | Adição de referências  | Ana Clara Borges     |
