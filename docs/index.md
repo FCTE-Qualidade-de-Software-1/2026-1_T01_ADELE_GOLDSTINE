@@ -37,6 +37,16 @@ A análise utiliza o modelo **ISO/IEC 25010**, com foco nas características de 
 
 Adele Goldstine (1920–1964) foi uma matemática e cientista da computação americana, autora do primeiro manual técnico do ENIAC e responsável por treinar suas seis programadoras originais. Seu trabalho documentando e ensinando o uso da máquina foi peça-chave para tornar a computação programável uma prática viável.
 
+## Declaração do Uso de IA
+
+| Fase | Ferramenta | Modo de Uso |
+|---|---| --- |
+|Fase 1|| |
+| Fase 2 | Gemini | Especificação de como conseguir os dados para o cálculo de métricas |
+| Fase 3 | | |
+| Fase 4 | | Correção gramatical e auxílio na escrita do código para cálculo da métrica 1.2 de confiabilidade |
+
+
 ## Bibliografia
 
 - ISO/IEC 25010:2011 — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models*. ISO, 2011.
@@ -47,3 +57,4 @@ Adele Goldstine (1920–1964) foi uma matemática e cientista da computação am
 |:------:|:-----------|:---------------------------------------|:----------|
 | 0.1    | 2026-05-11 | Estrutura inicial do site MkDocs       | —         |
 | 1.0    | 2026-05-13 | Adição da ementa da avaliação e da equipe (GitHubs dos integrantes) | Caio Felipe |
+| 1.1    | 2026-06-12 | Adição de tabela de uso de ia | Ana Clara Borges |
