@@ -140,11 +140,13 @@ Para alcançar o objetivo de medição para a característica de Manutenibilidad
 
 ## Bibliografia
 
-- ISO/IEC 25010:2011 — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models*. ISO, 2011.
-- _(adicionar mais referências no formato adotado pela disciplina)_
+> BRITISH STANDARDS INSTITUTION. BS ISO/IEC 25010: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Londres, 2011.
+
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. ISO/IEC WD 25023: Systems and software engineering – Systems and software Quality Requirements and Evaluation (SQuaRE) – Measurement of system and software product quality. Esboço de Trabalho (Working Draft). Editado por Motoei Azuma e KeumSuk Lee. Genebra, 2011.
 
 ## Histórico de Versão
 
 | Versão | Data       | Descrição                  | Autor(es) |
 |:------:|:-----------|:---------------------------|:----------|
 | 0.1    | 2026-06-09 | Criação inicial da página  | Ana Clara Borges     |
+| 1.0    | 2026-06-12 | Adição de referências  | Ana Clara Borges     |
