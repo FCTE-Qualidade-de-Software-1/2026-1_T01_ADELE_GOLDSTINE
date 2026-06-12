@@ -39,12 +39,12 @@ Adele Goldstine (1920–1964) foi uma matemática e cientista da computação am
 
 ## Declaração do Uso de IA
 
-| Fase | Ferramenta | Modo de Uso |
-|---|---| --- |
-|Fase 1|| |
-| Fase 2 | Gemini | Especificação de como conseguir os dados para o cálculo de métricas |
-| Fase 3 | | |
-| Fase 4 | | Correção gramatical e auxílio na escrita do código para cálculo da métrica 1.2 de confiabilidade |
+| Fase | Ferramenta e Modo de Uso | 
+|---|---|
+| Fase 1 | **NotebookLM** - Confirmação de tópicos a partir de documentos <br> **Claude Opus** - Geração de texto para markdown |
+| Fase 2 | **Gemini** - Especificação de como conseguir os dados para o cálculo de métricas |
+| Fase 3 | **NotebookLM** - Confirmação de tópicos a partir de documentos <br> **Claude** - Geração de texto e tabelas para markdown| 
+| Fase 4 | **Claude** - Correção gramatical e auxílio na escrita do código para cálculo da métrica 1.2 de confiabilidade; |
 
 
 ## Bibliografia
