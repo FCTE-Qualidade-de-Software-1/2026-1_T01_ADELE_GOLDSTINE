@@ -1,0 +1,3207 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Avaliação da qualidade de software do SuaGradeUnB">
+      
+      
+      
+        <link rel="canonical" href="https://FCTE-Qualidade-de-Software-1.github.io/2026-1_T01_ADELE_GOLDSTINE/fase4/m2_1_registro/">
+      
+      
+        <link rel="prev" href="../confiabilidade/">
+      
+      
+        <link rel="next" href="../manutenibilidade/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Registro da Metrica 2.1 - confiabilidade - Adele Goldstine - 2026.1 T01</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Poppins";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#registro-de-medicao-m21" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Adele Goldstine - 2026.1 T01" class="md-header__button md-logo" aria-label="Adele Goldstine - 2026.1 T01" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Adele Goldstine - 2026.1 T01
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Registro da Metrica 2.1 - confiabilidade
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="blue"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="light-green" data-md-color-accent="blue"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-1_T01_ADELE_GOLDSTINE" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Adele Goldstine
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase1/objetoDeEstudo/" class="md-tabs__link">
+          
+  
+  
+  Fase 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase2/introducao/" class="md-tabs__link">
+          
+  
+  
+  Fase 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase3/planejamento/" class="md-tabs__link">
+          
+  
+  
+  Fase 3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../fase4/" class="md-tabs__link">
+          
+  
+  
+  Fase 4
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Adele Goldstine - 2026.1 T01" class="md-nav__button md-logo" aria-label="Adele Goldstine - 2026.1 T01" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Adele Goldstine - 2026.1 T01
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-1_T01_ADELE_GOLDSTINE" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Adele Goldstine
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase1/objetoDeEstudo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Objeto de Estudo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase1/contexto-da-avaliacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contexto da Avaliação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase1/ods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ODS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase1/qualidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo de Qualidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase1/conclusao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conclusão
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase2/introducao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introdução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase2/confiabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medição 1 - Confiabilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase2/manutenibilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medição 2 - Manutenibilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase2/conclusao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conclusão
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase3/planejamento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planejamento da Avaliação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introdução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../confiabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação Confiabilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Registro da Metrica 2.1 - confiabilidade
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Registro da Metrica 2.1 - confiabilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-resultado-consolidado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Resultado Consolidado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-por-categoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Por Categoria
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-detalhamento-por-ocorrencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Detalhamento por Ocorrência
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Detalhamento por Ocorrência">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-autenticacao-e-seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Autenticação e Segurança
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-web-scraping-sigaa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Web Scraping SIGAA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-regras-de-negocio-e-banco-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Regras de Negócio e Banco de Dados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-infraestrutura-e-integracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Infraestrutura e Integração
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-operacoes-sem-tratamento-de-excecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Operações SEM Tratamento de Exceção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-falsos-positivos-excluidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Falsos Positivos Excluídos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manutenibilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaliação Manutenibilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-resultado-consolidado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Resultado Consolidado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-por-categoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Por Categoria
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-detalhamento-por-ocorrencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Detalhamento por Ocorrência
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Detalhamento por Ocorrência">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-autenticacao-e-seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Autenticação e Segurança
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-web-scraping-sigaa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Web Scraping SIGAA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-regras-de-negocio-e-banco-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Regras de Negócio e Banco de Dados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-infraestrutura-e-integracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Infraestrutura e Integração
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-operacoes-sem-tratamento-de-excecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Operações SEM Tratamento de Exceção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-falsos-positivos-excluidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Falsos Positivos Excluídos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="registro-de-medicao-m21">Registro de Medição — M2.1<a class="headerlink" href="#registro-de-medicao-m21" title="Permanent link">&para;</a></h1>
+<p><strong>Percentual de operações críticas com tratamento de exceção</strong></p>
+<ul>
+<li><strong>Data:</strong> 2026-06-12 01:05:36</li>
+<li><strong>Repositório:</strong> <code>2023-2-SuaGradeUnB</code></li>
+<li><strong>Categorias analisadas:</strong> Autenticação e Segurança | Regras de Negócio e BD | Infraestrutura e Integração | Web Scraping SIGAA</li>
+<li><strong>Escopo backend:</strong> <code>api/</code> (excluídas: migrations, tests)</li>
+<li><strong>Escopo frontend:</strong> <code>web/</code> (excluídas: imports/exports/comentários)</li>
+</ul>
+<hr />
+<h2 id="1-resultado-consolidado">1. Resultado Consolidado<a class="headerlink" href="#1-resultado-consolidado" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total de operações críticas</td>
+<td>134</td>
+</tr>
+<tr>
+<td>Com tratamento de exceção</td>
+<td>24</td>
+</tr>
+<tr>
+<td>Sem tratamento de exceção</td>
+<td>110</td>
+</tr>
+<tr>
+<td><strong>M2.1 (%)</strong></td>
+<td><strong>17.91%</strong></td>
+</tr>
+<tr>
+<td>Falsos positivos excluídos</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-por-categoria">2. Por Categoria<a class="headerlink" href="#2-por-categoria" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Categoria</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">Com exceção</th>
+<th style="text-align: right;">Sem exceção</th>
+<th style="text-align: right;">% coberta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Autenticação e Segurança</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">17.9%</td>
+</tr>
+<tr>
+<td>Web Scraping SIGAA</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">12.5%</td>
+</tr>
+<tr>
+<td>Regras de Negócio e Banco de Dados</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">15.9%</td>
+</tr>
+<tr>
+<td>Infraestrutura e Integração</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">23.7%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-detalhamento-por-ocorrencia">3. Detalhamento por Ocorrência<a class="headerlink" href="#3-detalhamento-por-ocorrencia" title="Permanent link">&para;</a></h2>
+<h3 id="31-autenticacao-e-seguranca">3.1 Autenticação e Segurança<a class="headerlink" href="#31-autenticacao-e-seguranca" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">#</th>
+<th>Arquivo</th>
+<th style="text-align: right;">Linha</th>
+<th>Snippet</th>
+<th style="text-align: center;">Exceção</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>api/api/management/commands/initadmin.py</code></td>
+<td style="text-align: right;">9</td>
+<td><code>username = config("ADMIN_NAME")</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>api/api/management/commands/initadmin.py</code></td>
+<td style="text-align: right;">10</td>
+<td><code>if not len(User.objects.all().filter(username=username)):</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>api/api/management/commands/initadmin.py</code></td>
+<td style="text-align: right;">11</td>
+<td><code>password = config("ADMIN_PASS")</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><code>api/api/management/commands/initadmin.py</code></td>
+<td style="text-align: right;">13</td>
+<td><code>admin = User.objects.create_superuser(</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>api/api/management/commands/initadmin.py</code></td>
+<td style="text-align: right;">15</td>
+<td><code>email=config("ADMIN_EMAIL")</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><code>api/api/management/commands/initadmin.py</code></td>
+<td style="text-align: right;">19</td>
+<td><code>admin.save()</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><code>api/api/views/delete_schedule.py</code></td>
+<td style="text-align: right;">27</td>
+<td><code>user = request.user</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><code>api/api/views/get_schedules.py</code></td>
+<td style="text-align: right;">28</td>
+<td><code>user = request.user</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><code>api/api/views/save_schedule.py</code></td>
+<td style="text-align: right;">32</td>
+<td><code>if not check_permission_to_save(request.user):</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td><code>api/api/views/save_schedule.py</code></td>
+<td style="text-align: right;">59</td>
+<td><code>user = request.user</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td><code>api/api/views/schedules.py</code></td>
+<td style="text-align: right;">42</td>
+<td><code>user = request.user</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td><code>api/core/settings/base.py</code></td>
+<td style="text-align: right;">26</td>
+<td><code>SECRET_KEY = config("DJANGO_SECRET_KEY")</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td><code>api/users/backends/google.py</code></td>
+<td style="text-align: right;">24</td>
+<td><code>if access_token != config('GOOGLE_OAUTH2_MOCK_TOKEN'):</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td><code>api/users/backends/google.py</code></td>
+<td style="text-align: right;">25</td>
+<td><code>response = requests.get(user_info_url, params=params)</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td><code>api/users/backends/google.py</code></td>
+<td style="text-align: right;">36</td>
+<td><code>user_data = response.json()</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td><code>api/users/backends/google.py</code></td>
+<td style="text-align: right;">45</td>
+<td><code>user, _ = User.objects.get_or_create(</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td><code>api/users/simplejwt/decorators.py</code></td>
+<td style="text-align: right;">16</td>
+<td><code>refresh_token = response.data.pop('refresh')</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td><code>api/users/simplejwt/decorators.py</code></td>
+<td style="text-align: right;">17</td>
+<td><code>response.set_cookie(key="refresh", value=refresh_token,</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td><code>api/users/views.py</code></td>
+<td style="text-align: right;">67</td>
+<td><code>backend = get_backend(kwargs['oauth2'])</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td><code>api/users/views.py</code></td>
+<td style="text-align: right;">74</td>
+<td><code>user_data = backend.get_user_data(token)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td><code>api/users/views.py</code></td>
+<td style="text-align: right;">76</td>
+<td><code>user = backend.do_auth(user_data)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">22</td>
+<td><code>api/users/views.py</code></td>
+<td style="text-align: right;">79</td>
+<td><code>refresh = serializer.get_token(user)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">23</td>
+<td><code>api/users/views.py</code></td>
+<td style="text-align: right;">101</td>
+<td><code>request.data['refresh'] = request.COOKIES['refresh']</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">24</td>
+<td><code>api/users/views.py</code></td>
+<td style="text-align: right;">114</td>
+<td><code>serializer.is_valid(raise_exception=True)</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
+<td><code>web/app/components/SignInSection.tsx</code></td>
+<td style="text-align: right;">30</td>
+<td><code>setAccessToken(retrieveAccessToken());</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">26</td>
+<td><code>web/app/components/SignInSection.tsx</code></td>
+<td style="text-align: right;">35</td>
+<td><code>registerWithGoogle(accessToken).then(response =&gt; {</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">27</td>
+<td><code>web/app/components/SignInSection.tsx</code></td>
+<td style="text-align: right;">56</td>
+<td><code>else signInWithGoogle(router);</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">28</td>
+<td><code>web/app/schedules/profile/page.tsx</code></td>
+<td style="text-align: right;">75</td>
+<td><code>&lt;Button onClick={() =&gt; signInWithGoogle(router)} className='!shadow-none'&gt;</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-web-scraping-sigaa">3.2 Web Scraping SIGAA<a class="headerlink" href="#32-web-scraping-sigaa" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">#</th>
+<th>Arquivo</th>
+<th style="text-align: right;">Linha</th>
+<th>Snippet</th>
+<th style="text-align: center;">Exceção</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>api/api/management/commands/updatedb.py</code></td>
+<td style="text-align: right;">70</td>
+<td><code>departments_ids = get_list_of_departments()</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>api/api/management/commands/updatedb.py</code></td>
+<td style="text-align: right;">111</td>
+<td><code>scraper = DisciplineWebScraper(department_id, year, period)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>api/api/management/commands/updatedb.py</code></td>
+<td style="text-align: right;">125</td>
+<td><code>disciplines_list = scraper.get_disciplines()</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><code>api/utils/management/commands/updatemock.py</code></td>
+<td style="text-align: right;">28</td>
+<td><code>departments = wbp.get_list_of_departments()</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>api/utils/management/commands/updatemock.py</code></td>
+<td style="text-align: right;">32</td>
+<td><code>discipline_scraper = wbp.DisciplineWebScraper(</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><code>api/utils/management/commands/updatemock.py</code></td>
+<td style="text-align: right;">34</td>
+<td><code>response = discipline_scraper.get_response_from_disciplines_post_request()</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><code>api/utils/management/commands/updatemock.py</code></td>
+<td style="text-align: right;">54</td>
+<td><code>return response.content.decode(encoding)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><code>api/utils/sessions.py</code></td>
+<td style="text-align: right;">31</td>
+<td><code>response = session.get(url=URL, headers=HEADERS) # Make a get request to the url</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><code>api/utils/sessions.py</code></td>
+<td style="text-align: right;">38</td>
+<td><code>response = get_response(session) # Get the response from the request session</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">31</td>
+<td><code>response = get_response(create_request_session())</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">33</td>
+<td><code>soup = BeautifulSoup(response.content, "html.parser")</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">34</td>
+<td><code>departments = soup.find("select", attrs={"id": "formTurma:inputDepto"})</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">60</td>
+<td><code>self.session = create_request_session()</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">65</td>
+<td><code>self.cookie = get_session_cookie(self.session)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">74</td>
+<td><code>initial_response = self.session.get(self.url, headers=HEADERS, cookies=self.cookie)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">75</td>
+<td><code>soup = BeautifulSoup(initial_response.content, "html.parser")</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">78</td>
+<td><code>view_state_tag = soup.find("input", {"name": "javax.faces.ViewState"})</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">82</td>
+<td><code>submit_button_tag = soup.find("input", {"value": "Buscar"})</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">97</td>
+<td><code>self.response = self.session.post(</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">253</td>
+<td><code>soup = BeautifulSoup(response.content, "html.parser")</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">255</td>
+<td><code>tables = soup.find("table", attrs={"class": "listagem"})</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">22</td>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">264</td>
+<td><code>self.get_response_from_disciplines_post_request()</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">23</td>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">292</td>
+<td><code>self.get_response_from_disciplines_post_request()</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">24</td>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">293</td>
+<td><code>self.make_web_scraping_of_disciplines(self.response)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-regras-de-negocio-e-banco-de-dados">3.3 Regras de Negócio e Banco de Dados<a class="headerlink" href="#33-regras-de-negocio-e-banco-de-dados" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">#</th>
+<th>Arquivo</th>
+<th style="text-align: right;">Linha</th>
+<th>Snippet</th>
+<th style="text-align: center;">Exceção</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>api/api/decorators.py</code></td>
+<td style="text-align: right;">15</td>
+<td><code>cache.delete(cache_key)</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>api/api/decorators.py</code></td>
+<td style="text-align: right;">19</td>
+<td><code>queryset.delete()</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>api/api/management/commands/updatedb.py</code></td>
+<td style="text-align: right;">126</td>
+<td><code>department = dbh.get_or_create_department(</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><code>api/api/management/commands/updatedb.py</code></td>
+<td style="text-align: right;">136</td>
+<td><code>discipline = dbh.get_or_create_discipline(</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>api/api/management/commands/updatedb.py</code></td>
+<td style="text-align: right;">144</td>
+<td><code>dbh.create_class(teachers=class_info["teachers"],</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><code>api/api/models.py</code></td>
+<td style="text-align: right;">17</td>
+<td><code>cache.delete(kwargs['cache_key'])</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><code>api/api/models.py</code></td>
+<td style="text-align: right;">22</td>
+<td><code>super(CustomModel, self).delete()</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><code>api/api/models.py</code></td>
+<td style="text-align: right;">48</td>
+<td><code>super(Department, self).delete(*args, **kwargs)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><code>api/api/models.py</code></td>
+<td style="text-align: right;">69</td>
+<td><code>super(Discipline, self).save(*args, **kwargs)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td><code>api/api/models.py</code></td>
+<td style="text-align: right;">80</td>
+<td><code>super(Discipline, self).delete(*args, **kwargs)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td><code>api/api/models.py</code></td>
+<td style="text-align: right;">120</td>
+<td><code>super(Class, self).delete(*args, **kwargs)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td><code>api/api/views/delete_schedule.py</code></td>
+<td style="text-align: right;">29</td>
+<td><code>return response.Response(status=status.HTTP_204_NO_CONTENT) if dbh.delete_schedule(user, i</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td><code>api/api/views/get_schedules.py</code></td>
+<td style="text-align: right;">29</td>
+<td><code>schedules = get_schedules(user)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td><code>api/api/views/save_schedule.py</code></td>
+<td style="text-align: right;">60</td>
+<td><code>answer = save_schedule(user, valid_schedule)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td><code>api/api/views/save_schedule.py</code></td>
+<td style="text-align: right;">156</td>
+<td><code>db_class = get_class_by_params(**key_args)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td><code>api/api/views/save_schedule.py</code></td>
+<td style="text-align: right;">220</td>
+<td><code>schedules = dbh.get_schedules(user)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td><code>api/api/views/schedules.py</code></td>
+<td style="text-align: right;">43</td>
+<td><code>schedules = dbh.get_schedules(user)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td><code>api/api/views/views.py</code></td>
+<td style="text-align: right;">53</td>
+<td><code>disciplines = get_best_similarities_by_name(name, disciplines)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td><code>api/api/views/views.py</code></td>
+<td style="text-align: right;">56</td>
+<td><code>disciplines = filter_disciplines_by_code(code=name[0])</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td><code>api/api/views/views.py</code></td>
+<td style="text-align: right;">59</td>
+<td><code>disciplines &amp;= filter_disciplines_by_code(code=term)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td><code>api/api/views/views.py</code></td>
+<td style="text-align: right;">61</td>
+<td><code>disciplines = filter_disciplines_by_code(name)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">22</td>
+<td><code>api/api/views/views.py</code></td>
+<td style="text-align: right;">69</td>
+<td><code>disciplines = filter_disciplines_by_teacher(name)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">23</td>
+<td><code>api/api/views/views.py</code></td>
+<td style="text-align: right;">74</td>
+<td><code>filtered_disciplines = filter_disciplines_by_year_and_period(</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">24</td>
+<td><code>api/users/backends/google.py</code></td>
+<td style="text-align: right;">59</td>
+<td><code>user.save()</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
+<td><code>api/users/views.py</code></td>
+<td style="text-align: right;">120</td>
+<td><code>return response.Response(serializer.validated_data, status=status.HTTP_200_OK)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">26</td>
+<td><code>api/utils/db_handler.py</code></td>
+<td style="text-align: right;">20</td>
+<td><code>return Department.objects.get_or_create(code=code, year=year, period=period)[0]</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">27</td>
+<td><code>api/utils/db_handler.py</code></td>
+<td style="text-align: right;">25</td>
+<td><code>return Discipline.objects.get_or_create(name=name, code=code, department=department)[0]</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">28</td>
+<td><code>api/utils/db_handler.py</code></td>
+<td style="text-align: right;">31</td>
+<td><code>return Class.objects.create(teachers=teachers, classroom=classroom, schedule=schedule,</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">29</td>
+<td><code>api/utils/db_handler.py</code></td>
+<td style="text-align: right;">37</td>
+<td><code>return Class.objects.filter(discipline=discipline)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">30</td>
+<td><code>api/utils/db_handler.py</code></td>
+<td style="text-align: right;">43</td>
+<td><code>return Department.objects.filter(year=year, period=period)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">31</td>
+<td><code>api/utils/db_handler.py</code></td>
+<td style="text-align: right;">62</td>
+<td><code>disciplines = Discipline.objects.all()</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">32</td>
+<td><code>api/utils/db_handler.py</code></td>
+<td style="text-align: right;">111</td>
+<td><code>Schedule.objects.get_or_create(user=user, classes=json_schedule)</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">33</td>
+<td><code>api/utils/db_handler.py</code></td>
+<td style="text-align: right;">120</td>
+<td><code>return Schedule.objects.filter(user=user).all()</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">34</td>
+<td><code>api/utils/db_handler.py</code></td>
+<td style="text-align: right;">126</td>
+<td><code>Schedule.objects.get(user=user, id=id).delete()</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">35</td>
+<td><code>api/utils/schedule_generator.py</code></td>
+<td style="text-align: right;">65</td>
+<td><code>_class = get_class_by_id(id=class_id)</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">36</td>
+<td><code>api/utils/search.py</code></td>
+<td style="text-align: right;">20</td>
+<td><code>values = self.model.objects.all()</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">37</td>
+<td><code>web/app/components/AsideSchedulePopUp/Form/InputForm.tsx</code></td>
+<td style="text-align: right;">44</td>
+<td><code>const data = await searchDiscipline(textSearch, year, period);</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">38</td>
+<td><code>web/app/components/SchedulePreview/SchedulePreview.tsx</code></td>
+<td style="text-align: right;">135</td>
+<td><code>getSchedules(user.access).then(response =&gt; {</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">39</td>
+<td><code>web/app/components/SchedulePreview/SchedulePreview.tsx</code></td>
+<td style="text-align: right;">154</td>
+<td><code>saveSchedule(props.schedules.localSchedule, user.access).then(response =&gt; {</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">40</td>
+<td><code>web/app/components/SchedulePreview/SchedulePreview.tsx</code></td>
+<td style="text-align: right;">194</td>
+<td><code>const response = await deleteSchedule(cloudSchedule?.id, user.access);</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">41</td>
+<td><code>web/app/components/SchedulePreview/SchedulePreview.tsx</code></td>
+<td style="text-align: right;">197</td>
+<td><code>getSchedules(user.access).then(response =&gt; {</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">42</td>
+<td><code>web/app/contexts/UserContext.tsx</code></td>
+<td style="text-align: right;">63</td>
+<td><code>getSchedules(user.access).then(response =&gt; {</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">43</td>
+<td><code>web/app/contexts/YearPeriodContext.tsx</code></td>
+<td style="text-align: right;">21</td>
+<td><code>retrieveYearAndPeriod().then(data =&gt; setPeriods(data));</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">44</td>
+<td><code>web/app/schedules/home/components/GenerateScheduleButton.tsx</code></td>
+<td style="text-align: right;">55</td>
+<td><code>generateSchedule(classes_id, [morningPreference, afternoonPreference, nightPreference]).th</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+</tbody>
+</table>
+<h3 id="34-infraestrutura-e-integracao">3.4 Infraestrutura e Integração<a class="headerlink" href="#34-infraestrutura-e-integracao" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">#</th>
+<th>Arquivo</th>
+<th style="text-align: right;">Linha</th>
+<th>Snippet</th>
+<th style="text-align: center;">Exceção</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>api/api/management/commands/updatedb.py</code></td>
+<td style="text-align: right;">116</td>
+<td><code>cache_value = cache.get(cache_key)</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>api/api/management/commands/updatedb.py</code></td>
+<td style="text-align: right;">148</td>
+<td><code>cache.set(cache_key, fingerprint, timeout=THIRTY_DAYS_IN_SECS)</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>api/core/asgi.py</code></td>
+<td style="text-align: right;">15</td>
+<td><code>os.environ.setdefault('DJANGO_SETTINGS_MODULE', config('SETTINGS_FILE_PATH'))</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><code>api/core/settings/base.py</code></td>
+<td style="text-align: right;">63</td>
+<td><code>"LOCATION": config("REDIS_CACHE_LOCATION"),</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>api/core/settings/dev.py</code></td>
+<td style="text-align: right;">25</td>
+<td><code>"NAME": config("DB_NAME"),</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><code>api/core/settings/dev.py</code></td>
+<td style="text-align: right;">26</td>
+<td><code>"USER": config("DB_USERNAME"),</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><code>api/core/settings/dev.py</code></td>
+<td style="text-align: right;">27</td>
+<td><code>"PASSWORD": config("DB_PASSWORD"),</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><code>api/core/settings/dev.py</code></td>
+<td style="text-align: right;">28</td>
+<td><code>"HOST": config("DB_HOSTNAME"),</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><code>api/core/settings/dev.py</code></td>
+<td style="text-align: right;">29</td>
+<td><code>"PORT": config("DB_PORT", cast=int),</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td><code>api/core/settings/prod.py</code></td>
+<td style="text-align: right;">43</td>
+<td><code>"default": dj_database_url.config(</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td><code>api/core/wsgi.py</code></td>
+<td style="text-align: right;">15</td>
+<td><code>os.environ.setdefault('DJANGO_SETTINGS_MODULE', config('SETTINGS_FILE_PATH'))</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td><code>api/utils/management/commands/updatemock.py</code></td>
+<td style="text-align: right;">21</td>
+<td><code>os.remove(current_path / f"mock/sigaa.html")</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td><code>api/utils/management/commands/updatemock.py</code></td>
+<td style="text-align: right;">22</td>
+<td><code>os.remove(current_path / "mock/infos.json")</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td><code>api/utils/management/commands/updatemock.py</code></td>
+<td style="text-align: right;">31</td>
+<td><code>with open(current_path / f"mock/sigaa.html", "a") as mock_file:</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td><code>api/utils/management/commands/updatemock.py</code></td>
+<td style="text-align: right;">38</td>
+<td><code>mock_file.write(striped_response)</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td><code>api/utils/management/commands/updatemock.py</code></td>
+<td style="text-align: right;">40</td>
+<td><code>with open(current_path / "mock/infos.json", "a") as info_file:</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td><code>api/utils/management/commands/updatemock.py</code></td>
+<td style="text-align: right;">46</td>
+<td><code>info_file.write(json.dumps(data))</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td><code>api/utils/sessions.py</code></td>
+<td style="text-align: right;">22</td>
+<td><code>session = Session() # Create a persistent request session</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td><code>api/utils/sessions.py</code></td>
+<td style="text-align: right;">23</td>
+<td><code>retry = Retry(connect=3, backoff_factor=0.5) # Create a retry object</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td><code>api/utils/sessions.py</code></td>
+<td style="text-align: right;">24</td>
+<td><code>adapter = HTTPAdapter(max_retries=retry) # Try to make the request 3 times</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td><code>api/utils/sessions.py</code></td>
+<td style="text-align: right;">25</td>
+<td><code>session.mount('https://', adapter) # Mount the adapter to the session</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">22</td>
+<td><code>api/utils/views.py</code></td>
+<td style="text-align: right;">14</td>
+<td><code>with open(mocked_html_path / f"mock/{actual_path[path]}.html", 'r') as html_file:</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">23</td>
+<td><code>api/utils/views.py</code></td>
+<td style="text-align: right;">15</td>
+<td><code>content = html_file.read()</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">24</td>
+<td><code>web/app/contexts/SchedulesContext.tsx</code></td>
+<td style="text-align: right;">47</td>
+<td><code>const localJSON = JSON.parse(localStorage.getItem('schedules') \|\| '[]');</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
+<td><code>web/app/contexts/SchedulesContext.tsx</code></td>
+<td style="text-align: right;">62</td>
+<td><code>localStorage.setItem('schedules', JSON.stringify(uniqueSchedules));</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">26</td>
+<td><code>web/app/contexts/SchedulesContext.tsx</code></td>
+<td style="text-align: right;">63</td>
+<td><code>} else localStorage.setItem('schedules', JSON.stringify(newSchedules));</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">27</td>
+<td><code>web/app/contexts/SchedulesContext.tsx</code></td>
+<td style="text-align: right;">65</td>
+<td><code>const localJSON = JSON.parse(localStorage.getItem('schedules') \|\| '[]');</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">28</td>
+<td><code>web/app/contexts/SchedulesContext.tsx</code></td>
+<td style="text-align: right;">74</td>
+<td><code>data[index].classes = JSON.parse(schedule.classes);</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">29</td>
+<td><code>web/app/contexts/UserContext.tsx</code></td>
+<td style="text-align: right;">45</td>
+<td><code>request.post('/users/login/', {}, settings).then(response =&gt; {</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">30</td>
+<td><code>web/app/utils/api/deleteSchedule.ts</code></td>
+<td style="text-align: right;">5</td>
+<td><code>const response = await request.delete(</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">31</td>
+<td><code>web/app/utils/api/generateSchedule.ts</code></td>
+<td style="text-align: right;">17</td>
+<td><code>const response = await request.post('/courses/schedules/generate/', body, settings);</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">32</td>
+<td><code>web/app/utils/api/getSchedules.ts</code></td>
+<td style="text-align: right;">5</td>
+<td><code>const response = request.get('/courses/schedules/', settingsWithAuth(access_token));</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">33</td>
+<td><code>web/app/utils/api/logout.ts</code></td>
+<td style="text-align: right;">22</td>
+<td><code>request.post('/users/logout/', {}, settings).then(response =&gt; {</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">34</td>
+<td><code>web/app/utils/api/registerWithGoogle.ts</code></td>
+<td style="text-align: right;">10</td>
+<td><code>const response = await request.post('/users/register/google/', body, settings);</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">35</td>
+<td><code>web/app/utils/api/retrieveYearAndPeriod.ts</code></td>
+<td style="text-align: right;">12</td>
+<td><code>const response = await request.get('/courses/year-period/', settings);</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">36</td>
+<td><code>web/app/utils/api/saveSchedule.ts</code></td>
+<td style="text-align: right;">7</td>
+<td><code>const response = await request.post('/courses/schedules/', schedule, settingsWithAuth(acce</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr>
+<td style="text-align: right;">37</td>
+<td><code>web/app/utils/api/searchDiscipline.ts</code></td>
+<td style="text-align: right;">32</td>
+<td><code>const response = await request.get('/courses/', {</code></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: right;">38</td>
+<td><code>web/app/utils/request.ts</code></td>
+<td style="text-align: right;">3</td>
+<td><code>const request = axios.create({</code></td>
+<td style="text-align: center;">✗</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-operacoes-sem-tratamento-de-excecao">4. Operações SEM Tratamento de Exceção<a class="headerlink" href="#4-operacoes-sem-tratamento-de-excecao" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Arquivo</th>
+<th style="text-align: right;">Linha</th>
+<th>Categoria</th>
+<th>Snippet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>api/api/management/commands/initadmin.py</code></td>
+<td style="text-align: right;">9</td>
+<td>Autenticação e Segurança</td>
+<td><code>username = config("ADMIN_NAME")</code></td>
+</tr>
+<tr>
+<td><code>api/api/management/commands/initadmin.py</code></td>
+<td style="text-align: right;">10</td>
+<td>Autenticação e Segurança</td>
+<td><code>if not len(User.objects.all().filter(username=username)):</code></td>
+</tr>
+<tr>
+<td><code>api/api/management/commands/initadmin.py</code></td>
+<td style="text-align: right;">11</td>
+<td>Autenticação e Segurança</td>
+<td><code>password = config("ADMIN_PASS")</code></td>
+</tr>
+<tr>
+<td><code>api/api/management/commands/initadmin.py</code></td>
+<td style="text-align: right;">13</td>
+<td>Autenticação e Segurança</td>
+<td><code>admin = User.objects.create_superuser(</code></td>
+</tr>
+<tr>
+<td><code>api/api/management/commands/initadmin.py</code></td>
+<td style="text-align: right;">15</td>
+<td>Autenticação e Segurança</td>
+<td><code>email=config("ADMIN_EMAIL")</code></td>
+</tr>
+<tr>
+<td><code>api/api/management/commands/initadmin.py</code></td>
+<td style="text-align: right;">19</td>
+<td>Autenticação e Segurança</td>
+<td><code>admin.save()</code></td>
+</tr>
+<tr>
+<td><code>api/api/management/commands/updatedb.py</code></td>
+<td style="text-align: right;">70</td>
+<td>Web Scraping SIGAA</td>
+<td><code>departments_ids = get_list_of_departments()</code></td>
+</tr>
+<tr>
+<td><code>api/api/management/commands/updatedb.py</code></td>
+<td style="text-align: right;">111</td>
+<td>Web Scraping SIGAA</td>
+<td><code>scraper = DisciplineWebScraper(department_id, year, period)</code></td>
+</tr>
+<tr>
+<td><code>api/api/management/commands/updatedb.py</code></td>
+<td style="text-align: right;">125</td>
+<td>Web Scraping SIGAA</td>
+<td><code>disciplines_list = scraper.get_disciplines()</code></td>
+</tr>
+<tr>
+<td><code>api/api/management/commands/updatedb.py</code></td>
+<td style="text-align: right;">126</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>department = dbh.get_or_create_department(</code></td>
+</tr>
+<tr>
+<td><code>api/api/management/commands/updatedb.py</code></td>
+<td style="text-align: right;">136</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>discipline = dbh.get_or_create_discipline(</code></td>
+</tr>
+<tr>
+<td><code>api/api/management/commands/updatedb.py</code></td>
+<td style="text-align: right;">144</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>dbh.create_class(teachers=class_info["teachers"],</code></td>
+</tr>
+<tr>
+<td><code>api/api/management/commands/updatedb.py</code></td>
+<td style="text-align: right;">148</td>
+<td>Infraestrutura e Integração</td>
+<td><code>cache.set(cache_key, fingerprint, timeout=THIRTY_DAYS_IN_SECS)</code></td>
+</tr>
+<tr>
+<td><code>api/api/models.py</code></td>
+<td style="text-align: right;">48</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>super(Department, self).delete(*args, **kwargs)</code></td>
+</tr>
+<tr>
+<td><code>api/api/models.py</code></td>
+<td style="text-align: right;">69</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>super(Discipline, self).save(*args, **kwargs)</code></td>
+</tr>
+<tr>
+<td><code>api/api/models.py</code></td>
+<td style="text-align: right;">80</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>super(Discipline, self).delete(*args, **kwargs)</code></td>
+</tr>
+<tr>
+<td><code>api/api/models.py</code></td>
+<td style="text-align: right;">120</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>super(Class, self).delete(*args, **kwargs)</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/delete_schedule.py</code></td>
+<td style="text-align: right;">27</td>
+<td>Autenticação e Segurança</td>
+<td><code>user = request.user</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/delete_schedule.py</code></td>
+<td style="text-align: right;">29</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>return response.Response(status=status.HTTP_204_NO_CONTENT) if dbh.delete_schedule(user, id) else re</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/get_schedules.py</code></td>
+<td style="text-align: right;">28</td>
+<td>Autenticação e Segurança</td>
+<td><code>user = request.user</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/get_schedules.py</code></td>
+<td style="text-align: right;">29</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>schedules = get_schedules(user)</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/save_schedule.py</code></td>
+<td style="text-align: right;">32</td>
+<td>Autenticação e Segurança</td>
+<td><code>if not check_permission_to_save(request.user):</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/save_schedule.py</code></td>
+<td style="text-align: right;">59</td>
+<td>Autenticação e Segurança</td>
+<td><code>user = request.user</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/save_schedule.py</code></td>
+<td style="text-align: right;">60</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>answer = save_schedule(user, valid_schedule)</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/save_schedule.py</code></td>
+<td style="text-align: right;">156</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>db_class = get_class_by_params(**key_args)</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/save_schedule.py</code></td>
+<td style="text-align: right;">220</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>schedules = dbh.get_schedules(user)</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/schedules.py</code></td>
+<td style="text-align: right;">42</td>
+<td>Autenticação e Segurança</td>
+<td><code>user = request.user</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/schedules.py</code></td>
+<td style="text-align: right;">43</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>schedules = dbh.get_schedules(user)</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/views.py</code></td>
+<td style="text-align: right;">53</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>disciplines = get_best_similarities_by_name(name, disciplines)</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/views.py</code></td>
+<td style="text-align: right;">56</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>disciplines = filter_disciplines_by_code(code=name[0])</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/views.py</code></td>
+<td style="text-align: right;">59</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>disciplines &amp;= filter_disciplines_by_code(code=term)</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/views.py</code></td>
+<td style="text-align: right;">61</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>disciplines = filter_disciplines_by_code(name)</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/views.py</code></td>
+<td style="text-align: right;">69</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>disciplines = filter_disciplines_by_teacher(name)</code></td>
+</tr>
+<tr>
+<td><code>api/api/views/views.py</code></td>
+<td style="text-align: right;">74</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>filtered_disciplines = filter_disciplines_by_year_and_period(</code></td>
+</tr>
+<tr>
+<td><code>api/core/asgi.py</code></td>
+<td style="text-align: right;">15</td>
+<td>Infraestrutura e Integração</td>
+<td><code>os.environ.setdefault('DJANGO_SETTINGS_MODULE', config('SETTINGS_FILE_PATH'))</code></td>
+</tr>
+<tr>
+<td><code>api/core/settings/base.py</code></td>
+<td style="text-align: right;">26</td>
+<td>Autenticação e Segurança</td>
+<td><code>SECRET_KEY = config("DJANGO_SECRET_KEY")</code></td>
+</tr>
+<tr>
+<td><code>api/core/settings/base.py</code></td>
+<td style="text-align: right;">63</td>
+<td>Infraestrutura e Integração</td>
+<td><code>"LOCATION": config("REDIS_CACHE_LOCATION"),</code></td>
+</tr>
+<tr>
+<td><code>api/core/settings/dev.py</code></td>
+<td style="text-align: right;">25</td>
+<td>Infraestrutura e Integração</td>
+<td><code>"NAME": config("DB_NAME"),</code></td>
+</tr>
+<tr>
+<td><code>api/core/settings/dev.py</code></td>
+<td style="text-align: right;">26</td>
+<td>Infraestrutura e Integração</td>
+<td><code>"USER": config("DB_USERNAME"),</code></td>
+</tr>
+<tr>
+<td><code>api/core/settings/dev.py</code></td>
+<td style="text-align: right;">27</td>
+<td>Infraestrutura e Integração</td>
+<td><code>"PASSWORD": config("DB_PASSWORD"),</code></td>
+</tr>
+<tr>
+<td><code>api/core/settings/dev.py</code></td>
+<td style="text-align: right;">28</td>
+<td>Infraestrutura e Integração</td>
+<td><code>"HOST": config("DB_HOSTNAME"),</code></td>
+</tr>
+<tr>
+<td><code>api/core/settings/dev.py</code></td>
+<td style="text-align: right;">29</td>
+<td>Infraestrutura e Integração</td>
+<td><code>"PORT": config("DB_PORT", cast=int),</code></td>
+</tr>
+<tr>
+<td><code>api/core/settings/prod.py</code></td>
+<td style="text-align: right;">43</td>
+<td>Infraestrutura e Integração</td>
+<td><code>"default": dj_database_url.config(</code></td>
+</tr>
+<tr>
+<td><code>api/core/wsgi.py</code></td>
+<td style="text-align: right;">15</td>
+<td>Infraestrutura e Integração</td>
+<td><code>os.environ.setdefault('DJANGO_SETTINGS_MODULE', config('SETTINGS_FILE_PATH'))</code></td>
+</tr>
+<tr>
+<td><code>api/users/backends/google.py</code></td>
+<td style="text-align: right;">45</td>
+<td>Autenticação e Segurança</td>
+<td><code>user, _ = User.objects.get_or_create(</code></td>
+</tr>
+<tr>
+<td><code>api/users/backends/google.py</code></td>
+<td style="text-align: right;">59</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>user.save()</code></td>
+</tr>
+<tr>
+<td><code>api/users/simplejwt/decorators.py</code></td>
+<td style="text-align: right;">16</td>
+<td>Autenticação e Segurança</td>
+<td><code>refresh_token = response.data.pop('refresh')</code></td>
+</tr>
+<tr>
+<td><code>api/users/simplejwt/decorators.py</code></td>
+<td style="text-align: right;">17</td>
+<td>Autenticação e Segurança</td>
+<td><code>response.set_cookie(key="refresh", value=refresh_token,</code></td>
+</tr>
+<tr>
+<td><code>api/users/views.py</code></td>
+<td style="text-align: right;">67</td>
+<td>Autenticação e Segurança</td>
+<td><code>backend = get_backend(kwargs['oauth2'])</code></td>
+</tr>
+<tr>
+<td><code>api/users/views.py</code></td>
+<td style="text-align: right;">74</td>
+<td>Autenticação e Segurança</td>
+<td><code>user_data = backend.get_user_data(token)</code></td>
+</tr>
+<tr>
+<td><code>api/users/views.py</code></td>
+<td style="text-align: right;">76</td>
+<td>Autenticação e Segurança</td>
+<td><code>user = backend.do_auth(user_data)</code></td>
+</tr>
+<tr>
+<td><code>api/users/views.py</code></td>
+<td style="text-align: right;">79</td>
+<td>Autenticação e Segurança</td>
+<td><code>refresh = serializer.get_token(user)</code></td>
+</tr>
+<tr>
+<td><code>api/users/views.py</code></td>
+<td style="text-align: right;">120</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>return response.Response(serializer.validated_data, status=status.HTTP_200_OK)</code></td>
+</tr>
+<tr>
+<td><code>api/utils/db_handler.py</code></td>
+<td style="text-align: right;">20</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>return Department.objects.get_or_create(code=code, year=year, period=period)[0]</code></td>
+</tr>
+<tr>
+<td><code>api/utils/db_handler.py</code></td>
+<td style="text-align: right;">25</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>return Discipline.objects.get_or_create(name=name, code=code, department=department)[0]</code></td>
+</tr>
+<tr>
+<td><code>api/utils/db_handler.py</code></td>
+<td style="text-align: right;">31</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>return Class.objects.create(teachers=teachers, classroom=classroom, schedule=schedule,</code></td>
+</tr>
+<tr>
+<td><code>api/utils/db_handler.py</code></td>
+<td style="text-align: right;">37</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>return Class.objects.filter(discipline=discipline)</code></td>
+</tr>
+<tr>
+<td><code>api/utils/db_handler.py</code></td>
+<td style="text-align: right;">43</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>return Department.objects.filter(year=year, period=period)</code></td>
+</tr>
+<tr>
+<td><code>api/utils/db_handler.py</code></td>
+<td style="text-align: right;">62</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>disciplines = Discipline.objects.all()</code></td>
+</tr>
+<tr>
+<td><code>api/utils/db_handler.py</code></td>
+<td style="text-align: right;">120</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>return Schedule.objects.filter(user=user).all()</code></td>
+</tr>
+<tr>
+<td><code>api/utils/management/commands/updatemock.py</code></td>
+<td style="text-align: right;">54</td>
+<td>Web Scraping SIGAA</td>
+<td><code>return response.content.decode(encoding)</code></td>
+</tr>
+<tr>
+<td><code>api/utils/search.py</code></td>
+<td style="text-align: right;">20</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>values = self.model.objects.all()</code></td>
+</tr>
+<tr>
+<td><code>api/utils/sessions.py</code></td>
+<td style="text-align: right;">22</td>
+<td>Infraestrutura e Integração</td>
+<td><code>session = Session() # Create a persistent request session</code></td>
+</tr>
+<tr>
+<td><code>api/utils/sessions.py</code></td>
+<td style="text-align: right;">23</td>
+<td>Infraestrutura e Integração</td>
+<td><code>retry = Retry(connect=3, backoff_factor=0.5) # Create a retry object</code></td>
+</tr>
+<tr>
+<td><code>api/utils/sessions.py</code></td>
+<td style="text-align: right;">24</td>
+<td>Infraestrutura e Integração</td>
+<td><code>adapter = HTTPAdapter(max_retries=retry) # Try to make the request 3 times</code></td>
+</tr>
+<tr>
+<td><code>api/utils/sessions.py</code></td>
+<td style="text-align: right;">25</td>
+<td>Infraestrutura e Integração</td>
+<td><code>session.mount('https://', adapter) # Mount the adapter to the session</code></td>
+</tr>
+<tr>
+<td><code>api/utils/sessions.py</code></td>
+<td style="text-align: right;">31</td>
+<td>Web Scraping SIGAA</td>
+<td><code>response = session.get(url=URL, headers=HEADERS) # Make a get request to the url</code></td>
+</tr>
+<tr>
+<td><code>api/utils/sessions.py</code></td>
+<td style="text-align: right;">38</td>
+<td>Web Scraping SIGAA</td>
+<td><code>response = get_response(session) # Get the response from the request session</code></td>
+</tr>
+<tr>
+<td><code>api/utils/views.py</code></td>
+<td style="text-align: right;">14</td>
+<td>Infraestrutura e Integração</td>
+<td><code>with open(mocked_html_path / f"mock/{actual_path[path]}.html", 'r') as html_file:</code></td>
+</tr>
+<tr>
+<td><code>api/utils/views.py</code></td>
+<td style="text-align: right;">15</td>
+<td>Infraestrutura e Integração</td>
+<td><code>content = html_file.read()</code></td>
+</tr>
+<tr>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">31</td>
+<td>Web Scraping SIGAA</td>
+<td><code>response = get_response(create_request_session())</code></td>
+</tr>
+<tr>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">33</td>
+<td>Web Scraping SIGAA</td>
+<td><code>soup = BeautifulSoup(response.content, "html.parser")</code></td>
+</tr>
+<tr>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">34</td>
+<td>Web Scraping SIGAA</td>
+<td><code>departments = soup.find("select", attrs={"id": "formTurma:inputDepto"})</code></td>
+</tr>
+<tr>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">60</td>
+<td>Web Scraping SIGAA</td>
+<td><code>self.session = create_request_session()</code></td>
+</tr>
+<tr>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">65</td>
+<td>Web Scraping SIGAA</td>
+<td><code>self.cookie = get_session_cookie(self.session)</code></td>
+</tr>
+<tr>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">74</td>
+<td>Web Scraping SIGAA</td>
+<td><code>initial_response = self.session.get(self.url, headers=HEADERS, cookies=self.cookie)</code></td>
+</tr>
+<tr>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">75</td>
+<td>Web Scraping SIGAA</td>
+<td><code>soup = BeautifulSoup(initial_response.content, "html.parser")</code></td>
+</tr>
+<tr>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">78</td>
+<td>Web Scraping SIGAA</td>
+<td><code>view_state_tag = soup.find("input", {"name": "javax.faces.ViewState"})</code></td>
+</tr>
+<tr>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">82</td>
+<td>Web Scraping SIGAA</td>
+<td><code>submit_button_tag = soup.find("input", {"value": "Buscar"})</code></td>
+</tr>
+<tr>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">97</td>
+<td>Web Scraping SIGAA</td>
+<td><code>self.response = self.session.post(</code></td>
+</tr>
+<tr>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">253</td>
+<td>Web Scraping SIGAA</td>
+<td><code>soup = BeautifulSoup(response.content, "html.parser")</code></td>
+</tr>
+<tr>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">255</td>
+<td>Web Scraping SIGAA</td>
+<td><code>tables = soup.find("table", attrs={"class": "listagem"})</code></td>
+</tr>
+<tr>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">264</td>
+<td>Web Scraping SIGAA</td>
+<td><code>self.get_response_from_disciplines_post_request()</code></td>
+</tr>
+<tr>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">292</td>
+<td>Web Scraping SIGAA</td>
+<td><code>self.get_response_from_disciplines_post_request()</code></td>
+</tr>
+<tr>
+<td><code>api/utils/web_scraping.py</code></td>
+<td style="text-align: right;">293</td>
+<td>Web Scraping SIGAA</td>
+<td><code>self.make_web_scraping_of_disciplines(self.response)</code></td>
+</tr>
+<tr>
+<td><code>web/app/components/AsideSchedulePopUp/Form/InputForm.tsx</code></td>
+<td style="text-align: right;">44</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>const data = await searchDiscipline(textSearch, year, period);</code></td>
+</tr>
+<tr>
+<td><code>web/app/components/SchedulePreview/SchedulePreview.tsx</code></td>
+<td style="text-align: right;">135</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>getSchedules(user.access).then(response =&gt; {</code></td>
+</tr>
+<tr>
+<td><code>web/app/components/SchedulePreview/SchedulePreview.tsx</code></td>
+<td style="text-align: right;">154</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>saveSchedule(props.schedules.localSchedule, user.access).then(response =&gt; {</code></td>
+</tr>
+<tr>
+<td><code>web/app/components/SchedulePreview/SchedulePreview.tsx</code></td>
+<td style="text-align: right;">194</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>const response = await deleteSchedule(cloudSchedule?.id, user.access);</code></td>
+</tr>
+<tr>
+<td><code>web/app/components/SchedulePreview/SchedulePreview.tsx</code></td>
+<td style="text-align: right;">197</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>getSchedules(user.access).then(response =&gt; {</code></td>
+</tr>
+<tr>
+<td><code>web/app/components/SignInSection.tsx</code></td>
+<td style="text-align: right;">30</td>
+<td>Autenticação e Segurança</td>
+<td><code>setAccessToken(retrieveAccessToken());</code></td>
+</tr>
+<tr>
+<td><code>web/app/components/SignInSection.tsx</code></td>
+<td style="text-align: right;">35</td>
+<td>Autenticação e Segurança</td>
+<td><code>registerWithGoogle(accessToken).then(response =&gt; {</code></td>
+</tr>
+<tr>
+<td><code>web/app/components/SignInSection.tsx</code></td>
+<td style="text-align: right;">56</td>
+<td>Autenticação e Segurança</td>
+<td><code>else signInWithGoogle(router);</code></td>
+</tr>
+<tr>
+<td><code>web/app/contexts/SchedulesContext.tsx</code></td>
+<td style="text-align: right;">47</td>
+<td>Infraestrutura e Integração</td>
+<td><code>const localJSON = JSON.parse(localStorage.getItem('schedules') \|\| '[]');</code></td>
+</tr>
+<tr>
+<td><code>web/app/contexts/SchedulesContext.tsx</code></td>
+<td style="text-align: right;">62</td>
+<td>Infraestrutura e Integração</td>
+<td><code>localStorage.setItem('schedules', JSON.stringify(uniqueSchedules));</code></td>
+</tr>
+<tr>
+<td><code>web/app/contexts/SchedulesContext.tsx</code></td>
+<td style="text-align: right;">63</td>
+<td>Infraestrutura e Integração</td>
+<td><code>} else localStorage.setItem('schedules', JSON.stringify(newSchedules));</code></td>
+</tr>
+<tr>
+<td><code>web/app/contexts/SchedulesContext.tsx</code></td>
+<td style="text-align: right;">65</td>
+<td>Infraestrutura e Integração</td>
+<td><code>const localJSON = JSON.parse(localStorage.getItem('schedules') \|\| '[]');</code></td>
+</tr>
+<tr>
+<td><code>web/app/contexts/SchedulesContext.tsx</code></td>
+<td style="text-align: right;">74</td>
+<td>Infraestrutura e Integração</td>
+<td><code>data[index].classes = JSON.parse(schedule.classes);</code></td>
+</tr>
+<tr>
+<td><code>web/app/contexts/UserContext.tsx</code></td>
+<td style="text-align: right;">45</td>
+<td>Infraestrutura e Integração</td>
+<td><code>request.post('/users/login/', {}, settings).then(response =&gt; {</code></td>
+</tr>
+<tr>
+<td><code>web/app/contexts/UserContext.tsx</code></td>
+<td style="text-align: right;">63</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>getSchedules(user.access).then(response =&gt; {</code></td>
+</tr>
+<tr>
+<td><code>web/app/contexts/YearPeriodContext.tsx</code></td>
+<td style="text-align: right;">21</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>retrieveYearAndPeriod().then(data =&gt; setPeriods(data));</code></td>
+</tr>
+<tr>
+<td><code>web/app/schedules/home/components/GenerateScheduleButton.tsx</code></td>
+<td style="text-align: right;">55</td>
+<td>Regras de Negócio e Banco de Dados</td>
+<td><code>generateSchedule(classes_id, [morningPreference, afternoonPreference, nightPreference]).then((respon</code></td>
+</tr>
+<tr>
+<td><code>web/app/schedules/profile/page.tsx</code></td>
+<td style="text-align: right;">75</td>
+<td>Autenticação e Segurança</td>
+<td><code>&lt;Button onClick={() =&gt; signInWithGoogle(router)} className='!shadow-none'&gt;</code></td>
+</tr>
+<tr>
+<td><code>web/app/utils/api/deleteSchedule.ts</code></td>
+<td style="text-align: right;">5</td>
+<td>Infraestrutura e Integração</td>
+<td><code>const response = await request.delete(</code></td>
+</tr>
+<tr>
+<td><code>web/app/utils/api/generateSchedule.ts</code></td>
+<td style="text-align: right;">17</td>
+<td>Infraestrutura e Integração</td>
+<td><code>const response = await request.post('/courses/schedules/generate/', body, settings);</code></td>
+</tr>
+<tr>
+<td><code>web/app/utils/api/getSchedules.ts</code></td>
+<td style="text-align: right;">5</td>
+<td>Infraestrutura e Integração</td>
+<td><code>const response = request.get('/courses/schedules/', settingsWithAuth(access_token));</code></td>
+</tr>
+<tr>
+<td><code>web/app/utils/api/logout.ts</code></td>
+<td style="text-align: right;">22</td>
+<td>Infraestrutura e Integração</td>
+<td><code>request.post('/users/logout/', {}, settings).then(response =&gt; {</code></td>
+</tr>
+<tr>
+<td><code>web/app/utils/api/registerWithGoogle.ts</code></td>
+<td style="text-align: right;">10</td>
+<td>Infraestrutura e Integração</td>
+<td><code>const response = await request.post('/users/register/google/', body, settings);</code></td>
+</tr>
+<tr>
+<td><code>web/app/utils/api/saveSchedule.ts</code></td>
+<td style="text-align: right;">7</td>
+<td>Infraestrutura e Integração</td>
+<td><code>const response = await request.post('/courses/schedules/', schedule, settingsWithAuth(access_token))</code></td>
+</tr>
+<tr>
+<td><code>web/app/utils/request.ts</code></td>
+<td style="text-align: right;">3</td>
+<td>Infraestrutura e Integração</td>
+<td><code>const request = axios.create({</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-falsos-positivos-excluidos">5. Falsos Positivos Excluídos<a class="headerlink" href="#5-falsos-positivos-excluidos" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Arquivo</th>
+<th style="text-align: right;">Linha</th>
+<th>Motivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>web/app/utils/api/deleteSchedule.ts</code></td>
+<td style="text-align: right;">4</td>
+<td>import/export/comment</td>
+</tr>
+<tr>
+<td><code>web/app/utils/api/generateSchedule.ts</code></td>
+<td style="text-align: right;">8</td>
+<td>import/export/comment</td>
+</tr>
+<tr>
+<td><code>web/app/utils/api/getSchedules.ts</code></td>
+<td style="text-align: right;">4</td>
+<td>import/export/comment</td>
+</tr>
+<tr>
+<td><code>web/app/utils/api/registerWithGoogle.ts</code></td>
+<td style="text-align: right;">5</td>
+<td>import/export/comment</td>
+</tr>
+<tr>
+<td><code>web/app/utils/api/retrieveYearAndPeriod.ts</code></td>
+<td style="text-align: right;">10</td>
+<td>import/export/comment</td>
+</tr>
+<tr>
+<td><code>web/app/utils/api/saveSchedule.ts</code></td>
+<td style="text-align: right;">6</td>
+<td>import/export/comment</td>
+</tr>
+<tr>
+<td><code>web/app/utils/api/searchDiscipline.ts</code></td>
+<td style="text-align: right;">24</td>
+<td>import/export/comment</td>
+</tr>
+<tr>
+<td><code>web/app/utils/retrieveAccessToken.ts</code></td>
+<td style="text-align: right;">1</td>
+<td>import/export/comment</td>
+</tr>
+<tr>
+<td><code>web/app/utils/signInWithGoogle.ts</code></td>
+<td style="text-align: right;">3</td>
+<td>import/export/comment</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "content.code.copy", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

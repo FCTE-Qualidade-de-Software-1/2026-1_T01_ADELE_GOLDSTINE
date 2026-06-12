@@ -16,7 +16,7 @@
         <link rel="prev" href="../fase4/">
       
       
-        <link rel="next" href="../manutenibilidade/">
+        <link rel="next" href="../m2_1_registro/">
       
       
         
@@ -1173,6 +1173,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../m2_1_registro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Registro da Metrica 2.1 - confiabilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../manutenibilidade/" class="md-nav__link">
         
   
@@ -1513,7 +1541,7 @@
 <p>Com o valor obtido de <strong>MTBF = 1,45 minutos</strong>, dentro do intervalo de 1 a 4 minutos, a métrica M1.1 é classificada como <strong>Regular</strong>. O resultado indica que, sob uso normal, o sistema apresentou falhas em uma frequência que compromete parcialmente a estabilidade percebida pelos usuários finais, embora não no nível mais crítico da escala.</p>
 <h2 id="2-metrica-m21-percentual-de-operacoes-criticas-com-tratamento-de-excecao">2. Métrica M2.1 — Percentual de operações críticas com tratamento de exceção<a class="headerlink" href="#2-metrica-m21-percentual-de-operacoes-criticas-com-tratamento-de-excecao" title="Permanent link">&para;</a></h2>
 <h3 id="21-descricao-da-medicao">2.1 Descrição da medição<a class="headerlink" href="#21-descricao-da-medicao" title="Permanent link">&para;</a></h3>
-<p>A medição da métrica M2.1 foi realizada por meio de um script Python que percorreu o código-fonte do repositório <code>2023-2-SuaGradeUnB</code>, identificando as operações críticas previamente definidas na Fase 3 (conexão/consulta ao banco de dados, manipulação de arquivos, <em>web scraping</em> do SIGAA e autenticação/autorização de usuários) e verificando se cada ocorrência está protegida por um bloco de tratamento de exceção (<code>try/except</code> no backend Python ou <code>try/catch</code> no frontend TypeScript). O registro completo da medição, com o detalhamento de cada ocorrência por arquivo e linha, está disponível em <code>m2_1_registro.md</code>.</p>
+<p>A medição da métrica M2.1 foi realizada por meio de um script Python que percorreu o código-fonte do repositório <code>2023-2-SuaGradeUnB</code>, identificando as operações críticas previamente definidas na Fase 3 (conexão/consulta ao banco de dados, manipulação de arquivos, <em>web scraping</em> do SIGAA e autenticação/autorização de usuários) e verificando se cada ocorrência está protegida por um bloco de tratamento de exceção (<code>try/except</code> no backend Python ou <code>try/catch</code> no frontend TypeScript). O registro completo da medição, com o detalhamento de cada ocorrência por arquivo e linha, está disponível em <a href="../m2_1_registro/">Registro da metrica M2.1 - Confiabilidade</a></p>
 <p>O escopo analisado foi:</p>
 <ul>
 <li><strong>Backend:</strong> diretório <code>api/</code> (excluindo <em>migrations</em> e testes);</li>
