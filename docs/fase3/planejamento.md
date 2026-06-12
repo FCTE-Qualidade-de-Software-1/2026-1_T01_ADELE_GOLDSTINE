@@ -135,8 +135,8 @@ Essa sessão de uso serve para medir o **MTBF** (*Mean Time Between Failures*, o
 
 **M3.1 — Tempo médio para realizar uma alteração**
 
-1. Definir o período de coleta (ex.: as *issues* trabalhadas no último marco do projeto).
-2. Para cada *issue*, medir o **tempo de ciclo** entre a transição "Em Andamento" → "Concluída" no GitHub Projects; cruzar com as datas dos *commits* relacionados via `git log` para validar a data efetiva de conclusão.
+1. Adotar uma **abordagem longitudinal** para o período de coleta: selecionar amostras de *issues* distribuídas ao longo de diferentes fases do ciclo de vida do software, evitando o viés de complexidade de um único sprint isolado.
+2. Para cada *issue*, medir o **tempo de ciclo** entre a transição "Em Andamento" → "Concluída" no GitHub Projects; cruzar com as datas dos *commits* relacionados via `git log` para validar a data efetiva de conclusão do código.
 3. Calcular `(soma dos tempos de alteração / número de alterações)` em horas.
 
 **M4.1 — Cobertura de testes**
