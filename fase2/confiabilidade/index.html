@@ -1337,7 +1337,7 @@
 </div>
 
 <div align="center">
-  <font size="4"><figcaption>Tabela 1: Objetivo de Medição: Confiabilidade</figcaption></font>
+  <font size="4"><figcaption>Tabela 2.1: Objetivo de Medição: Confiabilidade</figcaption></font>
 </div>
 
 <hr />
@@ -1364,13 +1364,11 @@
 <h3 id="selecao-das-metricas">Seleção das Métricas<a class="headerlink" href="#selecao-das-metricas" title="Permanent link">&para;</a></h3>
 <p><strong>Questão 1: Maturidade</strong></p>
 <ul>
-<li>
-<p><strong>Métrica 1.1: Tempo Médio Entre Falhas (Mean time between failures - MTBF)</strong></p>
-<ul>
-<li><strong>Definição:</strong> Tempo decorrido de sessão de uso controlado do sistemas dividido pelo número de falhas detectadas durante essa sessão de uso. Neste contexto, a "falhas" referen-se à eventos que impessam ou atrapalhem o uso do sistema por parte do usuário, como falhas de autenticação, falhas de carregamento das páginas, problemas para exportar os arquivos gerados e outras falhas da mesma natureza.  </li>
+<li><strong>Métrica 1.1: Tempo Médio Entre Falhas (Mean time between failures - MTBF)</strong></li>
+<li><strong>Definição:</strong> Tempo decorrido de sessão de uso controlado do sistemas dividido pelo número de falhas detectadas durante essa sessão de uso. Neste contexto, a "falhas" referen-se à eventos que impessam ou atrapalhem o uso do sistema por parte do usuário, como falhas de autenticação, falhas de carregamento das páginas, problemas para exportar os arquivos gerados e outras falhas da mesma natureza.</li>
 <li><strong>Fórmula:</strong> <code>(Tempo da sessão de uso em minutos) / (quantidade de falhas identificadas)</code></li>
 <li>
-<p><strong>Coleta:</strong> </p>
+<p><strong>Coleta:</strong></p>
 <ol>
 <li>Iniciar uma sessão de uso com usuários finais;</li>
 <li>Incrementar 1 em um contador iniciado em 0 a cada falha encontrado pelos usuários;</li>
@@ -1379,7 +1377,7 @@
 </ol>
 </li>
 <li>
-<p><strong>Pontuação de Julgamento:</strong> </p>
+<p><strong>Pontuação de Julgamento:</strong></p>
 </li>
 </ul>
 <table>
@@ -1398,32 +1396,27 @@
 <td style="text-align: center;">MTBF entre 1 e 4 minutos</td>
 <td style="text-align: center;">MTBF &lt; 1 hora</td>
 </tr>
+<tr>
+<td style="text-align: center;">- <strong>Propósito:</strong> Avaliar o nível de estabilidade alcançado pelo produto sob a perspectiva dos usuários finais.</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
 </tbody>
 </table>
-<ul>
-<li><strong>Propósito:</strong> Avaliar o nível de estabilidade alcançado pelo produto sob a perspectiva dos usuários finais.</li>
-</ul>
-</li>
-</ul>
 <p><strong>Questão 2: Tolerância a falhas</strong></p>
 <ul>
-<li>
-<p><strong>Métrica 2.1: Percentual de operações críticas tratadas com exceções.</strong></p>
-<ul>
+<li><strong>Métrica 2.1: Percentual de operações críticas tratadas com exceções.</strong></li>
 <li><strong>Definição:</strong> Percentual de operações críticas que estão contidas dentro de um bloco de exceções (<code>try-catch</code>) para os módulos de Backend e Frontend (conforme detalhados na Fase 1 - Contexto da Avaliação).</li>
 <li><strong>Fórmula:</strong> <code>(Número de operações críticas com try-catch / Número total de operações críticas) * 100</code></li>
-<li>
-<p><strong>Coleta:</strong> </p>
-<ol>
+<li><strong>Coleta:</strong><ol>
 <li>Definir a lista de "operações críticas": chamadas de função/método para conexão com banco de dados, manipulação de arquivos, manipulação de dados do web scraping, autenticação e autorização.</li>
 <li>Em <strong>todo o código-fonte do projeto</strong>, contar o número total de ocorrências dessas operações.</li>
 <li>Contar quantas dessas ocorrências estão sintaticamente dentro de um bloco <code>try { ... }</code>.</li>
 <li>Aplicar a fórmula acima.</li>
 </ol>
 </li>
-<li>
-<p><strong>Pontuação de Julgamento:</strong> </p>
-</li>
+<li><strong>Pontuação de Julgamento:</strong></li>
 </ul>
 <table>
 <thead>
@@ -1441,13 +1434,14 @@
 <td style="text-align: center;">40%–69%</td>
 <td style="text-align: center;">&lt; 40%</td>
 </tr>
+<tr>
+<td style="text-align: center;">- <strong>Propósito:</strong> Medir a robustez do código contra erros em tempo de execução.</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
 </tbody>
 </table>
-<ul>
-<li><strong>Propósito:</strong> Medir a robustez do código contra erros em tempo de execução.</li>
-</ul>
-</li>
-</ul>
 <h3 id="criterios-para-julgamento">Critérios para Julgamento<a class="headerlink" href="#criterios-para-julgamento" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Aceitável:</strong> ≥ 70% das métricas classificadas como "Bom" ou "Excelente". O sistema demonstra robustez e previsibilidade.</li>
@@ -1484,7 +1478,7 @@
   </table>
 
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 2: Questões e Métricas Simplificadas</figcaption></font>
+    <font size="4"><figcaption>Tabela 2.2: Questões e Métricas Simplificadas</figcaption></font>
   </div>
 </div>
 
@@ -1492,7 +1486,7 @@
 <h3 id="diagrama-gqm-confiabilidade-representacao-estrutural">Diagrama GQM - Confiabilidade (Representação Estrutural)<a class="headerlink" href="#diagrama-gqm-confiabilidade-representacao-estrutural" title="Permanent link">&para;</a></h3>
 <p><img alt="Confiabilidade (Representação Estrutural)" src="../../assets/confiabilidade.png" /></p>
 <div align="center">
-  <font size="3"><figcaption>Figura 2: Confiabilidade (Representação Estrutural)</figcaption></font>
+  <font size="3"><figcaption>Figura 2.2: Confiabilidade (Representação Estrutural)</figcaption></font>
 </div>
 
 <h2 id="historico-de-versao">Histórico de Versão<a class="headerlink" href="#historico-de-versao" title="Permanent link">&para;</a></h2>
