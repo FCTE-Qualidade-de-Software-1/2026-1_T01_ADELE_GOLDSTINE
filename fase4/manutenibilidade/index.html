@@ -2033,7 +2033,7 @@ Tabela de Pontuação de Julgamento disponível em <a href="../../fase2/manuteni
       <td><code>schedule_generator.py</code></td>
       <td><code>logger.info()</code></td>
       <td>❌ Não</td>
-      <td>Excelente lógica, mas sem instrumentação de logger para volumetria.</td>
+      <td>Sem instrumentação de logger para volumetria.</td>
     </tr>
     <tr>
       <td><b>Regras de negócio e BD</b></td>
@@ -2078,7 +2078,7 @@ Tabela de Pontuação de Julgamento disponível em <a href="../../fase2/manuteni
       <td><code>web_scraping.py</code></td>
       <td><code>logger.error()</code></td>
       <td>❌ Não</td>
-      <td>Instabilidades no SIGAA causarão quebras não monitoradas.</td>
+      <td>Instabilidades no SIGAA causarão falhas não monitoradas.</td>
     </tr>
     <tr>
       <td><b>Web Scraping</b></td>
@@ -2194,7 +2194,7 @@ Tabela de Pontuação de Julgamento disponível em <a href="../../fase2/manuteni
 </ul>
 <p><strong>Análise do Resultado:</strong>
 O sistema <em>Sua Grade UnB</em> apresenta um tempo médio efetivo de alteração de código de <strong>36 horas</strong>. Ao confrontar este valor com a tabela de julgamento, a classificação técnica recai sobre o nível <strong>INSATISFATÓRIO</strong> (&gt;10 horas).</p>
-<p>Embora o cálculo numérico indique um tempo de alteração acima do teto de 10 horas, a auditoria cruzada com os <em>Pull Requests</em> revela um cenário de excelência arquitetural escondido pelos dados. Das 6 alterações inspecionadas, 5 foram finalizadas em menos de 24 horas (frequentemente no mesmo dia). A arquitetura do sistema prova ser modular, limpa e altamente ágil, permitindo lidar com bugs e novas features quase instantaneamente.</p>
+<p>Embora o cálculo numérico indique um tempo de alteração acima do teto de 10 horas, a auditoria cruzada com os <em>Pull Requests</em> revela um cenário de alto nível arquitetural não totalmente refletido pelos dados. Das 6 alterações inspecionadas, 5 foram finalizadas em menos de 24 horas (frequentemente no mesmo dia). A arquitetura do sistema prova ser modular, limpa e ágil, permitindo lidar com bugs e novas features de forma rápida.</p>
 <div align="center">
   <table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; text-align: center; vertical-align: middle;">
     <tr>
@@ -2240,7 +2240,7 @@ Tabela de Pontuação de Julgamento disponível em <a href="../../fase2/manuteni
 <li><strong>Veredito Atual:</strong> Bom (80,8% de cobertura de cenários)</li>
 </ul>
 <p>Por um lado, o <strong>Backend</strong> possui uma suíte robusta e bem estruturada de testes funcionais e de integração. Ela valida com eficácia as regras de negócio complexas, o algoritmo de geração de grades e os modelos de persistência, oferecendo excelente proteção contra regressões de código. </p>
-<p>Por outro lado, o <strong>Frontend</strong> opera em um cenário de <strong>blindagem zero (0%)</strong>, gerando um ponto cego crítico na validação da interface, gerenciamento de estados locais e interações do usuário. Esse desbalanceamento impede que o sistema atinja a excelência, evidenciando a necessidade imediata de instrumentar o Next.js com ferramentas como <em>Jest</em>, <em>React Testing Library</em> ou <em>Cypress</em>.</p>
+<p>Por outro lado, o <strong>Frontend</strong> opera em um cenário de blindagem zero (0%), gerando um ponto cego crítico na validação da interface, gerenciamento de estados locais e interações do usuário. Esse desbalanceamento impede que o sistema atinja um nível mais alto de qualidade, evidenciando a necessidade imediata de instrumentar o Next.js com ferramentas como <em>Jest</em>, <em>React Testing Library</em> ou <em>Cypress</em>.</p>
 <p><strong>Cobertura Estrutural vs. Funcional:</strong>
 É crucial diferenciar a cobertura de <strong>cenários macro</strong> (os 80,8% calculados acima) da cobertura <strong>estrutural de linhas de código</strong> (<em>Statement Coverage</em>) gerada pela ferramenta nativa <code>coverage report</code>, que acusou um índice global de <strong>32%</strong> sobre as 1.916 instruções do backend. 
 </br>
@@ -2271,7 +2271,7 @@ Tabela de Pontuação de Julgamento disponível em <a href="../../fase2/manuteni
 <p>A auditoria de Manutenibilidade e Testabilidade da arquitetura do sistema <strong>SuaGradeUnB</strong> (Backend em Django e Frontend em Next.js) revelou um projeto com bases sólidas, mas com oportunidades claras de evolução na garantia de qualidade da interface.</p>
 <h3 id="51-pontos-fortes">5.1 - Pontos Fortes<a class="headerlink" href="#51-pontos-fortes" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Testabilidade do Backend:</strong> A suíte de testes do Django é robusta e bem consolidada, contando com <strong>casos de teste automatizados</strong>. Isso garante uma excelente proteção contra regressões nas regras de negócio, algoritmos de geração de grade e integrações com o banco de dados.</li>
+<li><strong>Testabilidade do Backend:</strong> A suíte de testes do Django é robusta e bem consolidada, contando com <strong>casos de teste automatizados</strong>. Isso garante uma ótima proteção contra regressões nas regras de negócio, algoritmos de geração de grade e integrações com o banco de dados.</li>
 <li><strong>Tempo de Ciclo e Resolução:</strong> A equipa apresenta grande agilidade na correção de bugs e manutenções corretivas/evolutivas. A análise de rastreamento (Issues) demonstrou um tempo de ciclo muito eficiente, com a grande maioria das tarefas resolvidas em até <strong>24 horas</strong>.</li>
 <li><strong>Rastreabilidade de Eventos:</strong> O mapeamento de metadados e logs cobre 12 operações vitais do sistema (divididas em 4 domínios), garantindo um monitoramento adequado para auditoria e resolução de falhas em ambiente de produção.</li>
 </ul>
@@ -2282,7 +2282,7 @@ Tabela de Pontuação de Julgamento disponível em <a href="../../fase2/manuteni
 </ul>
 <h3 id="53-parecer-tecnico-final">5.3 - Parecer Técnico Final<a class="headerlink" href="#53-parecer-tecnico-final" title="Permanent link">&para;</a></h3>
 <p>O nível de qualidade arquitetural geral do sistema é avaliado como <strong>Bom</strong>. A aplicação demonstra maturidade na gestão de dados no lado do servidor, suportada por uma equipa com processos ágeis de manutenção e monitorização. </p>
-<p>Para que o projeto alcance a faixa de <em>Excelência</em>, a recomendação técnica prioritária é o balanceamento da suíte de testes através da introdução de um framework de testes no Frontend (como Jest ou Cypress). A cobertura inicial dos fluxos críticos de navegação (caminhos felizes da interface) será suficiente para mitigar o principal risco de manutenibilidade encontrado nesta auditoria.</p>
+<p>Para que o projeto alcance o nível mais alto de qualidade, a recomendação técnica prioritária é o balanceamento da suíte de testes através da introdução de um framework de testes no Frontend (como Jest ou Cypress). A cobertura inicial dos fluxos críticos de navegação será suficiente para mitigar o principal risco de manutenibilidade encontrado nesta auditoria.</p>
 <hr />
 <h2 id="historico-de-versao">Histórico de Versão<a class="headerlink" href="#historico-de-versao" title="Permanent link">&para;</a></h2>
 <table>
@@ -2306,6 +2306,12 @@ Tabela de Pontuação de Julgamento disponível em <a href="../../fase2/manuteni
 <td style="text-align: left;">2026-06-23</td>
 <td style="text-align: left;">Adição dos testes</td>
 <td style="text-align: left;">Anne de Capdeville</td>
+</tr>
+<tr>
+<td style="text-align: center;">3.0</td>
+<td style="text-align: left;">2026-06-23</td>
+<td style="text-align: left;">Ajuste de tom</td>
+<td style="text-align: left;">Caio Rocha</td>
 </tr>
 </tbody>
 </table>
