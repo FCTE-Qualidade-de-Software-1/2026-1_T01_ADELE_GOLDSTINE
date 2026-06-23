@@ -149,12 +149,6 @@ Para alcançar o objetivo de medição para a característica de Confiabilidade,
   <font size="3"><figcaption>Figura 2: Confiabilidade (Representação Estrutural)</figcaption></font>
 </div>
 
-## Bibliografia
-
-> BRITISH STANDARDS INSTITUTION. BS ISO/IEC 25010: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Londres, 2011.
-
-> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. ISO/IEC WD 25023: Systems and software engineering – Systems and software Quality Requirements and Evaluation (SQuaRE) – Measurement of system and software product quality. Esboço de Trabalho (Working Draft). Editado por Motoei Azuma e KeumSuk Lee. Genebra, 2011.
-
 ## Histórico de Versão
 
 | Versão | Data       | Descrição                  | Autor(es) |

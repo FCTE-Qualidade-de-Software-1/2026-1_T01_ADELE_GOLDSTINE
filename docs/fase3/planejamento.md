@@ -238,12 +238,6 @@ O cronograma abaixo organiza a execução da Fase 4, distribuindo as atividades 
 
 ---
 
-## Bibliografia
-
-- ISO/IEC 25040:2011 — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Evaluation process*. Genebra: ISO, 2011.
-- ISO/IEC 25010:2011 — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models*. Genebra: ISO, 2011.
-- RAMOS, Cristiane Soares. **Processo de Avaliação de Produto de Software**. Slides da disciplina Qualidade de Software 1, Faculdade de Ciências e Tecnologias em Engenharia (FCTE), Universidade de Brasília, 2025/2.
-
 ## Histórico de Versão
 
 | Versão | Data       | Descrição                          | Autor(es) |

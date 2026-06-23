@@ -103,11 +103,6 @@ As características de qualidade de software escolhidas para plano foram a **Con
 **Manutenibilidade**: Assegurar a qualidade da base de código visando futuras operações de manutenção, contribuição e evolução.
 
 
-## Bibliografia
-
-- ISO/IEC 25010:2011 — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models*. ISO, 2011.
-
-
 ## Histórico de Versão
 
 | Versão | Data       | Descrição                  | Autor(es) |
