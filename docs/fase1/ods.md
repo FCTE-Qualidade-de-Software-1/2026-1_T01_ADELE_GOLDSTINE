@@ -23,12 +23,6 @@ As descrições, metas e indicadores foram retiradas do site [https://www.ipea.g
     - Relação com o projeto: O SuaGradeUnB é um projeto de código aberto, o que permite que muitos estudantes utilizem o projeto como objeto de estudo pessoal ou acadêmico.
 
 
-
-## Bibliografia
-
-- INSTITUTO DE PESQUISA ECONÔMICA APLICADA (Ipea). ODS 4 - Educação de Qualidade. Disponível em: [https://www.ipea.gov.br/ods/ods4.html](https://www.ipea.gov.br/ods/ods4.html). Acesso em: 13 mai. 2026.
-
-
 ## Histórico de Versão
 
 | Versão | Data       | Descrição                  | Autor(es) |
