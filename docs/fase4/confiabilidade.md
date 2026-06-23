@@ -287,11 +287,6 @@ Há, portanto, uma sobreposição entre os critérios "Parcialmente aceitável" 
 
 Recomenda-se priorizar, como ações corretivas, (i) a correção dos defeitos identificados durante a sessão de uso — em especial o bug de autenticação relacionado à troca de conta Google, classificado com impacto médio — e (ii) a ampliação da cobertura de blocos de tratamento de exceção nas operações críticas, sobretudo nas categorias de *Web Scraping* SIGAA e Regras de Negócio/Banco de Dados, que apresentaram as menores porcentagens de cobertura (12,5% e 15,9%, respectivamente).
 
-## Bibliografia
-
-- ISO/IEC 25010:2011 — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models*. Genebra: ISO, 2011.
-- ISO/IEC 25040:2011 — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Evaluation process*. Genebra: ISO, 2011.
-
 ## Histórico de Versão
 
 | Versão | Data       | Descrição                                          | Autor(es) |

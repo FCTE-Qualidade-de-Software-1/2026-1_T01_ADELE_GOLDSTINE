@@ -10,10 +10,6 @@ Os resultados são agrupados por característica de qualidade:
 
 Cada seção de métrica apresentará as evidências da coleta, a classificação obtida com base nos critérios do GQM e uma análise crítica dos resultados encontrados.
 
-## Bibliografia
-
-- ISO/IEC 25010:2011 — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models*. ISO, 2011.
-
 
 ## Histórico de Versão
 
