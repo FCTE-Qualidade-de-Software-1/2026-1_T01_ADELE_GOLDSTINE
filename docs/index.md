@@ -65,6 +65,10 @@ Adele Goldstine (1920–1964) foi uma matemática e cientista da computação am
 | 232013980    | Gabriel Magioli | 16,67%  |
 | 222025914    | Marllon Cardoso | 16,67%  |
 
+<div align="center">
+  <font size="3"><figcaption>Tabela 0.3: Tabela de contribuição</figcaption></font>
+</div>
+
 ## Bibliografia
 
 > BRITISH STANDARDS INSTITUTION. BS ISO/IEC 25010: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Londres, 2011.
