@@ -61,7 +61,7 @@ Para alcançar o objetivo de medição para a característica de Confiabilidade,
 **Questão 1: Maturidade**
 
 * **Métrica 1.1: Tempo Médio Entre Falhas (Mean time between failures - MTBF)**
-    * **Definição:** Tempo decorrido de sessão de uso controlado do sistemas dividido pelo número de falhas detectadas durante essa sessão de uso.
+    * **Definição:** Tempo decorrido de sessão de uso controlado do sistemas dividido pelo número de falhas detectadas durante essa sessão de uso. Neste contexto, a "falhas" referen-se à eventos que impessam ou atrapalhem o uso do sistema por parte do usuário, como falhas de autenticação, falhas de carregamento das páginas, problemas para exportar os arquivos gerados e outras falhas da mesma natureza.  
     * **Fórmula:** `(Tempo da sessão de uso em minutos) / (quantidade de falhas identificadas)`
     * **Coleta:** 
         1. Iniciar uma sessão de uso com usuários finais;
@@ -81,7 +81,7 @@ Para alcançar o objetivo de medição para a característica de Confiabilidade,
 **Questão 2: Tolerância a falhas**
 
 * **Métrica 2.1: Percentual de operações críticas tratadas com exceções.**
-    * **Definição:** Percentual de operações críticas que estão contidas dentro de um bloco de exceções (`try-catch`).
+    * **Definição:** Percentual de operações críticas que estão contidas dentro de um bloco de exceções (`try-catch`) para os módulos de Backend e Frontend (conforme detalhados na Fase 1 - Contexto da Avaliação).
     * **Fórmula:** `(Número de operações críticas com try-catch / Número total de operações críticas) * 100`
     * **Coleta:** 
         1. Definir a lista de "operações críticas": chamadas de função/método para conexão com banco de dados, manipulação de arquivos, manipulação de dados do web scraping, autenticação e autorização.
@@ -153,4 +153,6 @@ Para alcançar o objetivo de medição para a característica de Confiabilidade,
 
 | Versão | Data       | Descrição                  | Autor(es) |
 |:------:|:-----------|:---------------------------|:----------|
-| `1.0`  | 11/06/2026 | Adição do documento de conclusão da Fase 2 e da tabela de histórico de versão.                                              | [Marllon Cardoso](https://github.com/m4rllon)             | [Ana Borges](https://github.com/anabborges) |
+| `1.0`  | 11/06/2026 | Adição do documento de conclusão da Fase 2 e da tabela de histórico de versão.                                              | [Marllon Cardoso](https://github.com/m4rllon)             |
+| `1.1`    | 2026-06-23 | Alteração no diagrama de relação entre confiabilidade, Perguntas e Métricas | [Marllon Cardoso](https://github.com/m4rllon)     |
+

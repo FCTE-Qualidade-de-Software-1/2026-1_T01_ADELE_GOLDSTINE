@@ -66,7 +66,7 @@ Para alcançar o objetivo de medição para a característica de Manutenibilidad
 **Questão 1: Modularidade**
 
 * **Métrica 1.1: Nível de independência dos componentes**
-    * **Definição:** Quantidade de componentes que não dependem de outros dividido pela quantidade de componentes do sistema.
+    * **Definição:** Quantidade de componentes que não dependem de outros dividido pela quantidade de componentes do sistema. Essa avaliação será feita para os módulos de Backend e Frontend (conforme detalhados na Fase 1 - Contexto da Avaliação)
     * **Fórmula:** `(quantidade de componentes do sistema independentes) / (quantidade de componentes do sistema)`
     * **Coleta:** 
         1. Calcular as classes ou módulos do sistema;
@@ -84,7 +84,7 @@ Para alcançar o objetivo de medição para a característica de Manutenibilidad
 **Questão 2: Analisabilidade**
 
 * **Métrica 2.1: Nível de qualidade dos logs do sistema**
-    * **Definição:** Quantidade de eventos, logs ou passos que o sistema efetivamente grava em produção enquanto roda dividido pela quantidade de dados planejados para serem registrados que seriam suficientes para monitorar o status do sistema/software durante a operação.
+    * **Definição:** Quantidade de eventos, logs ou passos que o sistema efetivamente grava em produção enquanto roda dividido pela quantidade de dados planejados para serem registrados que seriam suficientes para monitorar o status do sistema/software durante a operação. Essa avaliação será feita para os módulos de Backend, Web Scraping e Frontend (conforme detalhados na Fase 1 - Contexto da Avaliação)
     * **Fórmula:** `(quantidade de dados realmente registrados durante a operação) / (quantidade de dados planejados para serem registrados que seriam suficientes para monitorar o status do sistema/software durante a operação)`
     * **Coleta:** 
         1. Mapeamento de operações críticas;
@@ -103,7 +103,7 @@ Para alcançar o objetivo de medição para a característica de Manutenibilidad
 **Questão 3: Modificabilidade**
 
 * **Métrica 3.1: Média do tempo gasto para fazer uma alteração**
-    * **Definição:** Soma do tempo gasto para fazer alterações dividido pela quantidade de alterações
+    * **Definição:** Soma do tempo gasto para fazer alterações dividido pela quantidade de alterações.
     * **Fórmula:** `(soma do tempo gasto para fazer alterações) / (quantidade de alterações realizadas)`
     * **Coleta:** 
         1. Escolha de um período para a coleta de dados;
@@ -122,7 +122,7 @@ Para alcançar o objetivo de medição para a característica de Manutenibilidad
 **Questão 4: Testabilidade**
 
 * **Métrica 4.1: Porcentagem de cobertura de testes**
-    * **Definição:** Quantidade de testes automatizados escritos dividida pela quantidade de cenários de teste que deveriam ter sido escritos.
+    * **Definição:** Quantidade de testes automatizados escritos dividida pela quantidade de cenários de teste que deveriam ter sido escritos. Essa avaliação será feita para os módulos de Backend, Web Scraping e Frontend (conforme detalhados na Fase 1 - Contexto da Avaliação)
     * **Fórmula:** `(quantidade de testes automatizados escritos) / (quantidade de cenários de teste que deveriam ter sido escritos)`
     * **Coleta:** 
         1. Rodar a suíte de testes para descobrir quantos casos de teste foram criados;
@@ -137,9 +137,21 @@ Para alcançar o objetivo de medição para a característica de Manutenibilidad
 
     * **Propósito:** Avaliar o nível da cobertura de testes do sistema.
 
+---
+
+
+### Relação entre Manutenibilidade, Perguntas e Métricas
+
+![Manutenabilidade (Representação Estrutural)](../assets/manutenabilidade.png)
+<div align="center">
+  <font size="3"><figcaption>Figura 3: Manutenabilidade (Representação Estrutural)</figcaption></font>
+</div>
+---
+
 ## Histórico de Versão
 
 | Versão | Data       | Descrição                  | Autor(es) |
 |:------:|:-----------|:---------------------------|:----------|
 | 0.1    | 2026-06-09 | Criação inicial da página  | Ana Clara Borges     |
 | 1.0    | 2026-06-12 | Adição de referências  | Ana Clara Borges     |
+| 1.1    | 2026-06-23 | Adição o diagrama de relação entre Manutenibilidade, Perguntas e Métricas | Marllon Cardoso     |
