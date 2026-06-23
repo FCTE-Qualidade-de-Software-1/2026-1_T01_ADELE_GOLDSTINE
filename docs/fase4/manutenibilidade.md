@@ -76,7 +76,7 @@ A análise de dependências do backend foi definida como sendo:
 Utilizando o Pydeps foi gerado um grafo de dependências para verificar as dependências do backend.
 
 <figure markdown="span">
-  ![pydeps](../assets/pydeps_backend.png){ width="200" }
+  ![pydeps](../assets/pydeps_backend.png){ width="600" }
   <figcaption>Figura 1 — Grafo de dependências Backend.</figcaption>
 </figure>
 

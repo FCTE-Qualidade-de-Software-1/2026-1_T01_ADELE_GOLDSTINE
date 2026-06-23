@@ -1,6 +1,6 @@
 # Avaliação — Confiabilidade
 
-Esta página apresenta os resultados da **Fase 4 — Execução da Avaliação** referentes à característica de qualidade **Confiabilidade**, avaliada segundo o modelo de qualidade SQuaRE e a norma ISO/IEC 25010:2011. As métricas executadas nesta fase — M1.1 (Tempo Médio Entre Falhas) e M2.1 (Percentual de operações críticas com tratamento de exceção) — foram planejadas na Fase 3 e seguem o método, os recursos e o roteiro lá definidos.
+Esta página apresenta os resultados da **Fase 4 — Execução da Avaliação** referentes à característica de qualidade **Confiabilidade**, avaliada segundo o modelo de qualidade SQuaRE e a norma ISO/IEC 25010:2011. As métricas executadas nesta fase — M1.1 (Tempo Médio Entre Falhas) e M2.1 (Percentual de operações críticas com tratamento de exceção) — foram planejadas na [Fase 3](../fase3/planejamento.md) e seguem o método, os recursos e o roteiro lá definidos.
 
 ## 1. Métrica M1.1 — Tempo Médio Entre Falhas (MTBF)
 

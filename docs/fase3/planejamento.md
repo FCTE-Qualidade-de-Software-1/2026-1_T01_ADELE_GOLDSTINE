@@ -1,8 +1,8 @@
 # Planejamento da Avaliação
 
-Avaliar a **Confiabilidade** e a **Manutenibilidade** do sistema *Sua Grade UnB*, com base no plano de medição GQM (Goal-Question-Metric) definido na Fase 2. O objetivo é executar a coleta de dados de forma sistemática para identificar pontos de vulnerabilidade, débito técnico e riscos operacionais, validando as hipóteses formuladas.
+Avaliar a [Confiabilidade](../fase2/confiabilidade.md) e a [Manutenibilidade](../fase2/manutenibilidade.md) do sistema *Sua Grade UnB*, com base no plano de medição GQM (Goal-Question-Metric) definido na [Fase 2](../fase2/introducao.md). O objetivo é executar a coleta de dados de forma sistemática para identificar pontos de vulnerabilidade, débito técnico e riscos operacionais, validando as hipóteses formuladas.
 
-Esta fase organiza *como* as medições especificadas na Fase 2 serão obtidas na prática, documentando o método, os recursos e o cronograma necessários para que a coleta seja feita de forma padronizada e repetível na Fase 4.
+Esta fase organiza *como* as medições especificadas na [Fase 2](../fase2/introducao.md) serão obtidas na prática, documentando o método, os recursos e o cronograma necessários para que a coleta seja feita de forma padronizada e repetível na Fase 4.
 
 ---
 
@@ -38,7 +38,7 @@ Esta fase organiza *como* as medições especificadas na Fase 2 serão obtidas n
 
 ### Método de Avaliação
 
-Será utilizada uma abordagem mista (quantitativa e qualitativa) baseada no plano GQM. A coleta de dados combina ferramentas de análise estática de código, análise do histórico do repositório e inspeção manual de código para as métricas qualitativas. As medições automáticas garantem objetividade onde o dado é numérico (cobertura de testes, acoplamento, tratamento de exceções, logs), enquanto uma sessão de uso controlada com usuários cobre o que só a observação direta revela.
+Será utilizada uma abordagem mista (quantitativa e qualitativa) baseada no plano [GQM](../fase2/introducao.md). A coleta de dados combina ferramentas de análise estática de código, análise do histórico do repositório e inspeção manual de código para as métricas qualitativas. As medições automáticas garantem objetividade onde o dado é numérico (cobertura de testes, acoplamento, tratamento de exceções, logs), enquanto uma sessão de uso controlada com usuários cobre o que só a observação direta revela.
 
 Essa sessão de uso serve para medir o **MTBF** (*Mean Time Between Failures*, ou Tempo Médio Entre Falhas), um indicador de confiabilidade que expressa quanto tempo, em média, o sistema opera sob uso normal antes de apresentar uma falha. Quanto maior o MTBF, mais estável é o sistema. Esse é o foco da métrica M1.1 de Confiabilidade, detalhada na Seção 2.2.
 
