@@ -28,7 +28,7 @@
 </div>
 
 <div align="center">
-  <font size="4"><figcaption>Tabela 1: Objetivo de Medição: Manutenibilidade</figcaption></font>
+  <font size="4"><figcaption>Tabela 2.3: Objetivo de Medição: Manutenibilidade</figcaption></font>
 </div>
 
 ---
@@ -144,7 +144,7 @@ Para alcançar o objetivo de medição para a característica de Manutenibilidad
 
 ![Manutenabilidade (Representação Estrutural)](../assets/manutenabilidade.png)
 <div align="center">
-  <font size="3"><figcaption>Figura 3: Manutenabilidade (Representação Estrutural)</figcaption></font>
+  <font size="3"><figcaption>Figura 2.3: Manutenabilidade (Representação Estrutural)</figcaption></font>
 </div>
 ---
 

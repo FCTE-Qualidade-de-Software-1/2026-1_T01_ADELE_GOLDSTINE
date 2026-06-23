@@ -13,7 +13,7 @@ A metodologia GQM, desenvolvida por Victor Basili em 1994, foca na criação de 
 
 ![Niveis do GQM](../assets/gqm.png)
 <div align="center">
-  <font size="3"><figcaption>Figura 1: Estrutura do GQM</figcaption></font>
+  <font size="3"><figcaption>Figura 2.1: Estrutura do GQM</figcaption></font>
 </div>
 
 
