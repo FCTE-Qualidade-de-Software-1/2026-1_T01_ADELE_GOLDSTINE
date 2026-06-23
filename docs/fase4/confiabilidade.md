@@ -49,7 +49,7 @@ Durante a execução do roteiro, foram registradas **2 falhas**, conforme detalh
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 1 — Falhas observadas durante a sessão de uso.</figcaption></font>
+    <font size="4"><figcaption>Tabela 4.1 — Falhas observadas durante a sessão de uso.</figcaption></font>
   </div>
 </div>
 
@@ -93,7 +93,7 @@ MTBF = (tempo da sessão em minutos) / (número de falhas)
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 2 — Resultado consolidado da métrica M1.1.</figcaption></font>
+    <font size="4"><figcaption>Tabela 4.2 — Resultado consolidado da métrica M1.1.</figcaption></font>
   </div>
 </div>
 
@@ -117,7 +117,7 @@ A Fase 2 estabelece a seguinte faixa de pontuação para a métrica M1.1:
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 3 — Pontuação de julgamento da métrica M1.1 (Fase 2).</figcaption></font>
+    <font size="4"><figcaption>Tabela 4.3 — Pontuação de julgamento da métrica M1.1 (Fase 2).</figcaption></font>
   </div>
 </div>
 
@@ -164,7 +164,7 @@ O escopo analisado foi:
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 3 — Resultado consolidado da métrica M2.1.</figcaption></font>
+    <font size="4"><figcaption>Tabela 4.4 — Resultado consolidado da métrica M2.1.</figcaption></font>
   </div>
 </div>
 
@@ -215,7 +215,7 @@ M2.1 = (operações críticas com tratamento de exceção / total de operações
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 4 — Resultado da métrica M2.1 por categoria de operação crítica.</figcaption></font>
+    <font size="4"><figcaption>Tabela 4.5 — Resultado da métrica M2.1 por categoria de operação crítica.</figcaption></font>
   </div>
 </div>
 
@@ -241,7 +241,7 @@ A Fase 2 estabelece a seguinte faixa de pontuação para a métrica M2.1:
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 5 — Pontuação de julgamento da métrica M2.1 (Fase 2).</figcaption></font>
+    <font size="4"><figcaption>Tabela 4.6 — Pontuação de julgamento da métrica M2.1 (Fase 2).</figcaption></font>
   </div>
 </div>
 
@@ -274,7 +274,7 @@ A Fase 2 define os seguintes critérios para o julgamento geral da característi
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 6 — Resumo das classificações das métricas de Confiabilidade.</figcaption></font>
+    <font size="4"><figcaption>Tabela 4.7 — Resumo das classificações das métricas de Confiabilidade.</figcaption></font>
   </div>
 </div>
 

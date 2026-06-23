@@ -64,7 +64,7 @@ A análise de dependências do backend foi definida como sendo:
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 1: Análise do Backend.</figcaption></font>
+    <font size="4"><figcaption>Tabela 16: Análise do Backend.</figcaption></font>
   </div>
 </div>
 <div id="teste1" align="center">
@@ -122,7 +122,7 @@ Por fim, foi realizada uma análise de dependências do frontend, sendo elas:
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 2: Análise do Frontend.</figcaption></font>
+    <font size="4"><figcaption>Tabela 17: Análise do Frontend.</figcaption></font>
   </div>
 </div>
 
@@ -159,7 +159,7 @@ Classificação dos módulos do sistema, dividida entre Backend e Frontend, conf
     <tr><td><b>utils</b></td><td>Frontend</td><td>Dependente</td><td>Lógica de rede dependente de <code>contexts</code>.</td></tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 3: Classificação consolidada de Módulos.</figcaption></font>
+    <font size="4"><figcaption>Tabela 18: Classificação consolidada de Módulos.</figcaption></font>
   </div>
 </div>
 
@@ -193,7 +193,7 @@ Com **57,14%** de independência, o sistema encontra-se na **faixa Regular** de 
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 4: Faixa de julgamento (M1.1). </figcaption></font>
+    <font size="4"><figcaption>Tabela 19: Faixa de julgamento (M1.1). </figcaption></font>
   </div>
 </div>
 </br> 
@@ -356,7 +356,7 @@ O sistema foi auditado com base em 12 eventos críticos distribuídos por 4 dom�
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 5: Avaliação da instrumentação de logs no código.</figcaption></font>
+    <font size="4"><figcaption>Tabela 20: Avaliação da instrumentação de logs no código.</figcaption></font>
   </div>
 </div>
 <div id="teste4" align="center">
@@ -392,7 +392,7 @@ A pontuação de **0%** comprova que qualquer falha operacional, indisponibilida
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 6: Faixa de julgamento (M2.1).</figcaption></font>
+    <font size="4"><figcaption>Tabela 21: Faixa de julgamento (M2.1).</figcaption></font>
   </div>
 </div>
 </br> 
@@ -502,7 +502,7 @@ Embora o cálculo numérico indique um tempo de alteração acima do teto de 10 
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 7: Faixa de julgamento (M3.1).</figcaption></font>
+    <font size="4"><figcaption>Tabela 22: Faixa de julgamento (M3.1).</figcaption></font>
   </div>
 </div>
 </br> 
@@ -562,7 +562,7 @@ Essa divergência é arquiteturalmente justificada pela presença de módulos is
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 8: Faixa de julgamento (M4.1).</figcaption></font>
+    <font size="4"><figcaption>Tabela 23: Faixa de julgamento (M4.1).</figcaption></font>
   </div>
 </div>
 </br> 
