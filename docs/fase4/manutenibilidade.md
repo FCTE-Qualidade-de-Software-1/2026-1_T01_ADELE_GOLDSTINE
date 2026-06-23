@@ -67,14 +67,23 @@ A análise de dependências do backend foi definida como sendo:
     <font size="4"><figcaption>Tabela 1: Análise do Backend.</figcaption></font>
   </div>
 </div>
+<div id="teste1" align="center">
+  <iframe width="600" height="337" src="https://www.youtube.com/embed/ChSvvw5q9ak" title="Teste 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <p><i>Teste 1 - Análise do Backend verificando as dependências de cada arquivo.</i></p>
+</div>
 
 <br>
 Utilizando o Pydeps foi gerado um grafo de dependências para verificar as dependências do backend.
 
 <figure markdown="span">
-  ![pydeps](../assets/pydeps_backend.svg){ width="200" }
-  <figcaption>Figura 2 — Grafo de dependências Backend.</figcaption>
+  ![pydeps](../assets/pydeps_backend.png){ width="200" }
+  <figcaption>Figura 1 — Grafo de dependências Backend.</figcaption>
 </figure>
+
+<div id="teste2" align="center">
+  <iframe width="600" height="337" src="https://www.youtube.com/embed/ioh_x6cTBGg" title="Teste 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <p><i>Teste 2 - Análise do Backend com pydeps.</i></p>
+</div>
 
 </br>
 Por fim, foi realizada uma análise de dependências do frontend, sendo elas:
@@ -117,9 +126,14 @@ Por fim, foi realizada uma análise de dependências do frontend, sendo elas:
   </div>
 </div>
 
+<div id="teste3" align="center">
+  <iframe width="600" height="337" src="https://www.youtube.com/embed/myTkOkbw1Xo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <p><i>Teste 3 - Análise do Frontend através da ferramenta Madge, mostrando que os 5 módulos principais são dependentes.</i></p>
+</div>
+
 ### 1.3 - Classificação de componentes
 
-Classificação dos módulos do sistema, dividida entre Backend e Frontend, conforme análise estática de dependências.
+Classificação dos módulos do sistema, dividida entre Backend e Frontend, conforme análise estática de dependências. Foram utilizados os [testes 1](#teste1), [2](#teste2) e [3](#teste3) como base para essa análise.
 
 <div align="center">
   <table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; text-align: left; vertical-align: top;">
@@ -345,6 +359,10 @@ O sistema foi auditado com base em 12 eventos críticos distribuídos por 4 dom�
     <font size="4"><figcaption>Tabela 5: Avaliação da instrumentação de logs no código.</figcaption></font>
   </div>
 </div>
+<div id="teste4" align="center">
+  <iframe width="600" height="337" src="https://www.youtube.com/embed/DRwDNRXWkbA" title="Auditoria de Logs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <p><i>Teste 4 - Auditoria de Código provando a ausência de rastreabilidade (0%) nos 12 eventos críticos mapeados no Backend e Frontend.</i></p>
+</div>
 
 ### 2.3 - Cálculo Quantitativo da Métrica
 
@@ -450,6 +468,10 @@ Abaixo encontra-se o rastreamento refinado das 6 operações críticas:
 **Rastreamento:** Início: 24 Nov 2023 → Código Efetivo: 25 Nov 2023
 **Ciclo:** 24 horas
 
+<div id="teste5" align="center">
+  <iframe width="600" height="337" src="https://www.youtube.com/embed/1lB7tn4Qut8" title="Teste 5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <p><i>Teste 5 - Demonstração do tempo de ciclo (Modificabilidade) através da inspeção de commits no histórico do Git.</i></p>
+</div>
 
 ### 3.3 - Cálculo Final e Análise Qualitativa 
 A métrica é obtida através da soma dos tempos de alteração de código dividida pelo número total de alterações analisadas. Adotou-se o mínimo de 24 horas para resoluções no mesmo dia.
@@ -486,28 +508,43 @@ Embora o cálculo numérico indique um tempo de alteração acima do teto de 10 
 </br> 
 Tabela de Pontuação de Julgamento disponível em [Fase 2 - Medição da Manutenibilidade](../fase2/manutenibilidade.md).
 
----
 ## 4 - Métrica M4.1 — Cobertura de Testes (Testabilidade)
 
-A métrica de cobertura avalia a Testabilidade do sistema através da contagem de casos de teste automatizados existentes em relação aos cenários arquiteturais que deveriam estar mapeados, focando-se na validação funcional.
+A métrica de cobertura avalia a **Testabilidade** do sistema através do mapeamento de casos de teste automatizados em relação aos cenários arquiteturais e funcionais planejados, garantindo a confiabilidade das entregas.
 
 ### 4.1 - Verificação de Testes (Backend e Frontend)
 
-- Casos de teste encontrados no Backend (Django): **101** cenários automatizados.
-- Casos de teste encontrados no Frontend (Next.js): **0** cenários automatizados (ausência de script de testes).
-- Cenários que deveriam existir (Meta de Histórias): **125** cenários planeados (101 mapeados no backend + 24 fluxos críticos mínimos de interface no frontend).
+* **Casos de teste encontrados no Backend (Django):** 101 cenários automatizados.
+* **Casos de teste encontrados no Frontend (Next.js):** 0 cenários automatizados (ausência completa de scripts e suítes de teste).
+* **Cenários esperados (Meta de Histórias de Usuário):** 125 cenários planejados (101 mapeados no backend + 24 fluxos críticos mínimos de interface no frontend).
 
 ### 4.2 - Cálculo Quantitativo da Métrica
 
-A métrica é obtida cruzando o volume de testes funcionais escritos com o planeamento arquitetural de qualidade.
+A métrica funcional é obtida cruzando o volume de cenários de teste escritos com o planejamento arquitetural de qualidade:
 
-* **M4.1** = (Casos de teste automatizados escritos / Cenários que deveriam existir) × 100 = (101 / 125) × 100 = **80,8%**
+* **M4.1** = (Casos de Teste Automatizados Escritos ÷ Cenários Planejados) × 100 = (101 ÷ 125) × 100 = **80,8%**
 
-### 4.3 - Julgamento da Arquitetura e Veredito
+### 4.3 - Evidência de Execução da Suíte de Testes
 
-- Veredito Atual: **Bom (80,8%)**
+<div id="teste6" align="center">
+  <iframe width="600" height="337" src="https://www.youtube.com/embed/PkYRaDU3Yh4" title="Execução dos Testes e Cobertura" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <p><i>Teste 6 - Execução da suíte de testes do Django exibindo os 101 cenários automatizados e o relatório de cobertura de código (Coverage).</i></p>
+</div>
+
+### 4.4 - Julgamento da Arquitetura e Veredito
+
+* **Veredito Atual:** Bom (80,8% de cobertura de cenários)
+
+Por um lado, o **Backend** possui uma suíte robusta e bem estruturada de testes funcionais e de integração. Ela valida com eficácia as regras de negócio complexas, o algoritmo de geração de grades e os modelos de persistência, oferecendo excelente proteção contra regressões de código. 
+
+Por outro lado, o **Frontend** opera em um cenário de **blindagem zero (0%)**, gerando um ponto cego crítico na validação da interface, gerenciamento de estados locais e interações do usuário. Esse desbalanceamento impede que o sistema atinja a excelência, evidenciando a necessidade imediata de instrumentar o Next.js com ferramentas como *Jest*, *React Testing Library* ou *Cypress*.
+
+**Cobertura Estrutural vs. Funcional:**
+É crucial diferenciar a cobertura de **cenários macro** (os 80,8% calculados acima) da cobertura **estrutural de linhas de código** (*Statement Coverage*) gerada pela ferramenta nativa `coverage report`, que acusou um índice global de **32%** sobre as 1.916 instruções do backend. 
 </br>
-Por um lado, o **Backend** possui uma suíte robusta e excelente com testes automatizados, garantindo grande proteção contra regressões nas regras de negócio, geração de grades e integração com o banco de dados. Por outro lado, o **Frontend** opera sem nenhuma cobertura de testes (0 cenários), criando um ponto cego na validação de interface e interação do utilizador. Este desbalanceamento puxa a métrica global para a faixa "Bom", evidenciando a necessidade de implementação de testes no Next.js (com ferramentas como Jest ou Cypress) para atingir a excelência arquitetural.
+Essa divergência é arquiteturalmente justificada pela presença de módulos isolados de alta complexidade procedural, como o mecanismo de *Web Scraping* (`utils/web_scraping.py`), que apresenta apenas **1% de cobertura de linhas** por depender de conexões externas mockadas. Isso indica que, embora os fluxos principais e caminhos felizes do sistema estejam validados por histórias de usuário, o código ainda possui ramificações internas e tratamentos de exceção secundários que carecem de testes unitários estritos.
+
+### 4.5 - Relatório Estrutural de Cobertura (Backend)
 
 <div align="center">
   <table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; text-align: center; vertical-align: middle;">
@@ -562,3 +599,4 @@ Para que o projeto alcance a faixa de *Excelência*, a recomendação técnica p
 | Versão | Data       | Descrição                  | Autor(es) |
 |:------:|:-----------|:---------------------------|:----------|
 | 1.0    | 2026-06-11 | Documentação da página  |    Anne de Capdeville      |
+| 2.0    | 2026-06-23 | Adição dos testes  |    Anne de Capdeville      |
