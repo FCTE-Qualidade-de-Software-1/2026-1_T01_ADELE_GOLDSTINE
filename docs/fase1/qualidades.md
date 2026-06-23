@@ -3,7 +3,7 @@
 ![Especificação inicial do modelo de qualidade](../assets/systemProductQuality.png)
 
 <div align="center">
-  <font size="3"><figcaption>Figura 1: Modelo de Qualidade</figcaption></font>
+  <font size="3"><figcaption>Figura 1.1: Modelo de Qualidade</figcaption></font>
 </div>
 
 
@@ -59,7 +59,7 @@ Esses foram os valores atribuídos pelo grupo para cada uma das qualidades (com 
 | Eficiência de Desempenho  | 2        | 2      | 5        | 0.8         | —           |
 
 <div align="center">
-  <font size="3"><figcaption>Tabela 1: Método de Priorização</figcaption></font>
+  <font size="3"><figcaption>Tabela 1.1: Método de Priorização</figcaption></font>
 </div>
 
 
@@ -68,7 +68,7 @@ Esses foram os valores atribuídos pelo grupo para cada uma das qualidades (com 
 ![Justificativas das características priorizadas](../assets/Gemini_Generated_Image_nbim6cnbim6cnbim.png)
 
 <div align="center">
-  <font size="3"><figcaption>Figura 2: Justificativas das características priorizadas. Imagem gerada por IA (NANO BANANA).</figcaption></font>
+  <font size="3"><figcaption>Figura 1.2: Justificativas das características priorizadas. Imagem gerada por IA (NANO BANANA).</figcaption></font>
 </div>
 
 <br>
@@ -79,7 +79,7 @@ Esses foram os valores atribuídos pelo grupo para cada uma das qualidades (com 
 | Manutenibilidade | A Manutenibilidade (Peso 6,0) é elementar para prolongar a vida útil desse projeto que é open source e de código legado. Uma vez que a arquitetura do projeto está diretamente ligada a sistemas de terceiros (como a fonte de dados extraídas por web scraping do SIGAA), bem como o uso do Heroku para implantação, que necessita de atualizações de status de assinatura constantes, faz-se necessário que o Sua Grade UnB possua uma base de código de fácil manutenção e entendimento, facilitando o processo de manutenção de código e, concomitantemente, fomentando a colaboração da comunidade. </br>**Stakeholders:** Facilita o trabalho da Comunidade OSS (contribuições e correções) e dos principais autores do projeto. |
 
 <div align="center">
-  <font size="3"><figcaption>Tabela 2: Características Priorizadas</figcaption></font>
+  <font size="3"><figcaption>Tabela 1.2: Características Priorizadas</figcaption></font>
 </div>
 
 #### ***Justificativas das características não priorizadas***
@@ -93,7 +93,7 @@ Esses foram os valores atribuídos pelo grupo para cada uma das qualidades (com 
 | Portabilidade | Assim como Adequação funcional, a Portabilidade apresentou peso final (5,0). O “SuaGradeUnB” é uma aplicação web desenvolvida com abordagem Mobile First, apresentando compatibilidade com diferentes tamanhos de tela e dispositivos, o que reduz significativamente possíveis problemas relacionados ao acesso e utilização do sistema pelos usuários. Por se tratar de uma aplicação acessada diretamente pelo navegador, faz com que questões relacionadas à portabilidade estejam mais relacionadas à experiência de acesso do usuário do que à necessidade de adaptação do sistema para diferentes ambientes operacionais. O grupo considerou que outras características apresentavam maior prioridade. |
 
 <div align="center">
-  <font size="3"><figcaption>Tabela 3: Características Não Priorizadas</figcaption></font>
+  <font size="3"><figcaption>Tabela 1.3: Características Não Priorizadas</figcaption></font>
 </div>
 
 
