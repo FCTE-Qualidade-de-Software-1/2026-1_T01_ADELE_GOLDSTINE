@@ -41,7 +41,7 @@ Adele Goldstine (1920–1964) foi uma matemática e cientista da computação am
 
 | Fase | Ferramenta e Modo de Uso | 
 |---|---|
-| Fase 1 | **NotebookLM** - Confirmação de tópicos a partir de documentos <br> **Claude Opus** - Geração de texto para markdown |
+| Fase 1 | **NotebookLM** - Confirmação de tópicos a partir de documentos <br> **Claude Opus** - Geração de texto para markdown <br> **NANO BANANA** - Geração de imagens |
 | Fase 2 | **Gemini** - Especificação de como conseguir os dados para o cálculo de métricas <br> **NotebookLM** - Identificar partes específicas da ISO, como descrição de métricas e questões de pesquisa. |
 | Fase 3 | **NotebookLM** - Confirmação de tópicos a partir de documentos <br> **Claude** - Geração de texto e tabelas para markdown| 
 | Fase 4 | **Claude** - Correção gramatical e auxílio na escrita do código para cálculo da métrica 1.2 de confiabilidade; |

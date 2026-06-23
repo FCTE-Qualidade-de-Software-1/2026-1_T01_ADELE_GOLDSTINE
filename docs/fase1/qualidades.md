@@ -65,6 +65,14 @@ Esses foram os valores atribuídos pelo grupo para cada uma das qualidades (com 
 
 #### ***Justificativas das características priorizadas***
 
+![Justificativas das características priorizadas](../assets/Gemini_Generated_Image_nbim6cnbim6cnbim.png)
+
+<div align="center">
+  <font size="3"><figcaption>Figura 2: Justificativas das características priorizadas. Imagem gerada por IA (NANO BANANA).</figcaption></font>
+</div>
+
+<br>
+
 | **Característica** | **Justificativa** |
 |----------------|----------------|
 | Confiabilidade | A Confiabilidade obteve o maior peso final (Peso 6,6) por julgarmos que caso as turmas fornecidas por ele não estejam de acordo com a oferta de matérias, resultando em um output equivocado para os usuários, o principal propósito do projeto de servir de apoio à comunidade de estudantes da UnB no processo de estruturar suas grades horárias não sería atendido, podendo gerar potenciais prejuízos aos usuários. </br>**Stakeholders:** Comunidade de estudantes da Universidade de Brasília (UnB). |
