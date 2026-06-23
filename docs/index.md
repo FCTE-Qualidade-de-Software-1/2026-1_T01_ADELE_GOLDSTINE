@@ -54,6 +54,30 @@ Adele Goldstine (1920–1964) foi uma matemática e cientista da computação am
   <font size="3"><figcaption>Tabela 0.2: Declaração de uso de IA</figcaption></font>
 </div>
 
+## Bibliografia
+
+> BRITISH STANDARDS INSTITUTION. BS ISO/IEC 25010: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Londres, 2011.
+
+> INSTITUTO DE PESQUISA ECONÔMICA APLICADA (Ipea). ODS 4 - Educação de Qualidade. Disponível em: https://www.ipea.gov.br/ods/ods4.html. Acesso em: 13 mai. 2026.
+
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. ISO/IEC 25000: Software engineering — Software product Quality Requirements and Evaluation (SQuaRE) — Guide to SQuaRE. 1. ed. Genebra, 2005.
+
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. ISO/IEC TR 25021: Software engineering — Software product Quality Requirements and Evaluation (SQuaRE) — Quality measure elements. 1. ed. Genebra, 2007.
+
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. ISO/IEC WD 25022: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) – Measurement of quality in use. Documento de Trabalho (Working Document). Genebra, 2012.
+
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. ISO/IEC WD 25023: Systems and software engineering – Systems and software Quality Requirements and Evaluation (SQuaRE) – Measurement of system and software product quality. Esboço de Trabalho (Working Draft). Editado por Motoei Azuma e KeumSuk Lee. Genebra, 2011.
+
+> ISO. ISO/IEC 12207:2017 – Systems and software engineering — Software life cycle processes. Geneva: International Organization for Standardization, 2017.
+
+> ISO. ISO/IEC 25010:2011 – Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Geneva: International Organization for Standardization, 2011.
+
+> ISO. ISO/IEC 25040:2011 — Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Evaluation process. Genebra: ISO, 2011.
+
+> RAMOS, Cristiane Soares. Processo de Avaliação de Produto de Software. Slides da disciplina Qualidade de Software, Faculdade de Ciências e Tecnologias em Engenharia (FCTE), Universidade de Brasília, 2025/2. Disponível em: https://aprender3.unb.br/pluginfile.php/3327791/mod_resource/content/1/2025-2%20PROC%20AVAL%20PRODUTO.pdf. Acesso em: 13 maio 2026.
+
+> SUAGRADEUNB. SuaGradeUnB. Disponível em: https://suagradeunb.com.br/. Acesso em: 13 maio 2026.
+
 ## Histórico de Versão
 
 | Versão | Data       | Descrição                              | Autor(es) |

@@ -9,19 +9,6 @@ Apesar do alinhamento positivo, a avaliação identificou pontos de atenção qu
 Com isso, o SuaGradeUnB integra princípios centrais da ODS 4, promovendo inclusão e contribuindo com o acesso à educação, ao promover equidade no planejamento acadêmico, fomentar a atuação da comunidade por ser um projeto open source e assegurar um nível de confiabilidade e manutenibilidade que viabiliza sua evolução e uso contínuo pela comunidade estudantil.
 
 
-## **Bibliografia**
-
-> ISO. **ISO/IEC 12207:2017** – *Systems and software engineering — Software life cycle processes*. Geneva: International Organization for Standardization, 2017.
-
-> ISO. **ISO/IEC 25010:2011** – *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models*. Geneva: International Organization for Standardization, 2011.
-
-> SUAGRADEUNB. **SuaGradeUnB**. Disponível em: <https://suagradeunb.com.br/>. Acesso em: 13 maio 2026.
-
-> RAMOS, Cristiane Soares. **Processo de Avaliação de Produto de Software**. Slides da disciplina Qualidade de Software, Faculdade de Ciências e Tecnologias em Engenharia (FCTE), Universidade de Brasília, 2025/2. Disponível em: <https://aprender3.unb.br/pluginfile.php/3327791/mod_resource/content/1/2025-2%20PROC%20AVAL%20PRODUTO.pdf>. Acesso em: 13 maio 2026.
-
-> INSTITUTO DE PESQUISA ECONÔMICA APLICADA (Ipea). ODS 4 - Educação de Qualidade. Disponível em: [https://www.ipea.gov.br/ods/ods4.html](https://www.ipea.gov.br/ods/ods4.html). Acesso em: 13 mai. 2026.
-
-
 ## **Histórico de Versão**
 
 | Versão | Data       | Descrição                  | Autor(es) |
