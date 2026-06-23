@@ -33,6 +33,10 @@ A análise utiliza o modelo **ISO/IEC 25010**, com foco nas características de 
 | Gabriel Magioli | [@gabemagioli](https://github.com/gabemagioli) |
 | Marllon Cardoso | [@m4rllon](https://github.com/m4rllon) |
 
+<div align="center">
+  <font size="3"><figcaption>Tabela 0.1: Membros da equipe</figcaption></font>
+</div>
+
 ## Adele Goldstine
 
 Adele Goldstine (1920–1964) foi uma matemática e cientista da computação americana, autora do primeiro manual técnico do ENIAC e responsável por treinar suas seis programadoras originais. Seu trabalho documentando e ensinando o uso da máquina foi peça-chave para tornar a computação programável uma prática viável.
@@ -45,6 +49,10 @@ Adele Goldstine (1920–1964) foi uma matemática e cientista da computação am
 | Fase 2 | **Gemini** - Especificação de como conseguir os dados para o cálculo de métricas <br> **NotebookLM** - Identificar partes específicas da ISO, como descrição de métricas e questões de pesquisa. |
 | Fase 3 | **NotebookLM** - Confirmação de tópicos a partir de documentos <br> **Claude** - Geração de texto e tabelas para markdown| 
 | Fase 4 | **Claude** - Correção gramatical e auxílio na escrita do código para cálculo da métrica 1.2 de confiabilidade; |
+
+<div align="center">
+  <font size="3"><figcaption>Tabela 0.2: Declaração de uso de IA</figcaption></font>
+</div>
 
 ## Histórico de Versão
 
