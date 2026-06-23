@@ -54,6 +54,19 @@ Adele Goldstine (1920–1964) foi uma matemática e cientista da computação am
   <font size="3"><figcaption>Tabela 0.2: Declaração de uso de IA</figcaption></font>
 </div>
 
+
+## Tabela de contribuição
+
+| Matrícula | Nome       | % de Contribuição                  |
+|:------:|:-----------|:---------------------------|
+| 221007789    | Ana Borges | 16,67%  |
+| 221031111    | Anne de Capdeville | 16,67%  |
+| 221007920    | Caio Felipe | 16,67%  |
+| 222024461    | Edilson Júnior | 16,67%  |
+| 232013980    | Gabriel Magioli | 16,67%  |
+| 222025914    | Marllon Cardoso | 16,67%  |
+---
+
 ## Histórico de Versão
 
 | Versão | Data       | Descrição                              | Autor(es) |
