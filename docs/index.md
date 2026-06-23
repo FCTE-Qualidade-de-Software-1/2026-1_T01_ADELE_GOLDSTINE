@@ -46,11 +46,6 @@ Adele Goldstine (1920–1964) foi uma matemática e cientista da computação am
 | Fase 3 | **NotebookLM** - Confirmação de tópicos a partir de documentos <br> **Claude** - Geração de texto e tabelas para markdown| 
 | Fase 4 | **Claude** - Correção gramatical e auxílio na escrita do código para cálculo da métrica 1.2 de confiabilidade; |
 
-
-## Bibliografia
-
-> ISO/IEC 25010:2011 — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models*. ISO, 2011.
-
 ## Histórico de Versão
 
 | Versão | Data       | Descrição                              | Autor(es) |
