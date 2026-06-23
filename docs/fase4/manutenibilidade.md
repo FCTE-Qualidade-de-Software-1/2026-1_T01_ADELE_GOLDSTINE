@@ -199,7 +199,6 @@ Com **57,14%** de independência, o sistema encontra-se na **faixa Regular** de 
 </br> 
 Tabela de Pontuação de Julgamento disponível em [Fase 2 - Medição da Manutenibilidade](../fase2/manutenibilidade.md).
 
-
 ---
 
 ## 2 - Métrica M2.1 — Analisabilidade (Nível de Rastreabilidade do Sistema)
@@ -298,7 +297,7 @@ O sistema foi auditado com base em 12 eventos críticos distribuídos por 4 dom�
       <td><code>schedule_generator.py</code></td>
       <td><code>logger.info()</code></td>
       <td>❌ Não</td>
-      <td>Excelente lógica, mas sem instrumentação de logger para volumetria.</td>
+      <td>Sem instrumentação de logger para volumetria.</td>
     </tr>
     <tr>
       <td><b>Regras de negócio e BD</b></td>
@@ -343,7 +342,7 @@ O sistema foi auditado com base em 12 eventos críticos distribuídos por 4 dom�
       <td><code>web_scraping.py</code></td>
       <td><code>logger.error()</code></td>
       <td>❌ Não</td>
-      <td>Instabilidades no SIGAA causarão quebras não monitoradas.</td>
+      <td>Instabilidades no SIGAA causarão falhas não monitoradas.</td>
     </tr>
     <tr>
       <td><b>Web Scraping</b></td>
@@ -484,7 +483,7 @@ A métrica é obtida através da soma dos tempos de alteração de código divid
 **Análise do Resultado:**
 O sistema *Sua Grade UnB* apresenta um tempo médio efetivo de alteração de código de **36 horas**. Ao confrontar este valor com a tabela de julgamento, a classificação técnica recai sobre o nível **INSATISFATÓRIO** (>10 horas).
 
-Embora o cálculo numérico indique um tempo de alteração acima do teto de 10 horas, a auditoria cruzada com os *Pull Requests* revela um cenário de excelência arquitetural escondido pelos dados. Das 6 alterações inspecionadas, 5 foram finalizadas em menos de 24 horas (frequentemente no mesmo dia). A arquitetura do sistema prova ser modular, limpa e altamente ágil, permitindo lidar com bugs e novas features quase instantaneamente.
+Embora o cálculo numérico indique um tempo de alteração acima do teto de 10 horas, a auditoria cruzada com os *Pull Requests* revela um cenário de alto nível arquitetural não totalmente refletido pelos dados. Das 6 alterações inspecionadas, 5 foram finalizadas em menos de 24 horas (frequentemente no mesmo dia). A arquitetura do sistema prova ser modular, limpa e ágil, permitindo lidar com bugs e novas features de forma rápida.
 
 <div align="center">
   <table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; text-align: center; vertical-align: middle;">
@@ -537,7 +536,7 @@ A métrica funcional é obtida cruzando o volume de cenários de teste escritos 
 
 Por um lado, o **Backend** possui uma suíte robusta e bem estruturada de testes funcionais e de integração. Ela valida com eficácia as regras de negócio complexas, o algoritmo de geração de grades e os modelos de persistência, oferecendo excelente proteção contra regressões de código. 
 
-Por outro lado, o **Frontend** opera em um cenário de **blindagem zero (0%)**, gerando um ponto cego crítico na validação da interface, gerenciamento de estados locais e interações do usuário. Esse desbalanceamento impede que o sistema atinja a excelência, evidenciando a necessidade imediata de instrumentar o Next.js com ferramentas como *Jest*, *React Testing Library* ou *Cypress*.
+Por outro lado, o **Frontend** opera em um cenário de blindagem zero (0%), gerando um ponto cego crítico na validação da interface, gerenciamento de estados locais e interações do usuário. Esse desbalanceamento impede que o sistema atinja um nível mais alto de qualidade, evidenciando a necessidade imediata de instrumentar o Next.js com ferramentas como *Jest*, *React Testing Library* ou *Cypress*.
 
 **Cobertura Estrutural vs. Funcional:**
 É crucial diferenciar a cobertura de **cenários macro** (os 80,8% calculados acima) da cobertura **estrutural de linhas de código** (*Statement Coverage*) gerada pela ferramenta nativa `coverage report`, que acusou um índice global de **32%** sobre as 1.916 instruções do backend. 
@@ -574,7 +573,7 @@ Tabela de Pontuação de Julgamento disponível em [Fase 2 - Medição da Manute
 A auditoria de Manutenibilidade e Testabilidade da arquitetura do sistema **SuaGradeUnB** (Backend em Django e Frontend em Next.js) revelou um projeto com bases sólidas, mas com oportunidades claras de evolução na garantia de qualidade da interface.
 
 ### 5.1 - Pontos Fortes
-* **Testabilidade do Backend:** A suíte de testes do Django é robusta e bem consolidada, contando com **casos de teste automatizados**. Isso garante uma excelente proteção contra regressões nas regras de negócio, algoritmos de geração de grade e integrações com o banco de dados.
+* **Testabilidade do Backend:** A suíte de testes do Django é robusta e bem consolidada, contando com **casos de teste automatizados**. Isso garante uma ótima proteção contra regressões nas regras de negócio, algoritmos de geração de grade e integrações com o banco de dados.
 * **Tempo de Ciclo e Resolução:** A equipa apresenta grande agilidade na correção de bugs e manutenções corretivas/evolutivas. A análise de rastreamento (Issues) demonstrou um tempo de ciclo muito eficiente, com a grande maioria das tarefas resolvidas em até **24 horas**.
 * **Rastreabilidade de Eventos:** O mapeamento de metadados e logs cobre 12 operações vitais do sistema (divididas em 4 domínios), garantindo um monitoramento adequado para auditoria e resolução de falhas em ambiente de produção.
 
@@ -585,8 +584,7 @@ A auditoria de Manutenibilidade e Testabilidade da arquitetura do sistema **SuaG
 ### 5.3 - Parecer Técnico Final
 O nível de qualidade arquitetural geral do sistema é avaliado como **Bom**. A aplicação demonstra maturidade na gestão de dados no lado do servidor, suportada por uma equipa com processos ágeis de manutenção e monitorização. 
 
-Para que o projeto alcance a faixa de *Excelência*, a recomendação técnica prioritária é o balanceamento da suíte de testes através da introdução de um framework de testes no Frontend (como Jest ou Cypress). A cobertura inicial dos fluxos críticos de navegação (caminhos felizes da interface) será suficiente para mitigar o principal risco de manutenibilidade encontrado nesta auditoria.
-
+Para que o projeto alcance o nível mais alto de qualidade, a recomendação técnica prioritária é o balanceamento da suíte de testes através da introdução de um framework de testes no Frontend (como Jest ou Cypress). A cobertura inicial dos fluxos críticos de navegação será suficiente para mitigar o principal risco de manutenibilidade encontrado nesta auditoria.
 
 ---
 
@@ -596,3 +594,4 @@ Para que o projeto alcance a faixa de *Excelência*, a recomendação técnica p
 |:------:|:-----------|:---------------------------|:----------|
 | 1.0    | 2026-06-11 | Documentação da página  |    Anne de Capdeville      |
 | 2.0    | 2026-06-23 | Adição dos testes  |    Anne de Capdeville      |
+| 3.0    | 2026-06-23 | Ajuste de tom | Caio Rocha |
