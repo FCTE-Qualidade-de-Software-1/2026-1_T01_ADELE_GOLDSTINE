@@ -19,6 +19,10 @@
 | **M2.1 (%)** | **17.91%** |
 | Falsos positivos excluídos | 9 |
 
+<div style="margin-top: 8px; text-align: center;">
+    <font size="4"><figcaption>Tabela 4.8 — Resultados Consolidados.</figcaption></font>
+</div>
+
 ---
 
 ## 2. Por Categoria
@@ -29,6 +33,10 @@
 | Web Scraping SIGAA | 24 | 3 | 21 | 12.5% |
 | Regras de Negócio e Banco de Dados | 44 | 7 | 37 | 15.9% |
 | Infraestrutura e Integração | 38 | 9 | 29 | 23.7% |
+
+<div style="margin-top: 8px; text-align: center;">
+    <font size="4"><figcaption>Tabela 4.9 — Resultados por Categoria.</figcaption></font>
+</div>
 
 ---
 
@@ -67,6 +75,10 @@
 | 27 | `web/app/components/SignInSection.tsx` | 56 | `else signInWithGoogle(router);` | ✗ |
 | 28 | `web/app/schedules/profile/page.tsx` | 75 | `<Button onClick={() => signInWithGoogle(router)} className='!shadow-none'>` | ✗ |
 
+<div style="margin-top: 8px; text-align: center;">
+    <font size="4"><figcaption>Tabela 4.10 — Detalhamento de ocorrências relacionadas a auteticação e segurança.</figcaption></font>
+</div>
+
 ### 3.2 Web Scraping SIGAA
 
 | # | Arquivo | Linha | Snippet | Exceção |
@@ -95,6 +107,10 @@
 | 22 | `api/utils/web_scraping.py` | 264 | `self.get_response_from_disciplines_post_request()` | ✗ |
 | 23 | `api/utils/web_scraping.py` | 292 | `self.get_response_from_disciplines_post_request()` | ✗ |
 | 24 | `api/utils/web_scraping.py` | 293 | `self.make_web_scraping_of_disciplines(self.response)` | ✗ |
+
+<div style="margin-top: 8px; text-align: center;">
+    <font size="4"><figcaption>Tabela 4.11 — Detalhamento de ocorrências relacionadas a web scraping.</figcaption></font>
+</div>
 
 ### 3.3 Regras de Negócio e Banco de Dados
 
@@ -145,6 +161,10 @@
 | 43 | `web/app/contexts/YearPeriodContext.tsx` | 21 | `retrieveYearAndPeriod().then(data => setPeriods(data));` | ✗ |
 | 44 | `web/app/schedules/home/components/GenerateScheduleButton.tsx` | 55 | `generateSchedule(classes_id, [morningPreference, afternoonPreference, nightPreference]).th` | ✗ |
 
+<div style="margin-top: 8px; text-align: center;">
+    <font size="4"><figcaption>Tabela 4.12 — Detalhamento de ocorrências relacionadas a regras de negócio.</figcaption></font>
+</div>
+
 ### 3.4 Infraestrutura e Integração
 
 | # | Arquivo | Linha | Snippet | Exceção |
@@ -187,6 +207,10 @@
 | 36 | `web/app/utils/api/saveSchedule.ts` | 7 | `const response = await request.post('/courses/schedules/', schedule, settingsWithAuth(acce` | ✗ |
 | 37 | `web/app/utils/api/searchDiscipline.ts` | 32 | `const response = await request.get('/courses/', {` | ✓ |
 | 38 | `web/app/utils/request.ts` | 3 | `const request = axios.create({` | ✗ |
+
+<div style="margin-top: 8px; text-align: center;">
+    <font size="4"><figcaption>Tabela 4.13 — Detalhamento de ocorrências relacionadas a infraestrutura e integração.</figcaption></font>
+</div>
 
 
 ---
@@ -306,6 +330,10 @@
 | `web/app/utils/api/saveSchedule.ts` | 7 | Infraestrutura e Integração | `const response = await request.post('/courses/schedules/', schedule, settingsWithAuth(access_token))` |
 | `web/app/utils/request.ts` | 3 | Infraestrutura e Integração | `const request = axios.create({` |
 
+<div style="margin-top: 8px; text-align: center;">
+    <font size="4"><figcaption>Tabela 4.14 — Detalhamento de ocorrências relacionadas a operações sem tratamento de exceção.</figcaption></font>
+</div>
+
 ---
 
 ## 5. Falsos Positivos Excluídos
@@ -321,3 +349,7 @@
 | `web/app/utils/api/searchDiscipline.ts` | 24 | import/export/comment |
 | `web/app/utils/retrieveAccessToken.ts` | 1 | import/export/comment |
 | `web/app/utils/signInWithGoogle.ts` | 3 | import/export/comment |
+
+<div style="margin-top: 8px; text-align: center;">
+    <font size="4"><figcaption>Tabela 4.15 — Detalhamento de ocorrências relacionadas a falsos positivos.</figcaption></font>
+</div>

@@ -32,7 +32,7 @@ Esta fase organiza *como* as medições especificadas na [Fase 2](../fase2/intro
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 1: Visão geral do plano de avaliação.</figcaption></font>
+    <font size="4"><figcaption>Tabela 3.1: Visão geral do plano de avaliação.</figcaption></font>
   </div>
 </div>
 
@@ -97,7 +97,7 @@ Essa sessão de uso serve para medir o **MTBF** (*Mean Time Between Failures*, o
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 2: Recursos necessários para a avaliação.</figcaption></font>
+    <font size="4"><figcaption>Tabela 3.2: Recursos necessários para a avaliação.</figcaption></font>
   </div>
 </div>
 
@@ -176,7 +176,7 @@ O *Sua Grade UnB* é distribuído via Docker, o que permite reproduzir o ambient
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 3: Recursos e ambiente de execução.</figcaption></font>
+    <font size="4"><figcaption>Tabela 3.3: Recursos e ambiente de execução.</figcaption></font>
   </div>
 </div>
 
@@ -232,7 +232,7 @@ O cronograma abaixo organiza a execução da Fase 4, distribuindo as atividades 
     </tr>
   </table>
   <div style="margin-top: 8px; text-align: center;">
-    <font size="4"><figcaption>Tabela 4: Cronograma de execução da avaliação (Fase 4).</figcaption></font>
+    <font size="4"><figcaption>Tabela 3.4: Cronograma de execução da avaliação (Fase 4).</figcaption></font>
   </div>
 </div>
 
