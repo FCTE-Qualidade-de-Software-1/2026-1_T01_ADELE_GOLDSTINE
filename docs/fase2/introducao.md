@@ -4,7 +4,7 @@ Após a realização da [Fase 1](../fase1/conclusao.md) do Processo de Avaliaç�
 
 Para o estabelecimento de métricas foi utilizada a abordagem Goal Question Metric (GQM) com o foco nas características priorizadas no [modelo de qualidade](../fase1/qualidades.md), sendo elas:
 
-- **Confiabilidade:** grau em que um produto ou sistema garante que os dados sejam acessíveis apenas àqueles autorizados a ter acesso.
+- **Confiabilidade:** Grau em que um sistema, produto ou componente executa funções especificadas, sob condições especificadas, por um período de tempo especificado.
 - **Manutenibilidade**: grau de eficácia e eficiência com que um produto ou sistema pode ser modificado pelos responsáveis ​​pela manutenção.
 
 ## Abordagem GQM
@@ -12,10 +12,10 @@ Para o estabelecimento de métricas foi utilizada a abordagem Goal Question Metr
 A metodologia GQM, desenvolvida por Victor Basili em 1994, foca na criação de métricas orientadas a um objetivo. Seguindo essa premissa, a metodologia possui três níveis, sendo eles: Conceitual, Operacional e Quantitativo.
 
 ![Niveis do GQM](../assets/gqm.png)
+
 <div align="center">
   <font size="3"><figcaption>Figura 2.1: Estrutura do GQM</figcaption></font>
 </div>
-
 
 1. O GQM se inicia com a definição de um objetivo, ou seja, para qual motivo será realizada a medição.
 2. Posteriomente há a definição de questões que deverão ser respondidas a partir das métricas. Juntamente disso, são definidas hipóteses, que são as respostas esperadas.
@@ -23,6 +23,6 @@ A metodologia GQM, desenvolvida por Victor Basili em 1994, foca na criação de 
 
 ## Histórico de Versão
 
-| Versão | Data       | Descrição                  | Autor(es) |
-|:------:|:-----------|:---------------------------|:----------|
-| 0.1    | 2026-06-09 | Criação inicial da página  | Ana Clara Borges     |
+| Versão | Data       | Descrição                 | Autor(es)        |
+| :----: | :--------- | :------------------------ | :--------------- |
+|  0.1   | 2026-06-09 | Criação inicial da página | Ana Clara Borges |

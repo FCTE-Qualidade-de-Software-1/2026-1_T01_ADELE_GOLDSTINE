@@ -323,7 +323,7 @@ A Fase 2 define os seguintes critérios para o julgamento geral da característi
     </tr>
     <tr>
       <td>M1.1 — MTBF</td>
-      <td>1,45 minutos</td>
+      <td>2,6 minutos</td>
       <td>Regular</td>
     </tr>
     <tr>
