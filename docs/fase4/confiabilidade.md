@@ -366,14 +366,9 @@ Com 15,9% de cobertura (7 de 44 operações), as operações de acesso ao banco 
 
 O ícone de seção ativa fica preso entre as duas opções da barra de navegação inferior. Por não impedir nenhuma funcionalidade, este item pode ser tratado em uma sprint de polimento de interface, após a resolução dos itens de maior impacto acima.
 
-## Bibliografia
-
-- ISO/IEC 25010:2011 — _Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models_. Genebra: ISO, 2011.
-- ISO/IEC 25040:2011 — _Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Evaluation process_. Genebra: ISO, 2011.
-
 ## Histórico de Versão
 
-| Versão | Data       | Descrição                                        | Autor(es)       |
-| :----: | :--------- | :----------------------------------------------- | :-------------- |
-|  1.0   | 2026-06-12 | Execução das medições de Confiabilidade (Fase 4) | Edilson Ribeiro |
-|  2.0   | 2026-06-23 | Aplicação de correções e feedbacks               | Edilson Ribeiro |
+| Versão | Data       | Descrição                                        | Autor(es)                                          |
+| :----: | :--------- | :----------------------------------------------- | :------------------------------------------------- |
+|  1.0   | 2026-06-12 | Execução das medições de Confiabilidade (Fase 4) | [Edilson Ribeiro](https://github.com/Edilson-r-jr) |
+|  2.0   | 2026-06-23 | Aplicação de correções e feedbacks               | [Edilson Ribeiro](https://github.com/Edilson-r-jr) |
