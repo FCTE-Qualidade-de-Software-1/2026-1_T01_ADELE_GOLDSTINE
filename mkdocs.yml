@@ -27,6 +27,7 @@ nav:
       - Codigo da Metrica 2.1 - confiabilidade: fase4/codigo_analise_metrica_2.1.md
       - Registro da Metrica 2.1 - confiabilidade: fase4/m2_1_registro.md
       - Avaliação Manutenibilidade: fase4/manutenibilidade.md
+      - Julgamento Consoliado: fase4/julgamento_final.md
 
 theme:
   name: material
