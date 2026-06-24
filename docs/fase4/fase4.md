@@ -1,6 +1,6 @@
 # Execução da Avaliação
 
-Esta fase detalha a execução do plano de avaliação de qualidade do software **SuaGradeUnB**, conforme projetado na Fase 3. O objetivo aqui é apresentar, de forma transparente e rastreável, a coleta de dados brutos para cada métrica definida nos planos GQM da  [Fase 2 - Medição da Manutenibilidade](../fase2/manutenibilidade.md) e a [Fase 3 - Planejamento da Avaliação](../fase3/planejamento.md).
+Esta fase detalha a execução do plano de avaliação de qualidade do software **SuaGradeUnB**, conforme projetado na Fase 3. O objetivo aqui é apresentar, de forma transparente e rastreável, a coleta de dados brutos para cada métrica definida nos planos GQM da  [Fase 2 - Medição da Manutenibilidade](../fase2/manutenibilidade.md), [Fase 2 - Medição da Confiabilidade](../fase2/confiabilidade.md)e a [Fase 3 - Planejamento da Avaliação](../fase3/planejamento.md).
 
 Os resultados são agrupados por característica de qualidade:
 
