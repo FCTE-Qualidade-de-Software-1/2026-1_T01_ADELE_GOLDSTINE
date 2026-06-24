@@ -23,6 +23,7 @@ nav:
   - Fase 4:
       - Introdução: fase4/fase4.md
       - Avaliação Confiabilidade: fase4/confiabilidade.md
+      - Codigo da Metrica 2.1 - confiabilidade: fase4/codigo_analise_metrica_2.1.md
       - Registro da Metrica 2.1 - confiabilidade: fase4/m2_1_registro.md
       - Avaliação Manutenibilidade: fase4/manutenibilidade.md
 
