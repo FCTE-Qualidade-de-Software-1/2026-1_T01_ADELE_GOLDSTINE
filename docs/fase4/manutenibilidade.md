@@ -658,17 +658,16 @@ A auditoria de Manutenibilidade e Testabilidade da arquitetura do sistema **SuaG
 
 ### 5.1 - Pontos Fortes
 * **Testabilidade do Backend:** A suíte de testes do Django é robusta e bem consolidada, contando com **casos de teste automatizados**. Isso garante uma ótima proteção contra regressões nas regras de negócio, algoritmos de geração de grade e integrações com o banco de dados.
-* **Tempo de Ciclo e Resolução:** A equipa apresenta grande agilidade na correção de bugs e manutenções corretivas/evolutivas. A análise de rastreamento (Issues) demonstrou um tempo de ciclo muito eficiente, com a grande maioria das tarefas resolvidas em até **24 horas**.
-* **Rastreabilidade de Eventos:** O mapeamento de metadados e logs cobre 12 operações vitais do sistema (divididas em 4 domínios), garantindo um monitoramento adequado para auditoria e resolução de falhas em ambiente de produção.
+* **Tempo de Ciclo e Resolução:** A equipa apresenta grande agilidade na correção de bugs e manutenções corretivas/evolutivas. A análise de rastreamento (Issues) demonstrou um tempo de ciclo muito eficiente, com a grande maioria das tarefas resolvidas em até **24 horas**. Mesmo que seguindo a faixa de julgamento ele seja classificado como Insatisfatório.
 
 ### 5.2 - Pontos a Melhorar
 * **Ponto Cego no Frontend:** A ausência de testes automatizados no repositório web (0 cenários mapeados) representa o maior risco técnico atual da arquitetura, deixando a interação do utilizador vulnerável a quebras de interface e falhas de fluxo.
-* **Fricção no Setup de Ambiente:** A inicialização do ambiente local do backend exige a configuração estrita de múltiplas variáveis de ambiente (geridas de forma rigorosa pela biblioteca `decouple`) e a instalação de binários do PostgreSQL, o que eleva a curva de aprendizado e a barreira de entrada para novos desenvolvedores executarem os testes básicos.
+* **Rastreabilidade de Eventos:** O mapeamento de metadados e logs não cobre as 12 operações vitais do sistema. Deve ter um foco em arrumar essa rastreabilidade por meio de logs.
 
 ### 5.3 - Parecer Técnico Final
 O nível de qualidade arquitetural geral do sistema é avaliado como **Bom**. A aplicação demonstra maturidade na gestão de dados no lado do servidor, suportada por uma equipa com processos ágeis de manutenção e monitorização. 
 
-Para que o projeto alcance o nível mais alto de qualidade, a recomendação técnica prioritária é o balanceamento da suíte de testes através da introdução de um framework de testes no Frontend (como Jest ou Cypress). A cobertura inicial dos fluxos críticos de navegação será suficiente para mitigar o principal risco de manutenibilidade encontrado nesta auditoria.
+Para que o projeto alcance o nível mais alto de qualidade, a recomendação técnica prioritária é a resolução dos pontos de melhoria.
 
 ---
 
