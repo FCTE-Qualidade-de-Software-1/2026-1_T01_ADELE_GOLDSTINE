@@ -2438,17 +2438,16 @@ Tabela de Pontuação de Julgamento disponível em <a href="../../fase2/manuteni
 <h3 id="51-pontos-fortes">5.1 - Pontos Fortes<a class="headerlink" href="#51-pontos-fortes" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Testabilidade do Backend:</strong> A suíte de testes do Django é robusta e bem consolidada, contando com <strong>casos de teste automatizados</strong>. Isso garante uma ótima proteção contra regressões nas regras de negócio, algoritmos de geração de grade e integrações com o banco de dados.</li>
-<li><strong>Tempo de Ciclo e Resolução:</strong> A equipa apresenta grande agilidade na correção de bugs e manutenções corretivas/evolutivas. A análise de rastreamento (Issues) demonstrou um tempo de ciclo muito eficiente, com a grande maioria das tarefas resolvidas em até <strong>24 horas</strong>.</li>
-<li><strong>Rastreabilidade de Eventos:</strong> O mapeamento de metadados e logs cobre 12 operações vitais do sistema (divididas em 4 domínios), garantindo um monitoramento adequado para auditoria e resolução de falhas em ambiente de produção.</li>
+<li><strong>Tempo de Ciclo e Resolução:</strong> A equipa apresenta grande agilidade na correção de bugs e manutenções corretivas/evolutivas. A análise de rastreamento (Issues) demonstrou um tempo de ciclo muito eficiente, com a grande maioria das tarefas resolvidas em até <strong>24 horas</strong>. Mesmo que seguindo a faixa de julgamento ele seja classificado como Insatisfatório.</li>
 </ul>
 <h3 id="52-pontos-a-melhorar">5.2 - Pontos a Melhorar<a class="headerlink" href="#52-pontos-a-melhorar" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Ponto Cego no Frontend:</strong> A ausência de testes automatizados no repositório web (0 cenários mapeados) representa o maior risco técnico atual da arquitetura, deixando a interação do utilizador vulnerável a quebras de interface e falhas de fluxo.</li>
-<li><strong>Fricção no Setup de Ambiente:</strong> A inicialização do ambiente local do backend exige a configuração estrita de múltiplas variáveis de ambiente (geridas de forma rigorosa pela biblioteca <code>decouple</code>) e a instalação de binários do PostgreSQL, o que eleva a curva de aprendizado e a barreira de entrada para novos desenvolvedores executarem os testes básicos.</li>
+<li><strong>Rastreabilidade de Eventos:</strong> O mapeamento de metadados e logs não cobre as 12 operações vitais do sistema. Deve ter um foco em arrumar essa rastreabilidade por meio de logs.</li>
 </ul>
 <h3 id="53-parecer-tecnico-final">5.3 - Parecer Técnico Final<a class="headerlink" href="#53-parecer-tecnico-final" title="Permanent link">&para;</a></h3>
 <p>O nível de qualidade arquitetural geral do sistema é avaliado como <strong>Bom</strong>. A aplicação demonstra maturidade na gestão de dados no lado do servidor, suportada por uma equipa com processos ágeis de manutenção e monitorização. </p>
-<p>Para que o projeto alcance o nível mais alto de qualidade, a recomendação técnica prioritária é o balanceamento da suíte de testes através da introdução de um framework de testes no Frontend (como Jest ou Cypress). A cobertura inicial dos fluxos críticos de navegação será suficiente para mitigar o principal risco de manutenibilidade encontrado nesta auditoria.</p>
+<p>Para que o projeto alcance o nível mais alto de qualidade, a recomendação técnica prioritária é a resolução dos pontos de melhoria.</p>
 <hr />
 <h2 id="historico-de-versao">Histórico de Versão<a class="headerlink" href="#historico-de-versao" title="Permanent link">&para;</a></h2>
 <table>
