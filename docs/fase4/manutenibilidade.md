@@ -1,8 +1,24 @@
 # Avaliação — Manutenibilidade
-
-Nessa parte está sendo realizada a avaliação da manutenibilidade seguindo as informações disponíveis na [Fase 2 - Medição da Manutenibilidade](../fase2/manutenibilidade.md) e a [Fase 3 - Planejamento da Avaliação](../fase3/planejamento.md).
-
+Esta página apresenta os resultados da Fase 4 — Execução da Avaliação referentes à característica de qualidade **Manutenibilidade**, avaliada segundo o modelo de qualidade SQuaRE e a norma ISO/IEC 25010:2011. As métricas executadas nesta fase — **M1.1** (Nível de independência dos componentes), **M2.1** (Nível de qualidade dos logs do sistema), **M3.1** (Média do tempo gasto para fazer uma alteração) e **M4.1** (Porcentagem de cobertura de testes) — foram planejadas na Fase 3, disponível em [Fase 3 - Planejamento da Avaliação](../fase3/planejamento.md), e seguem o método, os recursos e o roteiro lá definidos.
 Serão utilizadas as pontuações de julgamento mencionados na [Fase 2 - Medição da Manutenibilidade](../fase2/manutenibilidade.md).
+
+### Propósito e Contexto GQM
+
+De acordo com o propósito estabelecido na [Fase 1](../fase1/contexto-da-avaliacao.md) , esta avaliação tem como objetivo determinar se o **Sua Grade UnB** apresenta nível de Manutenibilidade adequado do ponto de vista da equipe do projeto, identificando o grau de eficácia e eficiência com que o sistema consegue ser modificado, testado e analisado pelos mantenedores responsáveis.
+
+No plano GQM adotado, a característica Manutenibilidade é decomposta da seguinte forma:
+
+* **Objetivo (G):** Avaliar a Manutenibilidade do Sua Grade UnB sob a perspectiva técnica da equipe do projeto, focando na modularidade da arquitetura, rastreabilidade de falhas, agilidade nas alterações de código e abrangência das suítes de teste.
+* **Questão 1 (Q1 — Modularidade):** O quão forte é a relação entre os componentes do sistema?
+    * **Métrica de resposta:** M1.1 — Nível de independência dos componentes
+* **Questão 2 (Q2 — Analisabilidade):** O quão fácil é identificar a operação específica que causou a falha?
+    * **Métrica de resposta:** M2.1 — Nível de qualidade dos logs do sistema
+* **Questão 3 (Q3 — Modificabilidade):** O quão facilmente o mantenedor consegue modificar o software para resolver um problema?
+    * **Métrica de resposta:** M3.1 — Média do tempo gasto para fazer uma alteração
+* **Questão 4 (Q4 — Testabilidade):** O quão completa é a cobertura de testes do sistema?
+    * **Métrica de resposta:** M4.1 — Porcentagem de cobertura de testes
+
+
 
 ---
 
@@ -529,6 +545,74 @@ A métrica funcional é obtida cruzando o volume de cenários de teste escritos 
   <iframe width="600" height="337" src="https://www.youtube.com/embed/PkYRaDU3Yh4" title="Execução dos Testes e Cobertura" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <p><i>Teste 6 - Execução da suíte de testes do Django exibindo os 101 cenários automatizados e o relatório de cobertura de código (Coverage).</i></p>
 </div>
+
+**Resultados do [Teste 6](https://youtu.be/PkYRaDU3Yh4)** rodado com `python -m coverage report`.
+```text
+Name                                                              Stmts   Miss  Cover
+-----------------------------------------------------------------------------------
+api\__init__.py                                                       0      0   100%
+api\apps.py                                                           4      0   100%
+api\decorators.py                                                    13      6    54%
+api\management\__init__.py                                            0      0   100%
+api\management\commands\__init__.py                                   0      0   100%
+api\migrations\0001_initial.py                                        7      0   100%
+api\migrations\0002_auto_20231113_2029.py                             5      0   100%
+api\migrations\0003_remove_class_workload_class_special_dates.py     5      0   100%
+api\migrations\0004_alter_class_special_dates.py                     5      0   100%
+api\migrations\0004_auto_20231126_1740.py                             5      0   100%
+api\migrations\0005_discipline_unicode_name.py                       4      0   100%
+api\migrations\0006_merge_20231127_2255.py                           4      0   100%
+api\migrations\0007_schedule.py                                       6      0   100%
+api\migrations\0008_schedule_created_at.py                            5      0   100%
+api\migrations\__init__.py                                            0      0   100%
+api\models.py                                                        72     29    60%
+api\serializers.py                                                   34      5    85%
+api\swagger.py                                                       19      0   100%
+api\tests\__init__.py                                                 0      0   100%
+api\tests\test_error_request_body_schedule_save.py                  41     32    22%
+api\tests\test_generate_schedule_api.py                             49     36    27%
+api\tests\test_get_schedules_api.py                                 30     20    33%
+api\tests\test_models.py                                             50     35    30%
+api\tests\test_schedule_delete.py                                   39     26    33%
+api\tests\test_schedule_models.py                                   15      7    53%
+api\tests\test_schedule_save.py                                    110     82    25%
+api\tests\test_search_api.py                                       168    148    12%
+api\tests\test_year_period_api.py                                   10      6    40%
+api\views\save_schedule.py                                          130     99    24%
+api\views\utils.py                                                    3      1    67%
+api\views\views.py                                                  102     67    34%
+core\__init__.py                                                      0      0   100%
+core\settings\base.py                                                35      0   100%
+core\settings\dev.py                                                  6      0   100%
+users\__init__.py                                                     0      0   100%
+users\apps.py                                                         4      0   100%
+users\migrations\0001_initial.py                                      9      0   100%
+users\migrations\0002_user_picture_url_alter_user_first_name.py       4      0   100%
+users\migrations\__init__.py                                          0      0   100%
+users\models.py                                                       11      0   100%
+users\tests\__init__.py                                               0      0   100%
+users\tests\test_session_login.py                                   56     37    34%
+users\tests\test_session_logout.py                                  30     16    47%
+users\tests\test_session_register.py                                50     36    28%
+utils\__init__.py                                                     0      0   100%
+utils\apps.py                                                         4      0   100%
+utils\db_handler.py                                                  71     43    39%
+utils\ira_calculator.py                                              45     31    31%
+utils\management\__init__.py                                          0      0   100%
+utils\management\commands\__init__.py                                 0      0   100%
+utils\schedule_generator.py                                         139    102    27%
+utils\search.py                                                      16      7    56%
+utils\sessions.py                                                    46     28    39%
+utils\tests\__init__.py                                               0      0   100%
+utils\tests\test_database_handler.py                                64     51    20%
+utils\tests\test_date_utils.py                                      70     57    19%
+utils\tests\test_ira_calculator.py                                  32     19    41%
+utils\tests\test_schedule_generator.py                              53     40    25%
+utils\tests\test_web_scraping.py                                    78     74     5%
+utils\web_scraping.py                                               158    156     1%
+-----------------------------------------------------------------------------------
+TOTAL                                                              1916   1296    32%
+```
 
 ### 4.4 - Julgamento da Arquitetura e Veredito
 
