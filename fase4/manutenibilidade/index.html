@@ -1113,6 +1113,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#proposito-e-contexto-gqm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propósito e Contexto GQM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1-metrica-m11-nivel-de-independencia-dos-componentes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1460,6 +1471,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#proposito-e-contexto-gqm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propósito e Contexto GQM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1-metrica-m11-nivel-de-independencia-dos-componentes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1785,8 +1807,30 @@
 
 
 <h1 id="avaliacao-manutenibilidade">Avaliação — Manutenibilidade<a class="headerlink" href="#avaliacao-manutenibilidade" title="Permanent link">&para;</a></h1>
-<p>Nessa parte está sendo realizada a avaliação da manutenibilidade seguindo as informações disponíveis na <a href="../../fase2/manutenibilidade/">Fase 2 - Medição da Manutenibilidade</a> e a <a href="../../fase3/planejamento/">Fase 3 - Planejamento da Avaliação</a>.</p>
-<p>Serão utilizadas as pontuações de julgamento mencionados na <a href="../../fase2/manutenibilidade/">Fase 2 - Medição da Manutenibilidade</a>.</p>
+<p>Esta página apresenta os resultados da Fase 4 — Execução da Avaliação referentes à característica de qualidade <strong>Manutenibilidade</strong>, avaliada segundo o modelo de qualidade SQuaRE e a norma ISO/IEC 25010:2011. As métricas executadas nesta fase — <strong>M1.1</strong> (Nível de independência dos componentes), <strong>M2.1</strong> (Nível de qualidade dos logs do sistema), <strong>M3.1</strong> (Média do tempo gasto para fazer uma alteração) e <strong>M4.1</strong> (Porcentagem de cobertura de testes) — foram planejadas na Fase 3, disponível em <a href="../../fase3/planejamento/">Fase 3 - Planejamento da Avaliação</a>, e seguem o método, os recursos e o roteiro lá definidos.
+Serão utilizadas as pontuações de julgamento mencionados na <a href="../../fase2/manutenibilidade/">Fase 2 - Medição da Manutenibilidade</a>.</p>
+<h3 id="proposito-e-contexto-gqm">Propósito e Contexto GQM<a class="headerlink" href="#proposito-e-contexto-gqm" title="Permanent link">&para;</a></h3>
+<p>De acordo com o propósito estabelecido na <a href="../../fase1/contexto-da-avaliacao/">Fase 1</a> , esta avaliação tem como objetivo determinar se o <strong>Sua Grade UnB</strong> apresenta nível de Manutenibilidade adequado do ponto de vista da equipe do projeto, identificando o grau de eficácia e eficiência com que o sistema consegue ser modificado, testado e analisado pelos mantenedores responsáveis.</p>
+<p>No plano GQM adotado, a característica Manutenibilidade é decomposta da seguinte forma:</p>
+<ul>
+<li><strong>Objetivo (G):</strong> Avaliar a Manutenibilidade do Sua Grade UnB sob a perspectiva técnica da equipe do projeto, focando na modularidade da arquitetura, rastreabilidade de falhas, agilidade nas alterações de código e abrangência das suítes de teste.</li>
+<li><strong>Questão 1 (Q1 — Modularidade):</strong> O quão forte é a relação entre os componentes do sistema?<ul>
+<li><strong>Métrica de resposta:</strong> M1.1 — Nível de independência dos componentes</li>
+</ul>
+</li>
+<li><strong>Questão 2 (Q2 — Analisabilidade):</strong> O quão fácil é identificar a operação específica que causou a falha?<ul>
+<li><strong>Métrica de resposta:</strong> M2.1 — Nível de qualidade dos logs do sistema</li>
+</ul>
+</li>
+<li><strong>Questão 3 (Q3 — Modificabilidade):</strong> O quão facilmente o mantenedor consegue modificar o software para resolver um problema?<ul>
+<li><strong>Métrica de resposta:</strong> M3.1 — Média do tempo gasto para fazer uma alteração</li>
+</ul>
+</li>
+<li><strong>Questão 4 (Q4 — Testabilidade):</strong> O quão completa é a cobertura de testes do sistema?<ul>
+<li><strong>Métrica de resposta:</strong> M4.1 — Porcentagem de cobertura de testes</li>
+</ul>
+</li>
+</ul>
 <hr />
 <h2 id="1-metrica-m11-nivel-de-independencia-dos-componentes">1 - Métrica M1.1 — Nível de independência dos componentes<a class="headerlink" href="#1-metrica-m11-nivel-de-independencia-dos-componentes" title="Permanent link">&para;</a></h2>
 <h3 id="11-levantamento-de-classes-e-modulos">1.1 - Levantamento de Classes e Módulos<a class="headerlink" href="#11-levantamento-de-classes-e-modulos" title="Permanent link">&para;</a></h3>
@@ -2263,6 +2307,72 @@ Tabela de Pontuação de Julgamento disponível em <a href="../../fase2/manuteni
   <p><i>Teste 6 - Execução da suíte de testes do Django exibindo os 101 cenários automatizados e o relatório de cobertura de código (Coverage).</i></p>
 </div>
 
+<p><strong>Resultados do <a href="https://youtu.be/PkYRaDU3Yh4">Teste 6</a></strong> rodado com <code>python -m coverage report</code>.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Name                                                              Stmts   Miss  Cover
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>-----------------------------------------------------------------------------------
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>api\__init__.py                                                       0      0   100%
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>api\apps.py                                                           4      0   100%
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>api\decorators.py                                                    13      6    54%
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>api\management\__init__.py                                            0      0   100%
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>api\management\commands\__init__.py                                   0      0   100%
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>api\migrations\0001_initial.py                                        7      0   100%
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>api\migrations\0002_auto_20231113_2029.py                             5      0   100%
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>api\migrations\0003_remove_class_workload_class_special_dates.py     5      0   100%
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>api\migrations\0004_alter_class_special_dates.py                     5      0   100%
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>api\migrations\0004_auto_20231126_1740.py                             5      0   100%
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>api\migrations\0005_discipline_unicode_name.py                       4      0   100%
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>api\migrations\0006_merge_20231127_2255.py                           4      0   100%
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>api\migrations\0007_schedule.py                                       6      0   100%
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>api\migrations\0008_schedule_created_at.py                            5      0   100%
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>api\migrations\__init__.py                                            0      0   100%
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>api\models.py                                                        72     29    60%
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>api\serializers.py                                                   34      5    85%
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>api\swagger.py                                                       19      0   100%
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>api\tests\__init__.py                                                 0      0   100%
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>api\tests\test_error_request_body_schedule_save.py                  41     32    22%
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>api\tests\test_generate_schedule_api.py                             49     36    27%
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>api\tests\test_get_schedules_api.py                                 30     20    33%
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>api\tests\test_models.py                                             50     35    30%
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>api\tests\test_schedule_delete.py                                   39     26    33%
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>api\tests\test_schedule_models.py                                   15      7    53%
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>api\tests\test_schedule_save.py                                    110     82    25%
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>api\tests\test_search_api.py                                       168    148    12%
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>api\tests\test_year_period_api.py                                   10      6    40%
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>api\views\save_schedule.py                                          130     99    24%
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>api\views\utils.py                                                    3      1    67%
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>api\views\views.py                                                  102     67    34%
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>core\__init__.py                                                      0      0   100%
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>core\settings\base.py                                                35      0   100%
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>core\settings\dev.py                                                  6      0   100%
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>users\__init__.py                                                     0      0   100%
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>users\apps.py                                                         4      0   100%
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>users\migrations\0001_initial.py                                      9      0   100%
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>users\migrations\0002_user_picture_url_alter_user_first_name.py       4      0   100%
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>users\migrations\__init__.py                                          0      0   100%
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>users\models.py                                                       11      0   100%
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>users\tests\__init__.py                                               0      0   100%
+<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>users\tests\test_session_login.py                                   56     37    34%
+<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>users\tests\test_session_logout.py                                  30     16    47%
+<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>users\tests\test_session_register.py                                50     36    28%
+<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>utils\__init__.py                                                     0      0   100%
+<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>utils\apps.py                                                         4      0   100%
+<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>utils\db_handler.py                                                  71     43    39%
+<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>utils\ira_calculator.py                                              45     31    31%
+<a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>utils\management\__init__.py                                          0      0   100%
+<a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a>utils\management\commands\__init__.py                                 0      0   100%
+<a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>utils\schedule_generator.py                                         139    102    27%
+<a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>utils\search.py                                                      16      7    56%
+<a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>utils\sessions.py                                                    46     28    39%
+<a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>utils\tests\__init__.py                                               0      0   100%
+<a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>utils\tests\test_database_handler.py                                64     51    20%
+<a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>utils\tests\test_date_utils.py                                      70     57    19%
+<a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a>utils\tests\test_ira_calculator.py                                  32     19    41%
+<a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a>utils\tests\test_schedule_generator.py                              53     40    25%
+<a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a>utils\tests\test_web_scraping.py                                    78     74     5%
+<a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a>utils\web_scraping.py                                               158    156     1%
+<a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>-----------------------------------------------------------------------------------
+<a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>TOTAL                                                              1916   1296    32%
+</code></pre></div></p>
 <h3 id="44-julgamento-da-arquitetura-e-veredito">4.4 - Julgamento da Arquitetura e Veredito<a class="headerlink" href="#44-julgamento-da-arquitetura-e-veredito" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Veredito Atual:</strong> Bom (80,8% de cobertura de cenários)</li>
